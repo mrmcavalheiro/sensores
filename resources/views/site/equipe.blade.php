@@ -1,6 +1,7 @@
 @extends('site.layout')
 @section('title','Página Sobre')
 @section('content')
+
     {{-- cards-Equipe --}}
     @include('partials.equipe.apresentacao')
 

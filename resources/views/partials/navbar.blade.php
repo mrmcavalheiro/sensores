@@ -16,7 +16,7 @@
         <ul class="right hide-on-med-and-down">
             @foreach ($itens as $key => $item)
                 <li>
-                    <a href="{{ route($rotas[$key]) }}">
+                    <a href="{{ route($rotas[$key]) }}" class="{{ Request::routeIs($rotas[$key]) ? 'active' : '' }}">
                         <i class="{{ $icons[$key] }} fa-1x"></i>
                         {{ $item }}
                     </a>
@@ -32,9 +32,9 @@
                         <img src="{{ asset('images/slide/sidenav-imagem.jpg') }}" alt="[imagem]"
                             title='{{ config('app.name') }}'>
                     </div>
-                    {{-- <ahref="#user"><imgclass="circle"src="images/yuna.jpg"></a> --}}
+                    {{-- <a href="#user"><img class="circle" src="images/yuna.jpg"></a> --}}
                     <a href="#name"><span class="white-text name"><b>{{ config('app.name') }}</b></span></a>
-                    {{--  <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>--}}
+                    {{-- <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a> --}}
                 </div>
              </li>
 
@@ -42,8 +42,8 @@
             <li><div class="divider"></div></li>
             @foreach ($itens as $key => $item)
                 <li>
-                    <a href="{{ route($rotas[$key]) }}">
-                        <i class="{{ $icons[$key] }} fa-1x blue-text text-lighten-4 "></i><b>
+                    <a href="{{ route($rotas[$key]) }}" class="{{ Request::routeIs($rotas[$key]) ? 'active' : '' }}">
+                        <i class="{{ $icons[$key] }} fa-1x blue-text text-lighten-4"></i><b>
                         {{ $item }}</b> <br>
                     </a>
                 </li>

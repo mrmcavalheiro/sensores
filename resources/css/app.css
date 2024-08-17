@@ -1,6 +1,7 @@
-.justify{
+.justify {
     text-align: justify;
 }
+
 .descricao-container {
     max-height: 200px; /* Ajuste a altura máxima desejada */
     overflow: auto;
@@ -20,6 +21,7 @@
 .mt-2 {
     margin-top: 10px;
 }
+
 .mr-0 {
     margin-right: 0px;
 }
@@ -28,15 +30,12 @@
     display: flex;
     justify-content: right;
     align-items: right;
-  }
-/* app.css */
+}
 
-/* Estilo para as linhas ímpares */
 table tbody tr.odd {
     background-color: #ffffff;
 }
 
-/* Estilo para as linhas pares */
 table tbody tr.even {
     background-color: #f2f2f2;
 }
@@ -45,7 +44,156 @@ table thead th {
     background-color: #f5f5f5;
     color: #333;
     font-weight: bold;
-  }
-  .subitem-marker {
+}
+
+.subitem-marker {
     margin-right: 5px; /* Ajuste o valor conforme necessário */
 }
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background: #fff;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.equipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.membro-card {
+    flex: 1 1 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    min-height: 435px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.membro-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.membro-card h3 {
+    margin-bottom: 10px;
+}
+
+.membro-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.membro-card .social-links a {
+    margin: 0 10px;
+    color: #666;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.membro-card .social-links a:hover {
+    color: #333;
+}
+
+.membro-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .membro-card {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .membro-card {
+        flex: 1 1 90%;
+        max-width: 90%;
+    }
+}
+/* Custom CSS for slider indicators */
+.slider .indicators {
+    bottom: 10px; /* Ajuste conforme necessário */
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .slider .indicators .indicator-item {
+    background-color: rgba(255, 255, 255, 0.5); /* Indicadores semi-translúcidos */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .slider .indicators .indicator-item.active {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  

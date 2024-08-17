@@ -1,11 +1,17 @@
 @extends('site.layout')
 @section('title','Página Contato')
 @section('content')
+
+<!-- Título Apoiadores com Fundo Azul -->
+<div class="quaseMenu">
+    Entre em Contato
+</div>
+
+
     <div class="row container">
         <div class="col s12">
             <div class="col s12 l6 push-l3 center-align">
-                <h1 class="flow-text blue-text">Entre em Contato</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ut nam dignissimos neque quidem, officiis quasi porro natus excepturi quibusdam, tempore expedita voluptate, earum minima? Facere saepe soluta corporis quis!</p>
+                <p>Estamos aqui para ajudar! Você pode entrar em contato conosco através dos seguintes meios:</p>
             </div>
         </div>
         {{-- cards-Parte1 --}}

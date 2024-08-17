@@ -1,0 +1,51 @@
+.justify{
+    text-align: justify;
+}
+.descricao-container {
+    max-height: 200px; /* Ajuste a altura máxima desejada */
+    overflow: auto;
+}
+
+.descricao-textarea {
+    height: 300px; /* Ajuste a altura desejada */
+    min-height: 300px; /* Define a altura mínima */
+    resize: vertical; /* Permite redimensionar verticalmente o textarea */
+    border: none; /* Remove a borda */
+}
+
+.card-image {
+    width: 300px; /* Define a largura desejada */
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+.mr-0 {
+    margin-right: 0px;
+}
+
+.img-direita {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+/* app.css */
+
+/* Estilo para as linhas ímpares */
+table tbody tr.odd {
+    background-color: #ffffff;
+}
+
+/* Estilo para as linhas pares */
+table tbody tr.even {
+    background-color: #f2f2f2;
+}
+
+table thead th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: bold;
+  }
+  .subitem-marker {
+    margin-right: 5px; /* Ajuste o valor conforme necessário */
+}

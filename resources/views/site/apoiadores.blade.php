@@ -1,6 +1,7 @@
 @extends('site.layout')
 @section('title', 'Página de Apoiadores')
 @section('content')
+
     {{-- Apresentação dos apoiadores --}}
     @include('partials.apoiadores.apresentacao')
 

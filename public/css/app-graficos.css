@@ -1,0 +1,760 @@
+/* Estilo para os gráficos */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    margin-bottom: 20px;
+}
+
+#main-chart {
+    height: 400px;
+    width: 100%;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 100%;
+}
+
+#main-chart {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilos personalizados para o menu de gráficos */
+.nav-wrapper {
+    background-color: #2196F3; /* Azul Materialize */
+    padding: 0 20px;
+}
+
+#nav-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav-mobile li {
+    margin: 0 15px;
+}
+
+#nav-mobile li a {
+    color: #fff; /* Cor dos links */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#nav-mobile li a.active {
+    color: #ffeb3b; /* Cor amarela para o item ativo */
+    border-bottom: 2px solid #ffeb3b; /* Borda inferior amarela */
+}
+
+#nav-mobile li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo ao passar o mouse */
+}
+
+/* Estilo para os cards de seleção */
+.region-menu-container,
+.period-menu-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0;
+    background: #fff;
+    padding: 0;
+    transition: box-shadow 0.3s; /* Adiciona transição para o efeito de hover */
+    height: 100%; /* Garante que todos os cards tenham a mesma altura */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.card-content {
+    padding: 20px;
+}
+.grafico-title,
+.region-title,
+.period-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2196F3;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    letter-spacing: 1px; /* Adiciona espaço entre as letras */
+}
+
+#region-menu,
+#period-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+#region-menu li,
+#period-menu li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para a Seleção de Região */
+#region-menu li a {
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    line-height: 1.2em; /* Texto um pouco para cima */
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: #f0f0f0; /* Cor de fundo para o botão */
+}
+
+#region-menu li a.active {
+    color: #ffeb3b; /* Cor amarela para o item ativo */
+    background-color: #2196F3; /* Fundo azul Materialize */
+    border-color: #2196F3; /* Borda azul Materialize */
+}
+
+#region-menu li a:hover {
+    background-color: rgba(33, 150, 243, 0.1); /* Fundo ao passar o mouse */
+    border-color: #2196F3; /* Borda azul Materialize ao passar o mouse */
+}
+
+/* Estilo para a Seleção de Período */
+#period-menu li a {
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    line-height: 1.8em; /* Texto um pouco para baixo */
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: #f0f0f0; /* Cor de fundo para o botão */
+}
+
+#period-menu li a.active {
+    color: #ffeb3b; /* Cor amarela para o item ativo */
+    background-color: #2196F3; /* Fundo azul Materialize */
+    border-color: #2196F3; /* Borda azul Materialize */
+}
+
+#period-menu li a:hover {
+    background-color: rgba(33, 150, 243, 0.1); /* Fundo ao passar o mouse */
+    border-color: #2196F3; /* Borda azul Materialize ao passar o mouse */
+}
+
+/* Ajustes para centralização */
+.nav-wrapper.center-align {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para as seções de conteúdo */
+.content-section {
+    display: none; /* Inicialmente escondido */
+    margin-top: 20px;
+}
+
+.content-section.hidden {
+    display: none; /* Esconde a seção */
+}
+
+.content-section:not(.hidden) {
+    display: block; /* Mostra a seção */
+}
+
+/* Estilo para o gráfico */
+.grafico-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+/* Ajustes para responsividade */
+@media only screen and (max-width: 992px) {
+    .region-menu-container,
+    .period-menu-container {
+        margin-bottom: 20px;
+    }
+}
+
+/* Outros estilos existentes */
+.justify {
+    text-align: justify;
+}
+
+.descricao-textarea {
+    height: 300px; /* Ajuste a altura desejada */
+    min-height: 300px; /* Define a altura mínima */
+    resize: vertical; /* Permite redimensionar verticalmente o textarea */
+    border: none; /* Remove a borda */
+}
+
+.card-image {
+    width: 300px; /* Define a largura desejada */
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+.mr-0 {
+    margin-right: 0px;
+}
+
+table tbody tr.odd {
+    background-color: #ffffff;
+}
+
+table tbody tr.even {
+    background-color: #f2f2f2;
+}
+
+table thead th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: bold;
+}
+
+.subitem-marker {
+    margin-right: 5px; /* Ajuste o valor conforme necessário */
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background: #fff;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.btn-toggle {
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-wrapper.center-align {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-adjust {
+    margin-top: -40px; /* Ajuste conforme necessário */
+}
+
+#nav-mobile li a {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+#nav-mobile li a.active {
+    font-weight: bold; /* Destaca o item ativo */
+    border-bottom: 2px solid #fff; /* Adiciona uma borda inferior ao item ativo */
+}
+
+.slider {
+    height: 400px; /* Ajuste conforme necessário */
+}
+
+.slider .slides {
+    height: 400px; /* Ajuste conforme necessário */
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo preto semi-transparente */
+    padding: 20px; /* Adiciona algum espaço ao redor do texto */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+/* Custom CSS for slider indicators */
+.slider .indicators {
+    top: 85%; /* Ajuste o valor para posicionar os indicadores abaixo do centro */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+.slider .indicators .indicator-item {
+    background-color: rgba(255, 255, 255, 0.5); /* Indicadores semi-translúcidos */
+    border-radius: 50%;
+    width: 20px; /* Largura dos indicadores */
+    height: 20px; /* Altura dos indicadores */
+    margin: 0 4px; /* Espaçamento entre os indicadores */
+    transition: background-color 0.3s; /* Suaviza a transição da cor de fundo */
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: rgba(255, 255, 255, 1); /* Indicadores ativos */
+}
+
+/* Ajustes para os controles de navegação */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centralizar verticalmente */
+    z-index: 1001; /* Certifica-se de que os controles estão acima dos indicadores */
+    color: white; /* Cor dos controles de navegação */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Posição à esquerda dos controles */
+}
+
+.carousel-control-next {
+    right: 10px; /* Posição à direita dos controles */
+}
+
+#nav-main li a, .sidenav li a {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #fff; /* Cor do texto do menu */
+    padding: 0 15px; /* Espaçamento ao redor do texto */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto */
+    height: 64px; /* Altura da barra de navegação */
+}
+
+#nav-main li a.active, .sidenav li a.active {
+    font-weight: bold; /* Destaca o item ativo */
+    border-bottom: 2px solid #fff; /* Adiciona uma borda inferior ao item ativo */
+    color: #ffeb3b; /* Cor diferente para o item ativo */
+}
+
+#nav-main li a:hover, .sidenav li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Adiciona um fundo ao passar o mouse */
+}
+
+ul li a, .sidenav li a {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #fff; /* Cor do texto do menu */
+    padding: 0 15px; /* Espaçamento ao redor do texto */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto */
+    height: 64px; /* Altura da barra de navegação */
+}
+
+ul li a.active, .sidenav li a.active {
+    font-weight: bold; /* Destaca o item ativo */
+    border-bottom: 2px solid #fff; /* Adiciona uma borda inferior ao item ativo */
+    color: #ffeb3b; /* Cor diferente para o item ativo */
+}
+
+ul li a:hover, .sidenav li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Adiciona um fundo ao passar o mouse */
+}
+
+.quaseMenu {
+    background-color: #2196F3; /* Azul Materialize */
+    padding: 15px 0; /* Espaçamento acima e abaixo do título */
+    margin-top: -40px; /* Começa 40px acima */
+    text-align: center;
+    color: #ffeb3b; /* Mesma cor do menu ativo */
+    font-size: 24px; /* Ajuste o tamanho da fonte para corresponder ao menu ativo */
+    font-weight: bold; /* Adiciona negrito para o texto */
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.page-footer .container {
+    width: 85%;
+}
+
+.page-footer .row {
+    margin-bottom: 0;
+}
+
+.page-footer .white-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.page-footer .grey-text.text-lighten-4 {
+    font-size: 16px;
+}
+
+.page-footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.1; /* Reduz a altura da linha para diminuir o espaçamento */
+    margin-top: -15px; /* Eleva os itens do menu */
+}
+
+.page-footer ul li {
+    margin-bottom: 1px; /* Reduz o espaço entre os itens */
+}
+
+.page-footer ul li a {
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.page-footer ul li a i {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.page-footer p {
+    margin: 5px 0; /* Ajusta o espaçamento vertical dos parágrafos */
+    line-height: 1.1; /* Reduz a altura da linha para os parágrafos */
+}
+
+.main-chart {
+    margin-bottom: 40px;
+}
+
+.small-charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.small-charts canvas {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.small-charts canvas:hover {
+    transform: scale(1.1);
+}
+
+.titulo-projeto {
+    font-size: 36px;  /* Aumenta o tamanho da fonte */
+    font-weight: bold;  /* Aplica negrito */
+    color: #2c3e50;  /* Cor escura para um bom contraste */
+    margin: 20px 0;  /* Margens superiores e inferiores */
+    text-align: center;  /* Centraliza o texto */
+}
+
+.lattes-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.lattes-link a {
+    color: #007bff; /* Cor do link */
+    font-weight: bold;
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.lattes-link a:hover {
+    color: #0056b3; /* Cor do link quando passar o mouse */
+    text-decoration: underline;
+}
+
+.nav-wrapper {
+    background-color: #2196F3; /* Azul Materialize */
+}
+
+/* Estilo básico para o menu */
+.nav-wrapper {
+    background-color: #2196F3; /* Azul Materialize */
+}
+
+.nav-wrapper .brand-logo {
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.nav-wrapper ul li a {
+    color: #fff; /* Cor dos links */
+    font-weight: bold;
+}
+
+.sidenav {
+    background-color: #2196F3; /* Azul Materialize */
+}
+
+.sidenav li a {
+    color: #fff; /* Cor dos links */
+}
+
+/* Estilos personalizados para o menu ativo */
+#nav-mobile li a.active, .sidenav li a.active {
+    font-weight: bold; /* Negrito para o item ativo */
+    border-bottom: 2px solid #fff; /* Borda inferior para o item ativo */
+}
+
+.equipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.membro-card {
+    flex: 1 1 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.membro-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.membro-card h3 {
+    margin-bottom: 10px;
+}
+
+.membro-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.membro-card .social-links a {
+    margin: 0 10px;
+    color: #666;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.membro-card .social-links a:hover {
+    color: #333;
+}
+
+.membro-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos personalizados para a página de apoioadores */
+.card-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.descricao-container {
+    max-height: 300px; /* Aumentar a altura máxima conforme necessário */
+    overflow: auto;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ajuste conforme necessário */
+    display: block;
+    margin: 0 auto;
+}
+
+.img-direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-action {
+    text-align: center;
+}
+
+.card-action a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2196F3; /* Azul Materialize */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card-action a:hover {
+    background-color: #1e88e5;
+}
+
+/* Estilos personalizados para o menu de seleção do período */
+.period-menu-container {
+    margin-top: 20px;
+}
+
+.period-title {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.period-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as colunas */
+}
+
+.period-menu li {
+    margin: 5px;
+    flex: 1 1 calc(50% - 10px); /* Define a largura dos itens */
+}
+
+.period-menu li a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.period-menu li a.active {
+    background-color: #2196F3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.period-menu li a:hover {
+    background-color: #1e88e5;
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-wrapper .brand-logo {
+      font-size: 1em;
+    }
+    #nav-mobile li a {
+      font-size: 14px;
+    }
+    .equipe-container {
+        grid-template-columns: 1fr;
+    }
+    .membro-card {
+        flex: 1 1 calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+    .card-image img {
+        max-width: 100px; /* Ajuste conforme necessário */
+    }
+
+    .period-menu {
+        flex-direction: column; /* Coloca em uma coluna única em telas menores */
+    }
+
+    .period-menu li {
+        flex: 1 1 100%;
+    }
+
+    .period-menu li a {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+
+    .region-menu-container,
+    .period-menu-container {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .period-title {
+        font-size: 1em;
+    }
+    .period-menu li a {
+        padding: 6px 8px;
+        font-size: 0.8em;
+    }
+}

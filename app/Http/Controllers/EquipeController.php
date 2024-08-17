@@ -20,7 +20,8 @@ class EquipeController extends Controller
         $numMembros = 8;
 
         foreach (range(1, $numMembros) as $i) {
-            $equipe[] = $this->gerarMembroEquipe($i);
+            
+          //  $equipe[] = $this->gerarMembroEquipe($i);
         }
 
         return $equipe;
@@ -32,6 +33,7 @@ class EquipeController extends Controller
             'nome' => $this->faker->name,
             'descricao' => $this->faker->sentence . ' ' . $this->faker->sentence . ' ' . $this->faker->sentence,
             'contato_email' => $this->faker->email,
+            'twitter' => $this->faker->email,
             'facebook' => $this->faker->url,
             'instagram' => $this->faker->url,
             'foto' => 'pessoa-' . $i . '.jpg',

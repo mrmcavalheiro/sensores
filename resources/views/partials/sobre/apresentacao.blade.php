@@ -1,50 +1,38 @@
-<div class="row container">
-    <div class="col s12">
-        <section class="col s12 l6 push-l3 center-align">
-            <p class="flow-text center-align blue-text"><b>{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['tituloPagina'] }}</b></p>
-            <p class="flow-text justify black-text">
-                {{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['apresentacao'] }}
-            </p>
-        </section>
-    </div>
+<div class="quaseMenu">
+    {{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['tituloPagina'] }}
 </div>
-<br>
-<div class="row container">
-    <div class="row">
-        <section class="col s12">
-            <h2 class="flow-text blue-text">
-                {{ \App\Models\SistemaGlobal::$paginaSobre['sobreData'][0]['titulo'] }}
-            </h2>
-            <p class="flow-text justify black-text">
-                {{ \App\Models\SistemaGlobal::$paginaSobre['sobreData'][0]['texto'] }}
-            </p>
-        </section>
-    </div>
-    <div class="row">
-        <section class="col s12">
-            <h2 class="flow-text blue-text">
-                {{ \App\Models\SistemaGlobal::$paginaSobre['sobreData'][1]['titulo'] }}
-            </h2>
-            <p class="flow-text justify black-text">
-                {{ \App\Models\SistemaGlobal::$paginaSobre['sobreData'][1]['texto'] }}
-            </p>
-        </section>
-    </div>
 
+<div class="container">
+    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['apresentacao'] }}</p>
+
+    <h1 class="titulo-projeto">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['projeto'] }}</h1>
+
+    <h4 class="bold">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['tituloJustificativa'] }}</h4>
+    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoJustificativa'] }}</p>
+
+    <h4 class="bold">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['tituloObjetivosEspecíficos'] }}</h4>
+    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoObjetivosEspecíficos-a'] }}</p>
+    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoObjetivosEspecíficos-b'] }}</p>
+    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoObjetivosEspecíficos-c'] }}</p>
+
+
+    <h4 class="bold">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['tituloEstrutura'] }}</h4>
+    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoEstrutura'] }}</p>
     @foreach (\App\Models\SistemaGlobal::$paginaSobre['sobreData'] as $index => $data)
-        @if ($index > 1)
-            <div class="row">
-                <section class="col s12">
-                    <a href="{{ route($data['rota']) }}">
-                        <div class="card hoverable">
-                            <div class="card-content">
-                                <span class="card-title flow-text blue-text"><b>{{ $data['titulo'] }}</b></span>
-                                <p class="flow-text justify black-text">{{ $data['texto'] }}</p>
-                            </div>
+    @if ($index > 1)
+        <div class="row">
+            <section class="col s12">
+                <a href="{{ route($data['rota']) }}">
+                    <div class="card hoverable">
+                        <div class="card-content">
+                            <span class="card-title flow-text blue-text"><b>{{ $data['titulo'] }}</b></span>
+                            <p class="flow-text justify black-text justify">{{ $data['texto'] }}</p>
                         </div>
-                    </a>
-                </section>
-            </div>
-        @endif
-    @endforeach
+                    </div>
+                </a>
+            </section>
+        </div>
+    @endif
+@endforeach
+
 </div>

@@ -24,10 +24,10 @@ class NavegationController extends Controller
     //Pagina de Apoiadores
     public function apoiadores()
     {
-        $apoiadoresController = new ApoiadoresController();
-        $apoiadores = $apoiadoresController->getApoiadoresData();
-        SistemaGlobal::loadApoiadoresData();
-
+    //    $apoiadoresController = new ApoiadoresController();
+    //    $apoiadores = $apoiadoresController->getApoiadoresData();
+    //    SistemaGlobal::loadApoiadoresData();
+        $apoiadores = \App\Models\SistemaGlobal::$paginaApoiadores[0]['apoiadores'];
         return view('site.apoiadores', compact('apoiadores'));
     }
 

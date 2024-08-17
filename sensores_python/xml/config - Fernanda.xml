@@ -1,0 +1,14 @@
+<config>
+    <api>
+        <api_host>https://g3-api.e-kakashi.com/v1</api_host>
+        <id>APXRJMJ33</id>
+        <password>PW00-Fernanda</password>
+    </api>
+    <database>
+        <db_host>200.132.192.32</db_host>
+        <db_port>3306</db_port> <!-- Porta padrão -->
+        <db_user>RedeSensores</db_user>
+        <db_password>Rede2024</db_password>
+        <db_name>baseSensores</db_name>
+    </database>
+</config>

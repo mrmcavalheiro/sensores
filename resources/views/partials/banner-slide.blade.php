@@ -1,4 +1,4 @@
-<div class="slider">
+<div id="banner" class="slider">
     <ul class="slides">
         <li>
             <img src="{{ asset('images/banner/banner-slide-1.jpg') }}" alt="imagem" title="{{ config('app.name') }}">

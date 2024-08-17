@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title','Página solo')
+@section('title','Página Análise de Solo')
 @section('content')
     {{-- cards-objetivos --}}
     @include('partials.solo.apresentacao')

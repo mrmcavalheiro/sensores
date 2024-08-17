@@ -1,70 +1,49 @@
-<br>
-<div class="row container">
-    @foreach ($apoiadores as $apoiador)
-        <div class="col s12 m6 l4">
-            <a href="{{ $apoiador['website'] }}" target="_blank">
-                <div class="card hoverable">
-                    <div class="card-image">
-                        <img src="{{ asset('images/parceiros/patrocinadores/' . $apoiador['logo']) }}" alt="{{ $apoiador['nome'] }}">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title flow-text blue-text"><b>{{ $apoiador['nome'] }}</b></span>
-                        <textarea readonly class="flow-text justify black-text descricao-textarea">
-                            {{ $apoiador['descricao'] }}
-                        </textarea>
-
-                    </div>
-                </div>
-            </a>
-        </div>
-    @endforeach
-</div>
-
-
+@php
+function replace_br_with_paragraphs($text) {
+    return preg_replace('/<br\\s*\/?>/', '</p><p>', $text);
+}
+@endphp
 <div class="row container">
     @foreach ($apoiadores as $index => $apoiador)
         <div class="col s12">
             <div class="card hoverable">
                 <div class="card-content">
-                    @if ($index % 2 == 0)
-                        <div class="row">
-                            <div class="col s12 m6 l6">
-                                <span class="card-title flow-text blue-text"><b>{{ $apoiador['nome'] }}</b></span>
-                                <p class="flow-text justify black-text">
-                                    <textarea readonly class="flow-text justify black-text descricao-textarea">
-                                        {{ $apoiador['descricao'] }}
-                                    </textarea>
+                    <span class="card-title flow-text blue-text"><b>{{ $apoiador['nome'] }}</b></span>
+                    <div class="row">
+                        @if ($index % 2 == 0)
+                            <div class="col s12 m8 l8">
+                                <p class="flow-text justify black-text descricao-container">
+                                    {{ $apoiador['descricao'] }}
                                 </p>
                             </div>
-                            <div class="col s12 m6 l6">
+                            <div class="col s12 m4 l4">
                                 <div class="card-image">
-                                    <img src="{{ asset('images/parceiros/patrocinadores/' . $apoiador['logo']) }}" alt="{{ $apoiador['nome'] }}">
+                                    <a href="{{ $apoiador['website'] }}" target="_blank">
+                                        <img src="{{ asset('images/parceiros/patrocinadores/' . $apoiador['logo']) }}" alt="{{ $apoiador['nome'] }}">
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                    @else
-                        <div class="row">
-                            <div class="col s12 m6 l6">
-                                <div class="card-image">
-                                    <img src="{{ asset('images/parceiros/patrocinadores/' . $apoiador['logo']) }}" alt="{{ $apoiador['nome'] }}">
+                        @else
+                            <div class="col s12 m4 l4">
+                                <div class="card-image img-direita">
+                                    <a href="{{ $apoiador['website'] }}" target="_blank">
+                                        <img src="{{ asset('images/parceiros/patrocinadores/' . $apoiador['logo']) }}" alt="{{ $apoiador['nome'] }}"
+                                            title="{{ config('app.name') }}">
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col s12 m6 l6">
-                                <span class="card-title flow-text blue-text"><b>{{ $apoiador['nome'] }}</b></span>
-                                <p class="flow-text justify black-text">
-                                    <textarea readonly class="flow-text justify black-text descricao-textarea">
-                                        {{ $apoiador['descricao'] }}
-                                    </textarea>
+                            <div class="col s12 m8 l8">
+                                <p class="flow-text justify black-text descricao-container">
+                                    {{ $apoiador['descricao'] }}
                                 </p>
                             </div>
-                        </div>
-                    @endif
+                        @endif
+                    </div>
                 </div>
-                <div class="card-action">
+                <div class="card-action center-align">
                     <a href="{{ $apoiador['website'] }}" target="_blank">Visitar Site</a>
                 </div>
             </div>
         </div>
     @endforeach
 </div>
-

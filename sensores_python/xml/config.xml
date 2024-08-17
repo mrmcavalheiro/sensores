@@ -1,0 +1,17 @@
+<config>
+    <api>
+        <api_host>https://g3-api.e-kakashi.com/v1</api_host>
+        <id>DLJ8PBRP5</id>
+        <password>Horizontina5754</password>
+    </api>
+    <database>
+        <db_host>200.132.192.32</db_host>
+        <db_port>3306</db_port>
+        <db_user>RedeSensores</db_user>
+        <db_password>Rede2024</db_password>
+        <db_name>baseSensores</db_name>
+    </database>
+    <driver>
+        <driver_path>G:\\Ferramentas\\chromedriver-win64\\chromedriver.exe</driver_path>
+    </driver>
+</config>
