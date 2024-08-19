@@ -282,6 +282,10 @@ ul li a:hover,
     width: 85%;
 }
 
+.all_rights_reserved {
+    padding-bottom: 4px;
+}
+
 .page-footer .row {
     margin-bottom: 0;
 }

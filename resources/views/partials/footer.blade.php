@@ -58,7 +58,7 @@
         </section>
     </div>
 
-    <div class="container center-align">
+    <div class="container center-align all_rights_reserved">
         <p>&copy; {{ date('Y') }} - Todos os direitos reservados.</p>
     </div>
 </footer>
