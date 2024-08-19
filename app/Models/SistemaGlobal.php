@@ -102,10 +102,10 @@ class SistemaGlobal extends Model
                     'descricao' => 'Engenheira Agrônoma, Mestre em Agronomia - Área de concentração - Solos, Doutora em Agronomia, Pós-doutora em Ciência do Solo. Experiência em docência na área de Agronomia, Engenharia Civil e Engenharia Ambiental.',
                     'foto' => 'Fernanda.jpeg',
                     'lattes' => 'http://lattes.cnpq.br/2638050343095103',
-               //     'email' => '',
-               //     'twitter' => '',
-               //     'facebook' => '',
-               //     'instagram' => ''                    
+                    // 'email' => '',
+                    // 'twitter' => '',
+                    // 'facebook' => '',
+                    // 'instagram' => ''                    
                 ],
                 [
                     'nome' => 'Drª Taciana Paula Enderle',

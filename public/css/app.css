@@ -8,6 +8,10 @@
     text-align: justify;
 }
 
+.m0 {
+    margin: 0 !important;
+}
+
 .descricao-textarea {
     height: 300px; /* Ajuste a altura desejada */
     min-height: 300px; /* Define a altura mínima */
@@ -357,7 +361,6 @@ ul li a:hover,
 }
 
 .lattes-link {
-    margin-top: 10px;
     text-align: center;
 }
 
@@ -408,36 +411,44 @@ ul li a:hover,
 
 .equipe-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 24px;
 }
 
 .membro-card {
-    flex: 1 1 calc(33.33% - 40px);
-    max-width: calc(33.33% - 40px);
-    text-align: center;
-    background-color: #fff;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 8px;
+    padding: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.membro_info_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.membro_image {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 4px;
 }
 
 .membro-card img {
+    display: block;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    object-fit: cover;
 }
 
-.membro-card h3 {
-    margin-bottom: 10px;
+.membro-card h4 {
+    margin: 0;
 }
 
 .membro-card p {
@@ -446,8 +457,13 @@ ul li a:hover,
     margin-bottom: 15px;
 }
 
+.membro-card .social-links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
 .membro-card .social-links a {
-    margin: 0 10px;
     color: #666;
     text-decoration: none;
     font-size: 18px;
@@ -458,7 +474,7 @@ ul li a:hover,
 }
 
 .membro-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
