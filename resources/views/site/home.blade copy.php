@@ -8,7 +8,7 @@
 @endphp
 
 <!-- Novo Menu de Gráficos -->
-<nav class="blue menu-adjust">
+<nav class="blue">
     <div class="nav-wrapper center-align">
         <ul id="nav-mobile" class="center">
             <li><a href="javascript:void(0);" class="active" onclick="showSection('graficos')">Gráficos</a></li>

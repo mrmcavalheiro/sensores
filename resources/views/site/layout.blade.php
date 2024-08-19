@@ -22,9 +22,6 @@
     {{-- navbar --}}
     @include('partials.navbar')
 
-    {{-- banner-slide.blade --}}
-    @include('partials.banner-slide')
-
     {{-- conteúdo principal --}}
     @yield('content')
 

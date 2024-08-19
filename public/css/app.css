@@ -58,7 +58,7 @@ table thead th {
     justify-content: space-between;
     height: 100%;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background: #fff;
 }
@@ -110,10 +110,6 @@ table thead th {
     justify-content: center;
 }
 
-.menu-adjust {
-    margin-top: -40px; /* Ajuste conforme necessário */
-}
-
 #nav-mobile li a {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
 }
@@ -132,7 +128,12 @@ table thead th {
 }
 
 .caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo preto semi-transparente */
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Adiciona um fundo preto semi-transparente */
     padding: 20px; /* Adiciona algum espaço ao redor do texto */
     border-radius: 10px; /* Adiciona bordas arredondadas */
 }
@@ -149,7 +150,12 @@ table thead th {
 }
 
 .slider .indicators .indicator-item {
-    background-color: rgba(255, 255, 255, 0.5); /* Indicadores semi-translúcidos */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+    ); /* Indicadores semi-translúcidos */
     border-radius: 50%;
     width: 20px; /* Largura dos indicadores */
     height: 20px; /* Altura dos indicadores */
@@ -162,10 +168,13 @@ table thead th {
 }
 
 /* Ajustes para os controles de navegação */
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     position: absolute;
     top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajuste fino para centralizar verticalmente */
+    transform: translateY(
+        -50%
+    ); /* Ajuste fino para centralizar verticalmente */
     z-index: 1001; /* Certifica-se de que os controles estão acima dos indicadores */
     color: white; /* Cor dos controles de navegação */
 }
@@ -178,7 +187,8 @@ table thead th {
     right: 10px; /* Posição à direita dos controles */
 }
 
-#nav-main li a, .sidenav li a {
+#nav-main li a,
+.sidenav li a {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
     color: #fff; /* Cor do texto do menu */
     padding: 0 15px; /* Espaçamento ao redor do texto */
@@ -188,17 +198,25 @@ table thead th {
     height: 64px; /* Altura da barra de navegação */
 }
 
-#nav-main li a.active, .sidenav li a.active {
+#nav-main li a.active,
+.sidenav li a.active {
     font-weight: bold; /* Destaca o item ativo */
     border-bottom: 2px solid #fff; /* Adiciona uma borda inferior ao item ativo */
     color: #ffeb3b; /* Cor diferente para o item ativo */
 }
 
-#nav-main li a:hover, .sidenav li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Adiciona um fundo ao passar o mouse */
+#nav-main li a:hover,
+.sidenav li a:hover {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+    ); /* Adiciona um fundo ao passar o mouse */
 }
 
-ul li a, .sidenav li a {
+ul li a,
+.sidenav li a {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
     color: #fff; /* Cor do texto do menu */
     padding: 0 15px; /* Espaçamento ao redor do texto */
@@ -208,20 +226,26 @@ ul li a, .sidenav li a {
     height: 64px; /* Altura da barra de navegação */
 }
 
-ul li a.active, .sidenav li a.active {
+ul li a.active,
+.sidenav li a.active {
     font-weight: bold; /* Destaca o item ativo */
     border-bottom: 2px solid #fff; /* Adiciona uma borda inferior ao item ativo */
     color: #ffeb3b; /* Cor diferente para o item ativo */
 }
 
-ul li a:hover, .sidenav li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Adiciona um fundo ao passar o mouse */
+ul li a:hover,
+.sidenav li a:hover {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+    ); /* Adiciona um fundo ao passar o mouse */
 }
 
 .quaseMenu {
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
     padding: 15px 0; /* Espaçamento acima e abaixo do título */
-    margin-top: -40px; /* Começa 40px acima */
     text-align: center;
     color: #ffeb3b; /* Mesma cor do menu ativo */
     font-size: 24px; /* Ajuste o tamanho da fonte para corresponder ao menu ativo */
@@ -298,11 +322,11 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 .titulo-projeto {
-    font-size: 36px;  /* Aumenta o tamanho da fonte */
-    font-weight: bold;  /* Aplica negrito */
-    color: #2c3e50;  /* Cor escura para um bom contraste */
-    margin: 20px 0;  /* Margens superiores e inferiores */
-    text-align: center;  /* Centraliza o texto */
+    font-size: 36px; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Aplica negrito */
+    color: #2c3e50; /* Cor escura para um bom contraste */
+    margin: 20px 0; /* Margens superiores e inferiores */
+    text-align: center; /* Centraliza o texto */
 }
 
 .lattes-link {
@@ -322,12 +346,12 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 .nav-wrapper {
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
 }
 
 /* Estilo básico para o menu */
 .nav-wrapper {
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
 }
 
 .nav-wrapper .brand-logo {
@@ -341,7 +365,7 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 .sidenav {
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
 }
 
 .sidenav li a {
@@ -349,7 +373,8 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 /* Estilos personalizados para o menu ativo */
-#nav-mobile li a.active, .sidenav li a.active {
+#nav-mobile li a.active,
+.sidenav li a.active {
     font-weight: bold; /* Negrito para o item ativo */
     border-bottom: 2px solid #fff; /* Borda inferior para o item ativo */
 }
@@ -456,7 +481,7 @@ ul li a:hover, .sidenav li a:hover {
     font-weight: bold;
     text-transform: uppercase;
     color: #1e88e5; /* Cor azul ou qualquer outra de sua preferência */
-    border-bottom: 3px solid #2196F3; /* Azul Materialize */
+    border-bottom: 3px solid #2196f3; /* Azul Materialize */
     padding-bottom: 10px; /* Espaço entre o texto e a linha */
     margin-bottom: 20px; /* Espaço abaixo da linha */
     text-align: center; /* Centralizar o texto */
@@ -474,7 +499,7 @@ ul li a:hover, .sidenav li a:hover {
 .card-action a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -482,9 +507,8 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 .card-action a:hover {
-    background-color: #1976D2; /* Cor ao passar o mouse */
+    background-color: #1976d2; /* Cor ao passar o mouse */
 }
-
 
 /* Estilos personalizados para o menu de seleção do período */
 .period-menu-container {
@@ -522,7 +546,7 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 .period-menu li a.active {
-    background-color: #2196F3;
+    background-color: #2196f3;
     color: #fff;
     font-weight: bold;
 }
@@ -538,7 +562,6 @@ ul li a:hover, .sidenav li a:hover {
     text-transform: uppercase;
     color: #1e88e5; /* cor azul ou qualquer outra de sua preferência */
 }
-
 
 /* Estilos personalizados para o título do gráfico */
 #chart-title {
@@ -574,7 +597,7 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 #chart-type-menu li a.active {
-    background-color: #2196F3;
+    background-color: #2196f3;
     color: #fff;
     font-weight: bold;
 }
@@ -584,14 +607,13 @@ ul li a:hover, .sidenav li a:hover {
     color: #fff;
 }
 
-
 /* Responsividade */
 @media (max-width: 768px) {
     .nav-wrapper .brand-logo {
-      font-size: 1em;
+        font-size: 1em;
     }
     #nav-mobile li a {
-      font-size: 14px;
+        font-size: 14px;
     }
     .equipe-container {
         grid-template-columns: 1fr;
