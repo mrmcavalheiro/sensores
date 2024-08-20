@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    {{-- top-banner --}}
+    @include('partials.top-banner')
+
     {{-- navbar --}}
     @include('partials.navbar')
-
-    {{-- banner-slide.blade --}}
-    @include('partials.banner-slide')
 
     {{-- conteúdo principal --}}
     @yield('content')

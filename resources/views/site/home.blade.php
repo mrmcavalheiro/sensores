@@ -7,20 +7,20 @@
     use Illuminate\Support\Facades\Log;
 @endphp
 
-<!-- Novo Menu de Gráficos -->
-<nav class="blue menu-adjust">
+{{-- <!-- Novo Menu de Gráficos -->
+<nav class="blue">
     <div class="nav-wrapper center-align">
         <ul id="nav-mobile" class="center">
             <li><a href="javascript:void(0);" class="active" onclick="showSection('graficos')">Gráficos</a></li>
             <li><a href="javascript:void(0);" onclick="showSection('sobre')">Sobre os Gráficos</a></li>
         </ul>
     </div>
-</nav>
+</nav> --}}
 
 <!-- Seções de Conteúdo -->
-<section id="graficos" class="content-section">
+<section id="graficos" class="content-section ">
     <div class="row">
-        <!-- Card de Seleção da Região -->
+        {{-- <!-- Card de Seleção da Região -->
         <div class="col s12 m6 l2 region-menu-container">
             <div class="card">
                 <div class="card-content">
@@ -54,23 +54,57 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Gráficos -->
-        <div class="col s12 l8">
-            <div class="card">
-                <h3 id="chart-title">Gráfico: {{ $regions[0]['description'] }}</h3>
+        <div class="col s12">
+            <div class="new_card main_chart_wrapper">
+                <h3 id="chart-title1">Gráfico de Umidade Volumétrica do Solo</h3>
+                <div class="main_chart_selectors">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger btn selector_button' href='#' data-target='dropdown_regions'>Selecione a Região</a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown_regions' class='dropdown-content selector-content'>
+                        @foreach($regions as $index => $region)
+                            <li>
+                                <a href="javascript:void(0);" onclick="selectRegion('{{ $region['id'] }}', '{{ $region['description'] }}')" title="{{ $region['description'] }}" class="{{ $index === 0 ? 'active' : '' }}" data-id="{{ $region['id'] }}">
+                                    {{ Str::limit($region['description'], 70) }}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger btn selector_button' href='#' data-target='dropdown_period'>Selecione o Período</a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown_period' class='dropdown-content selector-content'>
+                        @foreach($periods as $index => $period)
+                            <li>
+                                <a href="javascript:void(0);" onclick="selectPeriod({{ $index }}, '{{ $period }}')" class="{{ $index === 0 ? 'active' : '' }}" data-index="{{ $index }}">
+                                    {{ $period }}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+                
                 <div class="grafico-container">
                     <canvas id="mainChart"></canvas>
+                </div>
+                <div class="main_chart_selected">
+                    <h4><b>Região</b>: <span id="region-selected">{{ $regions[0]['description'] }}</span></h4>
+                    <h4><b>Período</b>: <span id="period-selected">{{ $periods[0] }}</span></h4>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="sobre" class="content-section hidden">
+{{-- <section id="sobre" class="content-section">
     @include('partials.home.apresentacao')
-</section>
+</section> --}}
 
 @include('partials.home.parallax')
 
@@ -79,49 +113,45 @@
     let mainChartInstance = null;
     let selectedPeriod = '1 semana'; // Período padrão
 
-    function showSection(section) {
-        document.querySelectorAll('.content-section').forEach(sec => sec.classList.add('hidden'));
-        document.getElementById(section).classList.remove('hidden');
-
-        document.querySelectorAll('#nav-mobile li a').forEach(item => item.classList.remove('active'));
-        if (section === 'graficos') {
-            document.querySelector('#nav-mobile li a[onclick="showSection(\'graficos\')"]').classList.add('active');
-        } else if (section === 'sobre') {
-            document.querySelector('#nav-mobile li a[onclick="showSection(\'sobre\')"]').classList.add('active');
-        }
-    }
-
     function selectRegion(id, description) {
-        document.querySelectorAll('#region-menu li a').forEach(item => item.classList.remove('active'));
-        document.querySelectorAll(`#region-menu li a`).forEach(item => {
+        document.querySelectorAll('#dropdown_regions li a').forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('#dropdown_regions li a').forEach(item => {
             if (item.dataset.id == id) {
                 item.classList.add('active');
             }
         });
 
-        const chartTitleElement = document.getElementById('chart-title');
+        const chartTitleElement = document.getElementById('region-selected');
         if (chartTitleElement) {
-            chartTitleElement.textContent = 'Gráfico: ' + description;
+            chartTitleElement.textContent = description;
         } else {
-            console.error('Element with id "chart-title" not found in the DOM.');
+            console.error('Element with id "region-selected" not found in the DOM.');
         }
 
         updateChartData(id, selectedPeriod);
     }
 
     function selectPeriod(index, period) {
-        document.querySelectorAll('#period-menu li a').forEach(item => item.classList.remove('active'));
-        document.querySelectorAll(`#period-menu li a`).forEach(item => {
+        document.querySelectorAll('#dropdown_period li a').forEach(item => item.classList.remove('active'));
+        document.querySelectorAll(`#dropdown_period li a`).forEach(item => {
             if (item.dataset.index == index) {
                 item.classList.add('active');
             }
         });
         selectedPeriod = period;
+
+        const chartTitleElement = document.getElementById('period-selected');
+        if (chartTitleElement) {
+            chartTitleElement.textContent = period;
+        } else {
+            console.error('Element with id "period-selected" not found in the DOM.');
+        }
+
         updateChartData(getSelectedRegion(), period);
     }
 
     function getSelectedRegion() {
-        const selectedRegion = document.querySelector('#region-menu li a.active');
+        const selectedRegion = document.querySelector('#dropdown_regions li a.active');
         return selectedRegion ? selectedRegion.dataset.id : null;
     }
 
@@ -194,6 +224,10 @@
         if (initialRegionId) {
             updateChartData(initialRegionId, selectedPeriod);
         }
+
+        // Inicialização do dropdown
+        const elems = document.querySelectorAll('.dropdown-trigger');
+        const instances = M.Dropdown.init(elems, { hover: false, constrainWidth: false });
     });
 </script>
 

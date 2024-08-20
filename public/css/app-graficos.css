@@ -32,7 +32,7 @@ h2 {
 
 /* Estilos personalizados para o menu de gráficos */
 .nav-wrapper {
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
     padding: 0 20px;
 }
 
@@ -71,7 +71,7 @@ h2 {
 }
 
 .card {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0;
     background: #fff;
     padding: 0;
@@ -80,18 +80,101 @@ h2 {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Aumenta a sombra ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.new_card {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.main_chart_wrapper {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.main_chart_wrapper h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.main_chart_wrapper h4 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.main_chart_selectors {
+    display: flex;
+    gap: 24px;
+}
+
+.main_chart_selected {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 12px;
+    gap: 24px;
+}
+
+.selector_button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #2196f3 !important;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.selector_button:hover {
+    background: #1e88e5 !important;
+}
+
+.selector-content li a {
+    height: auto;
+    color: #000 !important;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    line-height: 1.2em; /* Texto um pouco para cima */
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: white !important; /* Cor de fundo para o botão */
+}
+
+.selector-content li a.active {
+    color: white !important; /* Cor amarela para o item ativo */
+    background-color: #2196f3 !important; /* Fundo azul Materialize */
+    border-color: #2196f3 !important; /* Borda azul Materialize */
+}
+
+.selector-content li a:hover {
+    background-color: #f3f3f3de !important; /* Fundo ao passar o mouse */
+    border-color: #2196f3 !important; /* Borda azul Materialize ao passar o mouse */
+}
+
+.selector-content li a.active:hover {
+    background-color: #2196f3bb !important; /* Fundo ao passar o mouse */
+    border-color: #2196f3bb !important; /* Borda azul Materialize ao passar o mouse */
 }
 
 .card-content {
     padding: 20px;
 }
+
 .grafico-title,
 .region-title,
 .period-title {
     font-size: 1.8em;
     font-weight: bold;
-    color: #2196F3;
+    color: #2196f3;
     margin-bottom: 20px;
     display: block;
     text-align: center;
@@ -128,13 +211,13 @@ h2 {
 
 #region-menu li a.active {
     color: #ffeb3b; /* Cor amarela para o item ativo */
-    background-color: #2196F3; /* Fundo azul Materialize */
-    border-color: #2196F3; /* Borda azul Materialize */
+    background-color: #2196f3; /* Fundo azul Materialize */
+    border-color: #2196f3; /* Borda azul Materialize */
 }
 
 #region-menu li a:hover {
     background-color: rgba(33, 150, 243, 0.1); /* Fundo ao passar o mouse */
-    border-color: #2196F3; /* Borda azul Materialize ao passar o mouse */
+    border-color: #2196f3; /* Borda azul Materialize ao passar o mouse */
 }
 
 /* Estilo para a Seleção de Período */
@@ -155,13 +238,13 @@ h2 {
 
 #period-menu li a.active {
     color: #ffeb3b; /* Cor amarela para o item ativo */
-    background-color: #2196F3; /* Fundo azul Materialize */
-    border-color: #2196F3; /* Borda azul Materialize */
+    background-color: #2196f3; /* Fundo azul Materialize */
+    border-color: #2196f3; /* Borda azul Materialize */
 }
 
 #period-menu li a:hover {
     background-color: rgba(33, 150, 243, 0.1); /* Fundo ao passar o mouse */
-    border-color: #2196F3; /* Borda azul Materialize ao passar o mouse */
+    border-color: #2196f3; /* Borda azul Materialize ao passar o mouse */
 }
 
 /* Ajustes para centralização */
@@ -254,7 +337,7 @@ table thead th {
     justify-content: space-between;
     height: 100%;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background: #fff;
 }
@@ -306,10 +389,6 @@ table thead th {
     justify-content: center;
 }
 
-.menu-adjust {
-    margin-top: -40px; /* Ajuste conforme necessário */
-}
-
 #nav-mobile li a {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
 }
@@ -328,7 +407,12 @@ table thead th {
 }
 
 .caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo preto semi-transparente */
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Adiciona um fundo preto semi-transparente */
     padding: 20px; /* Adiciona algum espaço ao redor do texto */
     border-radius: 10px; /* Adiciona bordas arredondadas */
 }
@@ -345,7 +429,12 @@ table thead th {
 }
 
 .slider .indicators .indicator-item {
-    background-color: rgba(255, 255, 255, 0.5); /* Indicadores semi-translúcidos */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+    ); /* Indicadores semi-translúcidos */
     border-radius: 50%;
     width: 20px; /* Largura dos indicadores */
     height: 20px; /* Altura dos indicadores */
@@ -358,10 +447,13 @@ table thead th {
 }
 
 /* Ajustes para os controles de navegação */
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     position: absolute;
     top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajuste fino para centralizar verticalmente */
+    transform: translateY(
+        -50%
+    ); /* Ajuste fino para centralizar verticalmente */
     z-index: 1001; /* Certifica-se de que os controles estão acima dos indicadores */
     color: white; /* Cor dos controles de navegação */
 }
@@ -374,7 +466,8 @@ table thead th {
     right: 10px; /* Posição à direita dos controles */
 }
 
-#nav-main li a, .sidenav li a {
+#nav-main li a,
+.sidenav li a {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
     color: #fff; /* Cor do texto do menu */
     padding: 0 15px; /* Espaçamento ao redor do texto */
@@ -384,17 +477,25 @@ table thead th {
     height: 64px; /* Altura da barra de navegação */
 }
 
-#nav-main li a.active, .sidenav li a.active {
+#nav-main li a.active,
+.sidenav li a.active {
     font-weight: bold; /* Destaca o item ativo */
     border-bottom: 2px solid #fff; /* Adiciona uma borda inferior ao item ativo */
     color: #ffeb3b; /* Cor diferente para o item ativo */
 }
 
-#nav-main li a:hover, .sidenav li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Adiciona um fundo ao passar o mouse */
+#nav-main li a:hover,
+.sidenav li a:hover {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+    ); /* Adiciona um fundo ao passar o mouse */
 }
 
-ul li a, .sidenav li a {
+ul li a,
+.sidenav li a {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
     color: #fff; /* Cor do texto do menu */
     padding: 0 15px; /* Espaçamento ao redor do texto */
@@ -404,20 +505,26 @@ ul li a, .sidenav li a {
     height: 64px; /* Altura da barra de navegação */
 }
 
-ul li a.active, .sidenav li a.active {
+ul li a.active,
+.sidenav li a.active {
     font-weight: bold; /* Destaca o item ativo */
     border-bottom: 2px solid #fff; /* Adiciona uma borda inferior ao item ativo */
     color: #ffeb3b; /* Cor diferente para o item ativo */
 }
 
-ul li a:hover, .sidenav li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Adiciona um fundo ao passar o mouse */
+ul li a:hover,
+.sidenav li a:hover {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+    ); /* Adiciona um fundo ao passar o mouse */
 }
 
 .quaseMenu {
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
     padding: 15px 0; /* Espaçamento acima e abaixo do título */
-    margin-top: -40px; /* Começa 40px acima */
     text-align: center;
     color: #ffeb3b; /* Mesma cor do menu ativo */
     font-size: 24px; /* Ajuste o tamanho da fonte para corresponder ao menu ativo */
@@ -494,36 +601,20 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 .titulo-projeto {
-    font-size: 36px;  /* Aumenta o tamanho da fonte */
-    font-weight: bold;  /* Aplica negrito */
-    color: #2c3e50;  /* Cor escura para um bom contraste */
-    margin: 20px 0;  /* Margens superiores e inferiores */
-    text-align: center;  /* Centraliza o texto */
-}
-
-.lattes-link {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.lattes-link a {
-    color: #007bff; /* Cor do link */
-    font-weight: bold;
-    font-size: 16px; /* Tamanho da fonte */
-}
-
-.lattes-link a:hover {
-    color: #0056b3; /* Cor do link quando passar o mouse */
-    text-decoration: underline;
+    font-size: 36px; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Aplica negrito */
+    color: #2c3e50; /* Cor escura para um bom contraste */
+    margin: 20px 0; /* Margens superiores e inferiores */
+    text-align: center; /* Centraliza o texto */
 }
 
 .nav-wrapper {
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
 }
 
 /* Estilo básico para o menu */
 .nav-wrapper {
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
 }
 
 .nav-wrapper .brand-logo {
@@ -537,7 +628,7 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 .sidenav {
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
 }
 
 .sidenav li a {
@@ -545,65 +636,10 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 /* Estilos personalizados para o menu ativo */
-#nav-mobile li a.active, .sidenav li a.active {
+#nav-mobile li a.active,
+.sidenav li a.active {
     font-weight: bold; /* Negrito para o item ativo */
     border-bottom: 2px solid #fff; /* Borda inferior para o item ativo */
-}
-
-.equipe-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.membro-card {
-    flex: 1 1 calc(33.33% - 40px);
-    max-width: calc(33.33% - 40px);
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin-bottom: 20px;
-}
-
-.membro-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.membro-card h3 {
-    margin-bottom: 10px;
-}
-
-.membro-card p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.membro-card .social-links a {
-    margin: 0 10px;
-    color: #666;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.membro-card .social-links a:hover {
-    color: #333;
-}
-
-.membro-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos personalizados para a página de apoioadores */
@@ -654,7 +690,7 @@ ul li a:hover, .sidenav li a:hover {
 .card-action a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2196F3; /* Azul Materialize */
+    background-color: #2196f3; /* Azul Materialize */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -701,7 +737,7 @@ ul li a:hover, .sidenav li a:hover {
 }
 
 .period-menu li a.active {
-    background-color: #2196F3;
+    background-color: #2196f3;
     color: #fff;
     font-weight: bold;
 }
@@ -714,18 +750,12 @@ ul li a:hover, .sidenav li a:hover {
 /* Responsividade */
 @media (max-width: 768px) {
     .nav-wrapper .brand-logo {
-      font-size: 1em;
+        font-size: 1em;
     }
     #nav-mobile li a {
-      font-size: 14px;
+        font-size: 14px;
     }
-    .equipe-container {
-        grid-template-columns: 1fr;
-    }
-    .membro-card {
-        flex: 1 1 calc(100% - 40px);
-        max-width: calc(100% - 40px);
-    }
+
     .card-image img {
         max-width: 100px; /* Ajuste conforme necessário */
     }
