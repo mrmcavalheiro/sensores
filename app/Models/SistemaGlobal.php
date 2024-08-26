@@ -160,7 +160,8 @@ class SistemaGlobal extends Model
                       <br>A UNIJUI se destaca por sua atuação na integração entre ensino, pesquisa e extensão, promovendo o desenvolvimento regional e contribuindo significativamente para o avanço científico e tecnológico. 
                       <br>No projeto de rede de sensores para monitoramento de sistemas de irrigação, a UNIJUI atua como a principal instituição acadêmica, fornecendo expertise e apoio técnico através de seus pesquisadores e professores.",
                     'website' => "https://www.unijui.edu.br/",
-                    'logo' => 'parceiro-1.jpg',                  
+                    'logo' => 'unijui.jpg',
+                    'imageOrientation' => 'vertical',
                 ],
                 [
                     'nome' => "FOCKINK INDÚSTRIAS ELÉTRICAS LTDA",
@@ -168,7 +169,8 @@ class SistemaGlobal extends Model
                     <br>A empresa é reconhecida por seu compromisso com a qualidade, inovação e sustentabilidade. A FOCKINK tem uma longa história de colaboração com instituições de pesquisa e desenvolvimento, contribuindo para projetos que visam a melhoria da eficiência energética e a implementação de tecnologias avançadas.
                     <br>No contexto do projeto de rede de sensores, a FOCKINK participa fornecendo suporte técnico e expertise em sensoriamento e conservação de recursos, ajudando a tornar a iniciativa uma referência em eficiência no uso da água em sistemas de irrigação.",
                     'website' => "https://www.unijui.edu.br/",
-                    'logo' => 'parceiro-2.jpg',                  
+                    'logo' => 'fockink.png',
+                    'imageOrientation' => 'horizontal',
                 ],  
   
                 [
@@ -180,7 +182,8 @@ class SistemaGlobal extends Model
                     <br>Sua trajetória começou em 1947. Em 2022 completaram 75 anos de história, sendo sempre comprometidos com a excelência dos serviços prestados conforme a ideologia de seu fundador, Alfredo Arnaldo Fockink, aonde 'a melhor propaganda é o serviço'. É uma empresa familiar, 100% brasileira, sólida e bem estruturada que a torna referência nos segmentos em que atuam. Através do slogan, geramos soluções e integramos tecnologias. Desenvolvem Sistemas de Irrigação, Sistemas de Geração Fotovoltaica, Sistemas de Termometria e Aeração, Sistemas de Biogás, Estações de Carregamento Elétrico, Subestações, Painéis Elétricos e Automação, Instalações Eletromecânicas e Painéis e Caixas Metálicas Vazias, tudo isso gerido através de uma plataforma inteligente chamada Fockink IoT.
                     ",
                     'website' => "https://www.unijui.edu.br/",
-                    'logo' => 'corpsteam.jpeg',                  
+                    'logo' => 'corpsteam.jpeg',
+                    'imageOrientation' => 'horizontal',
                 ],    
      
             ]

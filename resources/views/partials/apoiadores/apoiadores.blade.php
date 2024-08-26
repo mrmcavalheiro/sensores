@@ -4,6 +4,20 @@ function replace_br_with_paragraphs($text) {
 }
 @endphp
 
+<div class="row container apoiador_main_container">
+    @foreach ($apoiadores as $index => $apoiador)
+        <div class="apoiador_container m0">
+            <a href="{{ $apoiador['website'] }}" target="_blank">
+                <img 
+                    src="{{ asset('images/parceiros/patrocinadores/' . $apoiador['logo']) }}"
+                    alt="{{ $apoiador['nome'] }}"
+                    title="{{ config('app.name') }}" 
+                    class="{{ $apoiador['imageOrientation'] }}">
+            </a>
+        </div>
+    @endforeach
+</div>
+{{-- 
 <div class="row container">
     @foreach ($apoiadores as $index => $apoiador)
         <div class="col s12">
@@ -46,4 +60,4 @@ function replace_br_with_paragraphs($text) {
             </div>
         </div>
     @endforeach
-</div>
+</div> --}}
