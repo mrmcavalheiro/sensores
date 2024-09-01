@@ -8,8 +8,16 @@
     text-align: justify;
 }
 
+.w100 {
+    width: 100%;
+}
+
 .m0 {
     margin: 0 !important;
+}
+
+.p0 {
+    padding: 0 !important;
 }
 
 .descricao-textarea {
@@ -598,12 +606,228 @@ ul li a:hover,
     background-color: #1e88e5;
     color: #fff;
 }
+
+.total-analises {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.collapsible-body {
+    padding: 20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table.striped {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table.striped thead {
+    background-color: #f0f0f0;
+}
+
+table.striped thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+table.striped tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table.striped tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+table.striped tbody td {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.subitem-marker {
+    color: #00796b;
+    margin-right: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.collapsible li.active .arrow_not_active {
+    display: none;
+}
+
+.collapsible li .arrow_active {
+    display: none;
+}
+
+.collapsible li.active .arrow_active {
+    display: block;
+}
+
 /* Adicione isso ao seu arquivo CSS */
 .apoiador-nome {
     font-size: 1.5em;
     font-weight: bold;
     text-transform: uppercase;
     color: #1e88e5; /* cor azul ou qualquer outra de sua preferência */
+}
+
+.apoiador_main_container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apoiador_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+}
+
+.apoiador_container a {
+    width: auto;
+}
+
+.apoiador_container img.horizontal {
+    width: auto;
+    max-width: 50%;
+    max-height: 80px;
+}
+
+.apoiador_container img.vertical {
+    width: auto;
+    max-height: 80px;
+}
+
+.contato_full_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-block: 24px;
+}
+
+.contato_container {
+    display: flex;
+}
+
+.contato_informacoes {
+    width: 100%;
+    position: relative;
+    padding: 24px;
+}
+
+.contato_informacoes_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    border-radius: 8px;
+    background-color: #fffa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+.contato_informacoes_container .contato_informacao {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.contato_informacoes_container .contato_informacao i {
+    font-size: 1.5em;
+}
+
+.contato_informacoes_container .contato_informacao a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contato_background_image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    filter: blur(2px);
+}
+
+.contato_informacoes_socials {
+    display: flex;
+    gap: 8px;
+}
+
+.contato_informacoes_social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    color: #000;
+    text-decoration: none;
+    background-color: #fff9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.contato_informacoes_social:hover {
+    background-color: #dddb;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contato_formulario_container {
+    display: flex;
+    align-self: center;
+}
+
+.contato_formulario {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato_formulario textarea.textarea-field {
+    max-height: 200px;
+    padding-top: 0;
+    margin-top: 0.8rem;
+}
+
+.contato_formulario input:-webkit-autofill,
+.contato_formulario input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s, box-shadow 0.3s,
+        border 0.3s, -webkit-box-shadow 0.3s !important;
+}
+
+.contato_full_container iframe {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ccc;
 }
 
 /* Estilos personalizados para o título do gráfico */
@@ -685,6 +909,32 @@ ul li a:hover,
     .region-menu-container,
     .period-menu-container {
         margin-bottom: 20px;
+    }
+
+    .collapsible-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .collapsible-header b,
+    .total-analises {
+        font-size: 1rem;
+    }
+
+    .arrow_not_active,
+    .arrow_active {
+        font-size: 1.2rem;
+    }
+
+    .apoiador_container img.horizontal {
+        width: auto;
+        max-width: 80%;
+        max-height: 80px;
+    }
+
+    .apoiador_container img.vertical {
+        width: auto;
+        max-height: 80px;
     }
 }
 

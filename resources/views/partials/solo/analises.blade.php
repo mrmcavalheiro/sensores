@@ -1,19 +1,23 @@
 <div class="row container">
-    <section class="row center-align">
-        <p class="flow-text text-center blue-text">
-            Relação de Municípios e Análise de Solo
+    <section class="center-align">
+        <p class="flow-text text-center black-text">
+            Relação de municípios e análises de solo
         </p>
     </section>
 
-    <div class="col s12">
+    <div class="col s12 p0">
         <ul class="collapsible">
             @foreach (\App\Http\Controllers\SoloController::$paginaSolo[0]['municipios'] as $municipio)
             <li>
                 <div class="collapsible-header">
-                    <div class="row center-align">
-                        <div class="col s12">
+                    <div class="row m0 w100">
+                        <div class="col s11">
                             <b>{{ $municipio['nomeMunicipio'] }}</b>
                             <span class="total-analises">({{ $municipio['totalAnalise'] }} análises)</span>
+                        </div>
+                        <div class="col s1">
+                            <i class="material-icons arrow_not_active">keyboard_arrow_down</i>
+                            <i class="material-icons arrow_active">keyboard_arrow_up</i>
                         </div>
                     </div>
                 </div>
@@ -80,3 +84,9 @@
         </ul>
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const elems = document.querySelectorAll('.collapsible');
+        const instances = M.Collapsible.init(elems, { accordion: true });
+    });
+</script>
