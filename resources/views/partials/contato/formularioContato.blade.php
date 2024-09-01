@@ -20,7 +20,7 @@
         </div>
 
         <div>
-            <button type="submit" class="btn-small blue"><i class="fa-regular fa-paper-plane left"></i>Enviar</button>
+            <button type="submit" disabled class="btn-small blue"><i class="fa-regular fa-paper-plane left"></i>Enviar</button>
             <button type="reset" class="btn-small indigo"><i class="fa-solid fa-eraser left"></i>Limpar</button>
         </div>
     </form>
