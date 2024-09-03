@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\ApoiadoresController;
 use App\Http\Controllers\EquipeController;
+use App\Http\Controllers\ProjetoController;
 use App\Models\SistemaGlobal;
 use App\Http\Controllers\SoloController;
 
@@ -53,6 +54,16 @@ class NavegationController extends Controller
         $equipe = $equipeController->getEquipeData();
         SistemaGlobal::loadEquipeData();
         return view('site.equipe', compact('equipe'));
+    }
+
+    //Pagina de Equipe
+    public function projeto()
+    {
+        $apoiadores = \App\Models\SistemaGlobal::$paginaApoiadores[0]['apoiadores'];
+        $equipeController = new EquipeController();
+        $equipe = $equipeController->getEquipeData();
+        SistemaGlobal::loadEquipeData();
+        return view('site.projeto', compact('apoiadores'), compact('equipe'));
     }
 
 }

@@ -14,28 +14,25 @@ class SistemaGlobal extends Model
 
     public static $Menu = [
         "itens" => [
-            "Medições",                     
-            "Análise de Solo",              
-            "Apoiadores",                   
-            "Equipe",                       
-            "Sobre",                        
-            "Contato"                       
+            "Medições",
+            "Análise de Solo",
+            "Projeto",
+            "Sobre", 
+            "Contato"
         ],
         "icons" => [
-            "fas fa-tachometer-alt",        
-            "fas fa-globe",                 
-            "fas fa-handshake",             
-            "fas fa-users",                 
-            "fas fa-info-circle",           
-            "fas fa-envelope"               
+            "fas fa-tachometer-alt",
+            "fas fa-globe",   
+            "fas fa-users",         
+            "fas fa-info-circle",   
+            "fas fa-envelope"
         ],
         "rotas" => [
-            "home",                         
-            "solo",                         
-            "apoiadores",                   
-            "equipe",                       
-            "sobre",                        
-            "contato"                       
+            "home",
+            "solo",
+            "projeto",
+            "sobre",
+            "contato"
         ]
     ];
 
@@ -93,7 +90,7 @@ class SistemaGlobal extends Model
 
     public static $paginaEquipe = [
         [
-            "tituloPagina" => "Equipe",
+            "tituloPagina" => "Equipe de Projeto",
             "apresentacao" => "Conheça nossa equipe de especialistas que trabalham duro para fornecer soluções inovadoras no campo da coleta de umidade do solo.",
             'membros' => [
                 [
@@ -136,6 +133,36 @@ class SistemaGlobal extends Model
                     'lattes' => 'http://lattes.cnpq.br/0370883124256890'
                 ],
 
+            ]      
+        ]
+    ];
+    public static $paginaEquipeDesenvolvimento = [
+        [
+            "tituloPagina" => "Equipe de Desenvolvimento",
+            "apresentacao" => "Conheça nossa equipe de desenvolvedores especializados, que se dedicam a criar soluções inovadoras no campo da coleta de umidade do solo. Eles trabalham com empenho e expertise para fornecer tecnologias de ponta que atendem às necessidades dos nossos clientes.",
+            'membros' => [
+                [
+                    'nome' => 'Me Marcos Ronaldo Melo Cavalheiro',
+                    'title' => 'Coordenador de Desenvolvimento',
+                    'descricao' => 'Bacharel em Processamento de Dados, Mestre em Modelagem Matemática. Área de concentração - Teoria da Computação.',
+                    'foto' => 'Marcos.jpeg',
+                    'lattes' => 'http://lattes.cnpq.br/5126485951006356',
+                    // 'email' => '',
+                    // 'twitter' => '',
+                    // 'facebook' => '',
+                    // 'instagram' => ''                    
+                ],
+                [
+                    'nome' => 'Felipe Ernesto Schmidt',
+                    'title' => 'Desenvolvedor',
+                    'descricao' => 'Bacharel em Ciência da Computação e Desenvolvedor de Software Sênior.',
+                    'foto' => 'Felipe.jpg',
+                    // 'lattes' => 'http://lattes.cnpq.br/5126485951006356',
+                    'email' => 'felipe.ernesto@sou.unijui.edu.br',
+                    // 'twitter' => '',
+                    // 'facebook' => '',
+                    // 'instagram' => ''                    
+                ],
             ]      
         ]
     ];

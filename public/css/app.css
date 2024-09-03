@@ -437,6 +437,7 @@ ul li a:hover,
 }
 
 .membro_info_wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -828,6 +829,14 @@ ul li {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #ccc;
+}
+
+.projeto_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 24px;
 }
 
 /* Estilos personalizados para o título do gráfico */
