@@ -1,0 +1,116 @@
+2024-09-01 06:13:12,189 - INFO - 
+ ********  Iniciando o script Sensores_02_CSV_Upload.py ******
+
+2024-09-01 06:13:12,192 - INFO - Número de arquivos no diretório 'Bot_csv_Baixados': 8
+2024-09-01 06:13:12,697 - INFO - 1/8 - Extraindo device_id: R189011 do arquivo: TG2011008A_TG2011008A.csv
+2024-09-01 06:13:12,890 - INFO - Conectado ao banco de dados.
+2024-09-01 06:13:37,194 - INFO - Lidas:    300 de    829  Gravadas:    300  Já estavam Gravadas:      0
+2024-09-01 06:14:00,716 - INFO - Lidas:    600 de    829  Gravadas:    594  Já estavam Gravadas:      6
+2024-09-01 06:14:09,629 - INFO - Arquivo Bot_csv_Baixados\TG2011008A_TG2011008A.csv processado e commit realizado.
+2024-09-01 06:14:09,897 - INFO - 2/8 - Extraindo device_id: R189014 do arquivo: TG21900016_TG21900016.csv
+2024-09-01 06:14:10,118 - INFO - Conectado ao banco de dados.
+2024-09-01 06:14:36,718 - INFO - Lidas:    300 de    829  Gravadas:    300  Já estavam Gravadas:      0
+2024-09-01 06:15:03,152 - INFO - Lidas:    600 de    829  Gravadas:    600  Já estavam Gravadas:      0
+2024-09-01 06:15:14,768 - INFO - Arquivo Bot_csv_Baixados\TG21900016_TG21900016.csv processado e commit realizado.
+2024-09-01 06:15:15,011 - INFO - 3/8 - Extraindo device_id: R189033 do arquivo: TG21900017_TG21900017.csv
+2024-09-01 06:15:15,215 - INFO - Conectado ao banco de dados.
+2024-09-01 06:15:40,035 - INFO - Lidas:    300 de    830  Gravadas:    300  Já estavam Gravadas:      0
+2024-09-01 06:16:04,666 - INFO - Lidas:    600 de    830  Gravadas:    600  Já estavam Gravadas:      0
+2024-09-01 06:16:15,399 - INFO - Arquivo Bot_csv_Baixados\TG21900017_TG21900017.csv processado e commit realizado.
+2024-09-01 06:16:15,628 - INFO - 4/8 - Extraindo device_id: R189034 do arquivo: TG21900019_TG21900019.csv
+2024-09-01 06:16:15,831 - INFO - Conectado ao banco de dados.
+2024-09-01 06:16:40,062 - INFO - Lidas:    300 de    838  Gravadas:    300  Já estavam Gravadas:      0
+2024-09-01 06:17:04,317 - INFO - Lidas:    600 de    838  Gravadas:    600  Já estavam Gravadas:      0
+2024-09-01 06:17:15,571 - INFO - Arquivo Bot_csv_Baixados\TG21900019_TG21900019.csv processado e commit realizado.
+2024-09-01 06:17:15,867 - INFO - 5/8 - Extraindo device_id: R189016 do arquivo: TG21900020_TG21900020.csv
+2024-09-01 06:17:16,060 - INFO - Conectado ao banco de dados.
+2024-09-01 06:17:39,989 - INFO - Lidas:    300 de    829  Gravadas:    300  Já estavam Gravadas:      0
+2024-09-01 06:18:03,693 - INFO - Lidas:    600 de    829  Gravadas:    600  Já estavam Gravadas:      0
+2024-09-01 06:18:14,012 - INFO - Arquivo Bot_csv_Baixados\TG21900020_TG21900020.csv processado e commit realizado.
+2024-09-01 06:18:14,240 - INFO - 6/8 - Extraindo device_id: R189021 do arquivo: TG21900026_TG21900026.csv
+2024-09-01 06:18:14,423 - INFO - Conectado ao banco de dados.
+2024-09-01 06:18:37,637 - INFO - Lidas:    300 de    829  Gravadas:    300  Já estavam Gravadas:      0
+2024-09-01 06:19:00,856 - INFO - Lidas:    600 de    829  Gravadas:    600  Já estavam Gravadas:      0
+2024-09-01 06:19:10,986 - INFO - Arquivo Bot_csv_Baixados\TG21900026_TG21900026.csv processado e commit realizado.
+2024-09-01 06:19:11,230 - INFO - 7/8 - Extraindo device_id: R189022 do arquivo: TG21900027_TG21900027.csv
+2024-09-01 06:19:11,426 - INFO - Conectado ao banco de dados.
+2024-09-01 06:19:35,590 - INFO - Lidas:    300 de    829  Gravadas:    300  Já estavam Gravadas:      0
+2024-09-01 06:19:59,940 - INFO - Lidas:    600 de    829  Gravadas:    600  Já estavam Gravadas:      0
+2024-09-01 06:20:10,536 - INFO - Arquivo Bot_csv_Baixados\TG21900027_TG21900027.csv processado e commit realizado.
+2024-09-01 06:20:10,786 - INFO - 8/8 - Extraindo device_id: R189030 do arquivo: TG21900039_TG21900039.csv
+2024-09-01 06:20:10,977 - INFO - Conectado ao banco de dados.
+2024-09-01 06:20:34,638 - INFO - Lidas:    300 de    829  Gravadas:    300  Já estavam Gravadas:      0
+2024-09-01 06:20:58,411 - INFO - Lidas:    600 de    829  Gravadas:    600  Já estavam Gravadas:      0
+2024-09-01 06:21:08,883 - INFO - Arquivo Bot_csv_Baixados\TG21900039_TG21900039.csv processado e commit realizado.
+2024-09-01 06:21:08,989 - INFO - Resumo dos Arquivos CSV:
++-------+---------------------------+-----------+-------------+--------------+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------------------+----------------------------+
+| Index |          Arquivo          | Device ID | Device Name | Total Linhas | Total Sensores |                                                                          Sensores com Dados                                                                          |   Data Primeira Linha    |    Data Última Linha     | Tamanho do Arquivo (bytes) |
++-------+---------------------------+-----------+-------------+--------------+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------------------+----------------------------+
+|   1   | TG2011008A_TG2011008A.csv |  R189011  |  TG2011008A |     829      |       8        | Volumetric humidity(S1), temperature(S1), Dew point(S1), Humidity deficit(S1), Relative humidity(S1), Soil Electronic Conductivity(S2), soil vwc(S2), Thermister(S2) | 2024-09-01T18:00:00+0900 | 2024-08-27T00:00:00+0900 |           50698            |
+|   2   | TG21900016_TG21900016.csv |  R189014  |  TG21900016 |     829      |       7        |                                                                      Solar radiation (W/m2)(A1)                                                                      | 2024-09-01T18:00:00+0900 | 2024-08-27T00:00:00+0900 |           28203            |
+|   3   | TG21900017_TG21900017.csv |  R189033  |  TG21900017 |     830      |       7        |                                                                                                                                                                      | 2024-09-01T18:00:00+0900 | 2024-08-27T00:00:00+0900 |           26735            |
+|   4   | TG21900019_TG21900019.csv |  R189034  |  TG21900019 |     838      |       1        |                                                                      Solar radiation (W/m2)(A1)                                                                      | 2024-09-01T18:00:00+0900 | 2024-08-27T00:00:00+0900 |           23801            |
+|   5   | TG21900020_TG21900020.csv |  R189016  |  TG21900020 |     829      |       1        |                                                                      Solar radiation (W/m2)(A1)                                                                      | 2024-09-01T18:00:00+0900 | 2024-08-27T00:00:00+0900 |           23061            |
+|   6   | TG21900026_TG21900026.csv |  R189021  |  TG21900026 |     829      |       7        |      Soil Electronic Conductivity(S1), Soil Electronic Conductivity(S2), soil vwc(S1), soil vwc(S2), Solar radiation (W/m2)(A1), Thermister(S1), Thermister(S2)      | 2024-09-01T18:00:00+0900 | 2024-08-27T00:00:00+0900 |           45655            |
+|   7   | TG21900027_TG21900027.csv |  R189022  |  TG21900027 |     829      |       7        |      Soil Electronic Conductivity(S1), Soil Electronic Conductivity(S2), soil vwc(S1), soil vwc(S2), Solar radiation (W/m2)(A1), Thermister(S1), Thermister(S2)      | 2024-09-01T18:00:00+0900 | 2024-08-27T00:00:00+0900 |           45827            |
+|   8   | TG21900039_TG21900039.csv |  R189030  |  TG21900039 |     829      |       7        |      Soil Electronic Conductivity(S1), Soil Electronic Conductivity(S2), soil vwc(S1), soil vwc(S2), Solar radiation (W/m2)(A1), Thermister(S1), Thermister(S2)      | 2024-09-01T18:00:00+0900 | 2024-08-27T00:00:00+0900 |           45738            |
++-------+---------------------------+-----------+-------------+--------------+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------------------+----------------------------+
+2024-09-01 06:21:10,907 - INFO - Verificação das Primeiras e Últimas Linhas Gravadas:
++-----------+-----------------------------+---------------------------+
+| Device ID | Data Primeira Linha Gravada | Data Última Linha Gravada |
++-----------+-----------------------------+---------------------------+
+|  R189011  |     2024-07-17 15:10:00     |    2024-09-01 06:00:00    |
+|  R189014  |     2024-01-24 16:04:43     |    2024-09-01 06:00:00    |
+|  R189033  |     2024-01-25 16:44:09     |    2024-09-01 06:00:00    |
+|  R189034  |     2024-01-24 10:44:30     |    2024-09-01 06:00:00    |
+|  R189016  |     2024-01-16 15:30:20     |    2024-09-01 06:00:00    |
+|  R189021  |     2024-01-24 13:39:05     |    2024-09-01 06:00:00    |
+|  R189022  |     2024-01-16 15:06:14     |    2024-09-01 06:00:00    |
+|  R189030  |     2023-12-12 10:50:00     |    2024-09-01 06:00:00    |
++-----------+-----------------------------+---------------------------+
+2024-09-01 06:21:10,911 - INFO - Resumo do upload dos arquivos CSV:
+2024-09-01 06:21:10,911 - INFO - 
+device_id  linhas_processadas  linhas_gravadas  linhas_existentes  erros
+2024-09-01 06:21:10,912 - INFO -    R189011                  829             594                  235     0
+2024-09-01 06:21:10,912 - INFO - Data Primeira Linha Gravada: 2024-07-17 15:10:00
+2024-09-01 06:21:10,912 - INFO - Data Última Linha Gravada: 2024-09-01 06:00:00
+2024-09-01 06:21:10,913 - INFO - 
+device_id  linhas_processadas  linhas_gravadas  linhas_existentes  erros
+2024-09-01 06:21:10,913 - INFO -    R189014                  829             636                  193     0
+2024-09-01 06:21:10,914 - INFO - Data Primeira Linha Gravada: 2024-01-24 16:04:43
+2024-09-01 06:21:10,915 - INFO - Data Última Linha Gravada: 2024-09-01 06:00:00
+2024-09-01 06:21:10,915 - INFO - 
+device_id  linhas_processadas  linhas_gravadas  linhas_existentes  erros
+2024-09-01 06:21:10,915 - INFO -    R189033                  830             637                  193     0
+2024-09-01 06:21:10,916 - INFO - Data Primeira Linha Gravada: 2024-01-25 16:44:09
+2024-09-01 06:21:10,916 - INFO - Data Última Linha Gravada: 2024-09-01 06:00:00
+2024-09-01 06:21:10,917 - INFO - 
+device_id  linhas_processadas  linhas_gravadas  linhas_existentes  erros
+2024-09-01 06:21:10,917 - INFO -    R189034                  838             643                  195     0
+2024-09-01 06:21:10,917 - INFO - Data Primeira Linha Gravada: 2024-01-24 10:44:30
+2024-09-01 06:21:10,918 - INFO - Data Última Linha Gravada: 2024-09-01 06:00:00
+2024-09-01 06:21:10,918 - INFO - 
+device_id  linhas_processadas  linhas_gravadas  linhas_existentes  erros
+2024-09-01 06:21:10,918 - INFO -    R189016                  829             636                  193     0
+2024-09-01 06:21:10,919 - INFO - Data Primeira Linha Gravada: 2024-01-16 15:30:20
+2024-09-01 06:21:10,919 - INFO - Data Última Linha Gravada: 2024-09-01 06:00:00
+2024-09-01 06:21:10,919 - INFO - 
+device_id  linhas_processadas  linhas_gravadas  linhas_existentes  erros
+2024-09-01 06:21:10,920 - INFO -    R189021                  829             636                  193     0
+2024-09-01 06:21:10,920 - INFO - Data Primeira Linha Gravada: 2024-01-24 13:39:05
+2024-09-01 06:21:10,920 - INFO - Data Última Linha Gravada: 2024-09-01 06:00:00
+2024-09-01 06:21:10,921 - INFO - 
+device_id  linhas_processadas  linhas_gravadas  linhas_existentes  erros
+2024-09-01 06:21:10,921 - INFO -    R189022                  829             636                  193     0
+2024-09-01 06:21:10,922 - INFO - Data Primeira Linha Gravada: 2024-01-16 15:06:14
+2024-09-01 06:21:10,922 - INFO - Data Última Linha Gravada: 2024-09-01 06:00:00
+2024-09-01 06:21:10,923 - INFO - 
+device_id  linhas_processadas  linhas_gravadas  linhas_existentes  erros
+2024-09-01 06:21:10,923 - INFO -    R189030                  829             636                  193     0
+2024-09-01 06:21:10,925 - INFO - Data Primeira Linha Gravada: 2023-12-12 10:50:00
+2024-09-01 06:21:10,925 - INFO - Data Última Linha Gravada: 2024-09-01 06:00:00
+2024-09-01 06:21:10,926 - INFO - 
+
+Chamando o script Sensores_03_Incluidos_CSV.py
+2024-09-01 06:21:23,125 - INFO - Script Sensores_03_Incluidos_CSV.py executado com sucesso.
+
