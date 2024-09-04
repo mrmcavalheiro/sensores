@@ -65,23 +65,12 @@ class ChartController extends Controller
         Log::info('Start date calculado', ['startDate' => $startDate]);
 
         // Construir a consulta
-        /*
         $query = DB::table('region_daily_averages')
             ->where('region_id', $regionId)
             ->whereDate('date_BR', '>=', $startDate)
             ->select(DB::raw("DATE_FORMAT(date_BR, '%d/%m/%Y') as date_BR"), DB::raw('AVG(avg_soil_vwc_s1) as avg_soil_vwc_s1'), DB::raw('AVG(avg_soil_vwc_s2) as avg_soil_vwc_s2'))
             ->groupBy(DB::raw("DATE_FORMAT(date_BR, '%d/%m/%Y')"))
             ->orderBy('date_BR');
-*/
-        // Construir a consulta
-        $query = DB::table('region_daily_averages')
-            ->where('region_id', $regionId)
-            ->whereDate('date_BR', '>=', $startDate)
-            ->select('date_BR', DB::raw('AVG(avg_soil_vwc_s1) as avg_soil_vwc_s1'), DB::raw('AVG(avg_soil_vwc_s2) as avg_soil_vwc_s2'))
-            ->groupBy('date_BR')
-            ->orderBy('date_BR');
-
-
 
         log::info('Consulta SQL construída', ['query' => $query]);  
 

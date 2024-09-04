@@ -6,7 +6,7 @@ use App\Http\Controllers\NavegationController;
 use App\Http\Controllers\SendMailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChartController;
-
+use App\Http\Controllers\SoloController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,7 +34,11 @@ Route::get('/apoiadores', [NavegationController::class, 'apoiadores'])->name('ap
 Route::get('/sobre', [NavegationController::class, 'sobre'])->name('sobre');
 
 // Pagina Análise de Solo
-Route::get('/solo', [NavegationController::class, 'solo'])->name('solo');
+//Route::get('/solo', [NavegationController::class, 'solo'])->name('solo');
+
+
+Route::get('/solo', [SoloController::class, 'solo'])->name('solo');
+
 
 // Pagina Equipe
 Route::get('/equipe', [NavegationController::class, 'equipe'])->name('equipe');

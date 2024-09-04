@@ -1,0 +1,265 @@
+2024-09-04 17:13:36,708 - INFO - 
+ ********  Iniciando o script Sensores_01_Bot_Site.py ******
+
+2024-09-04 17:13:36,711 - INFO - Usando driver path: G:\\Ferramentas\\chromedriver-win64\\chromedriver.exe
+2024-09-04 17:13:36,711 - INFO - Usando username: DLJ8PBRP5
+2024-09-04 17:13:36,725 - INFO - Pasta temporária criada: bot_csv_2024_09_04_17_13_36
+2024-09-04 17:13:38,240 - INFO - Configured download path: G:\Projetos\sensores\sensores_python\bot_csv_2024_09_04_17_13_36
+2024-09-04 17:13:38,240 - INFO - WebDriver configurado com o caminho de download: bot_csv_2024_09_04_17_13_36
+2024-09-04 17:13:38,241 - INFO - Acessando a página de login...
+2024-09-04 17:13:44,007 - INFO - Página de login acessada.
+2024-09-04 17:13:44,008 - INFO - Página de login carregada.
+2024-09-04 17:13:44,088 - INFO - Campo de username preenchido.
+2024-09-04 17:13:44,170 - INFO - Campo de password preenchido.
+2024-09-04 17:13:44,222 - INFO - Termos de uso aceitos.
+2024-09-04 17:13:44,405 - INFO - Botão de login clicado.
+2024-09-04 17:13:44,406 - INFO - Esperar 15 segundos para redirecionamento.
+2024-09-04 17:13:59,407 - INFO - Redirecionamento.
+2024-09-04 17:13:59,411 - INFO - Login realizado com sucesso!
+2024-09-04 17:13:59,412 - INFO - Verificando a URL da página atual...
+2024-09-04 17:13:59,416 - INFO - URL atual: https://g3-app.e-kakashi.com/
+2024-09-04 17:13:59,417 - INFO - Página principal após login detectada.
+2024-09-04 17:13:59,418 - INFO - Navegando para a página de dispositivos: https://g3-app.e-kakashi.com/setting/devices
+2024-09-04 17:14:00,019 - INFO - Página de dispositivos acessada.
+2024-09-04 17:14:00,021 - INFO - Esperando a página de dispositivos carregar...
+2024-09-04 17:14:02,927 - INFO - Elemento 'Device list' localizado.
+2024-09-04 17:14:17,928 - INFO - Extraindo dados dos dispositivos.
+2024-09-04 17:14:19,090 - INFO - Tabela de Dispositivos:
++-------+-----------+-------------+------------------------------------------------------+
+| Index | Device ID | Device Name |                         HREF                         |
++-------+-----------+-------------+------------------------------------------------------+
+|   1   |  R189001  |  TG2011001A | https://g3-app.e-kakashi.com/setting/devices/R189001 |
+|   2   |  R189010  |  TG2011002A | https://g3-app.e-kakashi.com/setting/devices/R189010 |
+|   3   |  R189008  |  TG2011003A | https://g3-app.e-kakashi.com/setting/devices/R189008 |
+|   4   |  R189031  |  TG2011005A | https://g3-app.e-kakashi.com/setting/devices/R189031 |
+|   5   |  R189000  |  TG2011006A | https://g3-app.e-kakashi.com/setting/devices/R189000 |
+|   6   |  R189011  |  TG2011008A | https://g3-app.e-kakashi.com/setting/devices/R189011 |
+|   7   |  R189006  |  TG2011009A | https://g3-app.e-kakashi.com/setting/devices/R189006 |
+|   8   |  R189007  |  TG2011030A | https://g3-app.e-kakashi.com/setting/devices/R189007 |
+|   9   |  R189009  |  TG2011031A | https://g3-app.e-kakashi.com/setting/devices/R189009 |
+|   10  |  R189003  |  TG2011034A | https://g3-app.e-kakashi.com/setting/devices/R189003 |
+|   11  |  R189005  |  TG21900011 | https://g3-app.e-kakashi.com/setting/devices/R189005 |
+|   12  |  R189002  |  TG21900012 | https://g3-app.e-kakashi.com/setting/devices/R189002 |
+|   13  |  R189004  |  TG21900013 | https://g3-app.e-kakashi.com/setting/devices/R189004 |
+|   14  |  R189032  |  TG21900015 | https://g3-app.e-kakashi.com/setting/devices/R189032 |
+|   15  |  R189014  |  TG21900016 | https://g3-app.e-kakashi.com/setting/devices/R189014 |
+|   16  |  R189033  |  TG21900017 | https://g3-app.e-kakashi.com/setting/devices/R189033 |
+|   17  |  R189015  |  TG21900018 | https://g3-app.e-kakashi.com/setting/devices/R189015 |
+|   18  |  R189034  |  TG21900019 | https://g3-app.e-kakashi.com/setting/devices/R189034 |
+|   19  |  R189016  |  TG21900020 | https://g3-app.e-kakashi.com/setting/devices/R189016 |
+|   20  |  R189017  |  TG21900021 | https://g3-app.e-kakashi.com/setting/devices/R189017 |
+|   21  |  R189018  |  TG21900022 | https://g3-app.e-kakashi.com/setting/devices/R189018 |
+|   22  |  R189035  |  TG21900023 | https://g3-app.e-kakashi.com/setting/devices/R189035 |
+|   23  |  R189019  |  TG21900024 | https://g3-app.e-kakashi.com/setting/devices/R189019 |
+|   24  |  R189020  |  TG21900025 | https://g3-app.e-kakashi.com/setting/devices/R189020 |
+|   25  |  R189021  |  TG21900026 | https://g3-app.e-kakashi.com/setting/devices/R189021 |
+|   26  |  R189022  |  TG21900027 | https://g3-app.e-kakashi.com/setting/devices/R189022 |
+|   27  |  R189023  |  TG21900028 | https://g3-app.e-kakashi.com/setting/devices/R189023 |
+|   28  |  R189024  |  TG21900029 | https://g3-app.e-kakashi.com/setting/devices/R189024 |
+|   29  |  R189025  |  TG21900030 | https://g3-app.e-kakashi.com/setting/devices/R189025 |
+|   30  |  R189012  |  TG21900035 | https://g3-app.e-kakashi.com/setting/devices/R189012 |
+|   31  |  R189036  |  TG21900036 | https://g3-app.e-kakashi.com/setting/devices/R189036 |
+|   32  |  R189037  |  TG21900037 | https://g3-app.e-kakashi.com/setting/devices/R189037 |
+|   33  |  R189013  |  TG21900038 | https://g3-app.e-kakashi.com/setting/devices/R189013 |
+|   34  |  R189030  |  TG21900039 | https://g3-app.e-kakashi.com/setting/devices/R189030 |
+|   35  |  R189026  |  TG21900046 | https://g3-app.e-kakashi.com/setting/devices/R189026 |
+|   36  |  R189027  |  TG21900047 | https://g3-app.e-kakashi.com/setting/devices/R189027 |
+|   37  |  R189028  |  TG21900048 | https://g3-app.e-kakashi.com/setting/devices/R189028 |
+|   38  |  R189029  |  TG21900050 | https://g3-app.e-kakashi.com/setting/devices/R189029 |
+|   39  |  R189038  |  TG22800017 | https://g3-app.e-kakashi.com/setting/devices/R189038 |
+|   40  |  R189039  |  TG22800018 | https://g3-app.e-kakashi.com/setting/devices/R189039 |
++-------+-----------+-------------+------------------------------------------------------+
+2024-09-04 17:14:19,094 - INFO - 1/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189001
+2024-09-04 17:14:36,365 - INFO - Dados do dispositivo R189001 atualizados com sucesso.
+2024-09-04 17:14:36,366 - INFO - 2/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189010
+2024-09-04 17:14:53,443 - INFO - Dados do dispositivo R189010 atualizados com sucesso.
+2024-09-04 17:14:53,443 - INFO - 3/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189008
+2024-09-04 17:15:10,680 - INFO - Dados do dispositivo R189008 atualizados com sucesso.
+2024-09-04 17:15:10,681 - INFO - 4/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189031
+2024-09-04 17:15:27,787 - INFO - Dados do dispositivo R189031 atualizados com sucesso.
+2024-09-04 17:15:27,787 - INFO - 5/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189000
+2024-09-04 17:15:45,009 - INFO - Dados do dispositivo R189000 atualizados com sucesso.
+2024-09-04 17:15:45,010 - INFO - 6/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189011
+2024-09-04 17:16:02,204 - INFO - Dados do dispositivo R189011 atualizados com sucesso.
+2024-09-04 17:16:02,206 - INFO - 7/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189006
+2024-09-04 17:16:19,531 - INFO - Dados do dispositivo R189006 atualizados com sucesso.
+2024-09-04 17:16:19,532 - INFO - 8/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189007
+2024-09-04 17:16:36,673 - INFO - Dados do dispositivo R189007 atualizados com sucesso.
+2024-09-04 17:16:36,673 - INFO - 9/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189009
+2024-09-04 17:16:53,821 - INFO - Dados do dispositivo R189009 atualizados com sucesso.
+2024-09-04 17:16:53,822 - INFO - 10/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189003
+2024-09-04 17:17:10,946 - INFO - Dados do dispositivo R189003 atualizados com sucesso.
+2024-09-04 17:17:10,947 - INFO - 11/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189005
+2024-09-04 17:17:28,078 - INFO - Dados do dispositivo R189005 atualizados com sucesso.
+2024-09-04 17:17:28,079 - INFO - 12/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189002
+2024-09-04 17:17:45,263 - INFO - Dados do dispositivo R189002 atualizados com sucesso.
+2024-09-04 17:17:45,264 - INFO - 13/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189004
+2024-09-04 17:18:03,129 - INFO - Dados do dispositivo R189004 atualizados com sucesso.
+2024-09-04 17:18:03,130 - INFO - 14/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189032
+2024-09-04 17:18:24,846 - INFO - Dados do dispositivo R189032 atualizados com sucesso.
+2024-09-04 17:18:24,847 - INFO - 15/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189014
+2024-09-04 17:18:41,977 - INFO - Dados do dispositivo R189014 atualizados com sucesso.
+2024-09-04 17:18:41,978 - INFO - 16/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189033
+2024-09-04 17:18:59,093 - INFO - Dados do dispositivo R189033 atualizados com sucesso.
+2024-09-04 17:18:59,094 - INFO - 17/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189015
+2024-09-04 17:19:16,240 - INFO - Dados do dispositivo R189015 atualizados com sucesso.
+2024-09-04 17:19:16,241 - INFO - 18/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189034
+2024-09-04 17:19:33,387 - INFO - Dados do dispositivo R189034 atualizados com sucesso.
+2024-09-04 17:19:33,390 - INFO - 19/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189016
+2024-09-04 17:19:50,579 - INFO - Dados do dispositivo R189016 atualizados com sucesso.
+2024-09-04 17:19:50,579 - INFO - 20/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189017
+2024-09-04 17:20:07,712 - INFO - Dados do dispositivo R189017 atualizados com sucesso.
+2024-09-04 17:20:07,712 - INFO - 21/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189018
+2024-09-04 17:20:25,528 - INFO - Dados do dispositivo R189018 atualizados com sucesso.
+2024-09-04 17:20:25,529 - INFO - 22/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189035
+2024-09-04 17:20:42,671 - INFO - Dados do dispositivo R189035 atualizados com sucesso.
+2024-09-04 17:20:42,672 - INFO - 23/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189019
+2024-09-04 17:20:59,870 - INFO - Dados do dispositivo R189019 atualizados com sucesso.
+2024-09-04 17:20:59,872 - INFO - 24/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189020
+2024-09-04 17:21:17,104 - INFO - Dados do dispositivo R189020 atualizados com sucesso.
+2024-09-04 17:21:17,105 - INFO - 25/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189021
+2024-09-04 17:21:34,237 - INFO - Dados do dispositivo R189021 atualizados com sucesso.
+2024-09-04 17:21:34,239 - INFO - 26/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189022
+2024-09-04 17:21:51,470 - INFO - Dados do dispositivo R189022 atualizados com sucesso.
+2024-09-04 17:21:51,470 - INFO - 27/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189023
+2024-09-04 17:22:08,613 - INFO - Dados do dispositivo R189023 atualizados com sucesso.
+2024-09-04 17:22:08,614 - INFO - 28/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189024
+2024-09-04 17:22:25,783 - INFO - Dados do dispositivo R189024 atualizados com sucesso.
+2024-09-04 17:22:25,784 - INFO - 29/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189025
+2024-09-04 17:22:42,933 - INFO - Dados do dispositivo R189025 atualizados com sucesso.
+2024-09-04 17:22:42,934 - INFO - 30/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189012
+2024-09-04 17:23:00,068 - INFO - Dados do dispositivo R189012 atualizados com sucesso.
+2024-09-04 17:23:00,069 - INFO - 31/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189036
+2024-09-04 17:23:17,234 - INFO - Dados do dispositivo R189036 atualizados com sucesso.
+2024-09-04 17:23:17,235 - INFO - 32/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189037
+2024-09-04 17:23:34,451 - INFO - Dados do dispositivo R189037 atualizados com sucesso.
+2024-09-04 17:23:34,452 - INFO - 33/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189013
+2024-09-04 17:23:51,601 - INFO - Dados do dispositivo R189013 atualizados com sucesso.
+2024-09-04 17:23:51,601 - INFO - 34/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189030
+2024-09-04 17:24:08,825 - INFO - Dados do dispositivo R189030 atualizados com sucesso.
+2024-09-04 17:24:08,825 - INFO - 35/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189026
+2024-09-04 17:24:26,016 - INFO - Dados do dispositivo R189026 atualizados com sucesso.
+2024-09-04 17:24:26,017 - INFO - 36/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189027
+2024-09-04 17:24:43,231 - INFO - Dados do dispositivo R189027 atualizados com sucesso.
+2024-09-04 17:24:43,231 - INFO - 37/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189028
+2024-09-04 17:25:00,348 - INFO - Dados do dispositivo R189028 atualizados com sucesso.
+2024-09-04 17:25:00,349 - INFO - 38/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189029
+2024-09-04 17:25:18,065 - INFO - Dados do dispositivo R189029 atualizados com sucesso.
+2024-09-04 17:25:18,065 - INFO - 39/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189038
+2024-09-04 17:25:35,153 - INFO - Dados do dispositivo R189038 atualizados com sucesso.
+2024-09-04 17:25:35,153 - INFO - 40/40 Acessando detalhes do dispositivo: https://g3-app.e-kakashi.com/setting/devices/R189039
+2024-09-04 17:25:52,432 - INFO - Dados do dispositivo R189039 atualizados com sucesso.
+2024-09-04 17:25:52,438 - INFO - Tabela de Detalhes dos Dispositivos:
++-----------+-------------+---------------------+---------------------+---------------------------+-----------------+------------------------------------------------------+
+| Device ID | Device Name |       Latitude      |      Longitude      | Last measurement datetime | Received status |                         Href                         |
++-----------+-------------+---------------------+---------------------+---------------------------+-----------------+------------------------------------------------------+
+|  R189001  |  TG2011001A | -28.435056016666667 | -54.006178166666665 |    2023/10/01 20:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189001 |
+|  R189010  |  TG2011002A | -27.699545150000002 | -53.561122999999995 |    2023/10/13 17:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189010 |
+|  R189008  |  TG2011003A | -29.898225333333336 | -53.539185100000005 |    2024/03/30 20:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189008 |
+|  R189031  |  TG2011005A |  4.868941333333334  |     -74.8148426     |    2021/11/19 07:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189031 |
+|  R189000  |  TG2011006A |  -28.43803091666667 |  -54.00448728333334 |    2024/05/26 16:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189000 |
+|  R189011  |  TG2011008A | -29.723778466666666 |  -53.71375351666667 |    2024/09/04 17:00:00    |        OK       | https://g3-app.e-kakashi.com/setting/devices/R189011 |
+|  R189006  |  TG2011009A |  4.891605533333333  |  -74.78794556666666 |    2022/07/07 11:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189006 |
+|  R189007  |  TG2011030A | -28.597885416666667 |  -53.08696440000001 |    2023/04/04 20:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189007 |
+|  R189009  |  TG2011031A | -27.714104933333335 | -53.529423316666666 |    2024/04/30 11:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189009 |
+|  R189003  |  TG2011034A |         0.0         |         0.0         |            None           |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189003 |
+|  R189005  |  TG21900011 | -29.825154283333337 | -53.647092766666674 |    2023/05/17 11:10:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189005 |
+|  R189002  |  TG21900012 | -30.591697950000004 | -54.509590566666674 |    2024/05/22 19:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189002 |
+|  R189004  |  TG21900013 | -29.818514583333332 | -53.630808949999995 |    2023/08/29 20:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189004 |
+|  R189032  |  TG21900015 | -28.275537633333336 | -55.432404966666674 |    2024/07/16 07:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189032 |
+|  R189014  |  TG21900016 | -28.057850666666663 |  -53.66542381666667 |    2024/09/04 17:00:00    |        OK       | https://g3-app.e-kakashi.com/setting/devices/R189014 |
+|  R189033  |  TG21900017 | -28.241672450000003 |  -55.22651841666667 |    2024/09/03 10:20:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189033 |
+|  R189015  |  TG21900018 | -28.877790233333332 |  -54.38763036666666 |    2024/06/26 07:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189015 |
+|  R189034  |  TG21900019 | -27.951090750000002 | -54.313289266666665 |    2024/09/04 17:00:00    |        OK       | https://g3-app.e-kakashi.com/setting/devices/R189034 |
+|  R189016  |  TG21900020 |  -28.70685761666667 |  -54.94967171666667 |    2024/09/04 17:00:00    |        OK       | https://g3-app.e-kakashi.com/setting/devices/R189016 |
+|  R189017  |  TG21900021 |     -28.12114515    |  -53.68607995000001 |    2024/08/18 19:40:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189017 |
+|  R189018  |  TG21900022 | -28.159053866666667 |  -55.07140931666666 |    2024/06/11 18:26:22    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189018 |
+|  R189035  |  TG21900023 |     -29.9104333     | -53.540573166666675 |    2024/05/23 07:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189035 |
+|  R189019  |  TG21900024 | -28.622004666666665 |  -55.66324566666667 |    2024/08/17 18:30:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189019 |
+|  R189020  |  TG21900025 |  -28.43758703333333 |  -53.55165333333333 |    2024/09/04 16:00:00    |        OK       | https://g3-app.e-kakashi.com/setting/devices/R189020 |
+|  R189021  |  TG21900026 |     -27.79761275    |  -53.89170193333333 |    2024/09/04 17:00:00    |        OK       | https://g3-app.e-kakashi.com/setting/devices/R189021 |
+|  R189022  |  TG21900027 |  -28.70318771666667 | -54.939941916666676 |    2024/09/04 17:00:00    |        OK       | https://g3-app.e-kakashi.com/setting/devices/R189022 |
+|  R189023  |  TG21900028 | -28.029399683333335 |  -53.63949998333332 |    2024/04/05 10:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189023 |
+|  R189024  |  TG21900029 |  -28.81906548333333 |  -54.37555906666667 |    2024/02/02 08:40:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189024 |
+|  R189025  |  TG21900030 |  -28.67738578333334 | -55.584460683333326 |    2024/06/03 18:20:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189025 |
+|  R189012  |  TG21900035 |     -33.28340355    | -53.238285049999995 |    2022/04/06 20:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189012 |
+|  R189036  |  TG21900036 |     -30.1232841     |  -53.79590114999999 |    2024/03/26 15:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189036 |
+|  R189037  |  TG21900037 |  -29.74864356666667 |  -53.55173856666667 |    2024/04/18 08:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189037 |
+|  R189013  |  TG21900038 | -29.142356383333336 |     -56.11851125    |    2024/02/01 18:38:40    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189013 |
+|  R189030  |  TG21900039 | -28.272547583333335 | -54.167796716666665 |    2024/09/04 17:00:00    |        OK       | https://g3-app.e-kakashi.com/setting/devices/R189030 |
+|  R189026  |  TG21900046 | -28.535889366666666 |  -53.54893306666666 |    2024/08/17 20:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189026 |
+|  R189027  |  TG21900047 |  -28.52777793333333 | -54.035620550000004 |    2024/08/21 22:40:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189027 |
+|  R189028  |  TG21900048 |      -2.1195924     |     -79.48814485    |    2023/04/09 13:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189028 |
+|  R189029  |  TG21900050 | -2.1164295999999996 |  -79.49284196666667 |    2024/02/03 20:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189029 |
+|  R189038  |  TG22800017 |  -29.52519653333333 |  -55.44063331666666 |    2024/05/29 20:00:00    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189038 |
+|  R189039  |  TG22800018 |         0.0         |         0.0         |    2023/07/20 00:02:42    |      Error      | https://g3-app.e-kakashi.com/setting/devices/R189039 |
++-----------+-------------+---------------------+---------------------+---------------------------+-----------------+------------------------------------------------------+
+2024-09-04 17:25:52,443 - INFO - Número de linhas em matriz_detalhes com 'OK': 8/40
+2024-09-04 17:25:52,718 - INFO - 1/8 Baixando CSV para o dispositivo R189011 (TG2011008A)   Dias de consulta: 3
+2024-09-04 17:25:52,718 - INFO - Acessando URL CSV: https://g3-app.e-kakashi.com/setting/devices/R189011/csv
+2024-09-04 17:25:55,524 - INFO - Preenchendo o campo de dias com 3 dias.
+2024-09-04 17:25:55,661 - INFO - Clicando no botão CSV Export.
+2024-09-04 17:25:55,730 - INFO - Esperando o download do arquivo CSV.
+2024-09-04 17:26:05,732 - INFO - Arquivo CSV baixado com sucesso em: bot_csv_2024_09_04_17_13_36\TG2011008A_TG2011008A.csv
+2024-09-04 17:26:05,963 - INFO - 2/8 Baixando CSV para o dispositivo R189014 (TG21900016)   Dias de consulta: 3
+2024-09-04 17:26:05,963 - INFO - Acessando URL CSV: https://g3-app.e-kakashi.com/setting/devices/R189014/csv
+2024-09-04 17:26:08,727 - INFO - Preenchendo o campo de dias com 3 dias.
+2024-09-04 17:26:08,789 - INFO - Clicando no botão CSV Export.
+2024-09-04 17:26:08,843 - INFO - Esperando o download do arquivo CSV.
+2024-09-04 17:26:18,845 - INFO - Arquivo CSV baixado com sucesso em: bot_csv_2024_09_04_17_13_36\TG21900016_TG21900016.csv
+2024-09-04 17:26:19,092 - INFO - 3/8 Baixando CSV para o dispositivo R189034 (TG21900019)   Dias de consulta: 4
+2024-09-04 17:26:19,093 - INFO - Acessando URL CSV: https://g3-app.e-kakashi.com/setting/devices/R189034/csv
+2024-09-04 17:26:21,828 - INFO - Preenchendo o campo de dias com 4 dias.
+2024-09-04 17:26:21,892 - INFO - Clicando no botão CSV Export.
+2024-09-04 17:26:21,947 - INFO - Esperando o download do arquivo CSV.
+2024-09-04 17:26:31,949 - INFO - Arquivo CSV baixado com sucesso em: bot_csv_2024_09_04_17_13_36\TG21900019_TG21900019.csv
+2024-09-04 17:26:32,191 - INFO - 4/8 Baixando CSV para o dispositivo R189016 (TG21900020)   Dias de consulta: 3
+2024-09-04 17:26:32,192 - INFO - Acessando URL CSV: https://g3-app.e-kakashi.com/setting/devices/R189016/csv
+2024-09-04 17:26:34,963 - INFO - Preenchendo o campo de dias com 3 dias.
+2024-09-04 17:26:35,067 - INFO - Clicando no botão CSV Export.
+2024-09-04 17:26:35,110 - INFO - Esperando o download do arquivo CSV.
+2024-09-04 17:26:45,241 - INFO - Arquivo CSV baixado com sucesso em: bot_csv_2024_09_04_17_13_36\TG21900020_TG21900020.csv
+2024-09-04 17:26:45,508 - INFO - 5/8 Baixando CSV para o dispositivo R189020 (TG21900025)   Dias de consulta: 3
+2024-09-04 17:26:45,508 - INFO - Acessando URL CSV: https://g3-app.e-kakashi.com/setting/devices/R189020/csv
+2024-09-04 17:26:48,276 - INFO - Preenchendo o campo de dias com 3 dias.
+2024-09-04 17:26:48,338 - INFO - Clicando no botão CSV Export.
+2024-09-04 17:26:48,387 - INFO - Esperando o download do arquivo CSV.
+2024-09-04 17:26:58,389 - INFO - Arquivo CSV baixado com sucesso em: bot_csv_2024_09_04_17_13_36\TG21900025_TG21900025.csv
+2024-09-04 17:26:58,644 - INFO - 6/8 Baixando CSV para o dispositivo R189021 (TG21900026)   Dias de consulta: 3
+2024-09-04 17:26:58,645 - INFO - Acessando URL CSV: https://g3-app.e-kakashi.com/setting/devices/R189021/csv
+2024-09-04 17:27:01,386 - INFO - Preenchendo o campo de dias com 3 dias.
+2024-09-04 17:27:01,449 - INFO - Clicando no botão CSV Export.
+2024-09-04 17:27:01,495 - INFO - Esperando o download do arquivo CSV.
+2024-09-04 17:27:11,496 - INFO - Arquivo CSV baixado com sucesso em: bot_csv_2024_09_04_17_13_36\TG21900026_TG21900026.csv
+2024-09-04 17:27:11,758 - INFO - 7/8 Baixando CSV para o dispositivo R189022 (TG21900027)   Dias de consulta: 3
+2024-09-04 17:27:11,759 - INFO - Acessando URL CSV: https://g3-app.e-kakashi.com/setting/devices/R189022/csv
+2024-09-04 17:27:14,482 - INFO - Preenchendo o campo de dias com 3 dias.
+2024-09-04 17:27:14,548 - INFO - Clicando no botão CSV Export.
+2024-09-04 17:27:14,598 - INFO - Esperando o download do arquivo CSV.
+2024-09-04 17:27:24,600 - INFO - Arquivo CSV baixado com sucesso em: bot_csv_2024_09_04_17_13_36\TG21900027_TG21900027.csv
+2024-09-04 17:27:24,861 - INFO - 8/8 Baixando CSV para o dispositivo R189030 (TG21900039)   Dias de consulta: 3
+2024-09-04 17:27:24,863 - INFO - Acessando URL CSV: https://g3-app.e-kakashi.com/setting/devices/R189030/csv
+2024-09-04 17:27:27,587 - INFO - Preenchendo o campo de dias com 3 dias.
+2024-09-04 17:27:27,649 - INFO - Clicando no botão CSV Export.
+2024-09-04 17:27:27,697 - INFO - Esperando o download do arquivo CSV.
+2024-09-04 17:27:37,698 - INFO - Arquivo CSV baixado com sucesso em: bot_csv_2024_09_04_17_13_36\TG21900039_TG21900039.csv
+2024-09-04 17:27:37,699 - INFO - Tabela de Downloads:
++-----------+-------------+----------+----------------------------+-------------------------------------------------------+
+| Device_ID | Device_Name | Download | Tamanho do Arquivo (bytes) |                    Local do Arquivo                   |
++-----------+-------------+----------+----------------------------+-------------------------------------------------------+
+|  R189011  |  TG2011008A |   sim    |           28365            | bot_csv_2024_09_04_17_13_36\TG2011008A_TG2011008A.csv |
+|  R189014  |  TG21900016 |   sim    |           15859            | bot_csv_2024_09_04_17_13_36\TG21900016_TG21900016.csv |
+|  R189034  |  TG21900019 |   sim    |           17783            | bot_csv_2024_09_04_17_13_36\TG21900019_TG21900019.csv |
+|  R189016  |  TG21900020 |   sim    |           12901            | bot_csv_2024_09_04_17_13_36\TG21900020_TG21900020.csv |
+|  R189020  |  TG21900025 |   sim    |           20985            | bot_csv_2024_09_04_17_13_36\TG21900025_TG21900025.csv |
+|  R189021  |  TG21900026 |   sim    |           25706            | bot_csv_2024_09_04_17_13_36\TG21900026_TG21900026.csv |
+|  R189022  |  TG21900027 |   sim    |           25435            | bot_csv_2024_09_04_17_13_36\TG21900027_TG21900027.csv |
+|  R189030  |  TG21900039 |   sim    |           25379            | bot_csv_2024_09_04_17_13_36\TG21900039_TG21900039.csv |
++-----------+-------------+----------+----------------------------+-------------------------------------------------------+
+2024-09-04 17:27:37,701 - INFO - Downloads bem-sucedidos: 8/40
+2024-09-04 17:27:40,093 - INFO - Todos os arquivos CSV foram copiados para a pasta Bot_csv_Baixados.
+2024-09-04 17:27:44,175 - INFO - 
+
+Chamando o script Sensores_02_CSV_Upload.py
+2024-09-04 17:33:27,827 - INFO - Script Sensores_02_CSV_Upload.py executado com sucesso.
+
