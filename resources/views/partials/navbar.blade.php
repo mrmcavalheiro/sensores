@@ -4,6 +4,7 @@
     $itens = $menu['itens'];
     $icons = $menu['icons'];
     $rotas = $menu['rotas'];
+    $rotaPrincipal = $menu['rota_principal'];
 @endphp
 
 <nav class="blue">
@@ -11,7 +12,7 @@
         {{-- Menu Hamburger --}}
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons small-text">menu</i></a>
 
-        <a href="{{ route($rotas[0]) }}" class="brand-logo light">{{ config('app.name') }}</a>
+        <a href="{{ route($rotaPrincipal) }}" class="brand-logo light">{{ config('app.name') }}</a>
         {{-- Menu para desktop --}}
         <ul class="right hide-on-med-and-down">
             @foreach ($itens as $key => $item)

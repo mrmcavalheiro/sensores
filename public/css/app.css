@@ -780,6 +780,40 @@ ul li {
     max-height: 80px;
 }
 
+.boletins-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-block: 24px;
+}
+
+.boletins_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.boletim_wrapper {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download_button {
+    cursor: pointer;
+    color: #e53935;
+    transition: 0.2s;
+}
+
+.download_button:hover {
+    color: #c62828;
+    font-size: 18px;
+}
+
 .sobre_container {
     display: flex;
     flex-direction: column;
@@ -1047,6 +1081,10 @@ ul li {
 
     .sobre_imagens {
         grid-template-columns: 1fr;
+    }
+
+    .boletins_wrapper {
+        grid-template-columns: 1fr 1fr;
     }
 }
 

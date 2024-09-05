@@ -36,6 +36,9 @@ Route::get('/projeto', [NavegationController::class, 'projeto'])->name('projeto'
 // Pagina Sobre
 Route::get('/sobre', [NavegationController::class, 'sobre'])->name('sobre');
 
+// Pagina Boletins
+Route::get('/boletins', [NavegationController::class, 'boletins'])->name('boletins');
+
 // Pagina Análise de Solo
 //Route::get('/solo', [NavegationController::class, 'solo'])->name('solo');
 

@@ -14,26 +14,30 @@ class SistemaGlobal extends Model
 
     public static $Menu = [
         "itens" => [
-            "Sobre",
-            "Equipe",
-            // "Medições",
             "Análise de Solo",
+            "Equipe",
+            "Boletins",
+            // "Medições",
+            "Sobre",
             "Contato"
         ],
         "icons" => [
-            "fas fa-info-circle",   
-            "fas fa-users",
-            // "fas fa-tachometer-alt",
             "fas fa-globe",
+            "fas fa-users",
+            "fas fa-file-pdf",
+            // "fas fa-tachometer-alt",
+            "fas fa-info-circle",   
             "fas fa-envelope"
         ],
         "rotas" => [
-            "sobre",
-            "projeto",
-            // "home",
             "solo",
+            "projeto",
+            "boletins",
+            // "home",
+            "sobre",
             "contato"
-        ]
+        ],
+        "rota_principal" => "home"
     ];
 
  
@@ -256,10 +260,30 @@ class SistemaGlobal extends Model
                 ],
      
             ]
-            
         ]
-        
     ];
+
+    public static $paginaBoletins = [
+        [
+            "tituloPagina" => "Boletins",
+            "boletins" =>
+            [
+                [
+                    'nome' => "1º BOLETIM INOVA 2021",
+                    'file' => 'boletim_1.pdf',
+                ],
+                [
+                    'nome' => "2º BOLETIM INOVA 2021",
+                    'file' => 'boletim_2.pdf',
+                ],
+                [
+                    'nome' => "3º BOLETIM INOVA 2021",
+                    'file' => 'boletim_3.pdf',
+                ],
+            ]
+        ]
+    ];
+
 
     public static function loadApoiadoresData()
     {

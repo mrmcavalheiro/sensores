@@ -46,6 +46,12 @@ class NavegationController extends Controller
     
         return view('site.solo', compact('data'));
     }
+
+    public function boletins()
+    {
+        $boletins = \App\Models\SistemaGlobal::$paginaBoletins[0];
+        return view('site.boletins', compact('boletins'));
+    }
     
     //Pagina de Equipe
     public function equipe()
