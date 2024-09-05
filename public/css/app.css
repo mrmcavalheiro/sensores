@@ -12,6 +12,10 @@
     width: 100%;
 }
 
+.align_center {
+    align-items: center !important;
+}
+
 .m0 {
     margin: 0 !important;
 }
@@ -295,7 +299,7 @@ ul li a:hover,
 }
 
 .all_rights_reserved {
-    padding-bottom: 4px;
+    padding-block: 8px;
 }
 
 .page-footer .row {
@@ -970,6 +974,39 @@ ul li {
     flex-direction: column;
     gap: 16px;
     padding-top: 24px;
+}
+
+.footer_info_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer_info {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.footer_menu_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 8px;
+}
+
+.footer_menu_link {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #01579b80;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color: #01579b80;
+    transition: 0.3s;
+}
+
+.footer_menu_link:hover {
+    background-color: #01579b;
 }
 
 /* Estilos personalizados para o título do gráfico */
