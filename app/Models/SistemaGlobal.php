@@ -40,51 +40,66 @@ class SistemaGlobal extends Model
     public static $paginaSobre = [
         "paginaSobre" => [
             [
-                "tituloPagina" => "Sobre o Projeto",
-                "apresentacao" => "Apresentamos o projeto inovador de coleta de umidade do solo desenvolvido em parceria entre a renomada Universidade Regional do Noroeste do Estado do Rio Grande do Sul (UNIJUI) e empresas locais da região. Com o objetivo de fornecer dados precisos e relevantes para os agricultores da região noroeste do Rio Grande do Sul, unimos conhecimentos da área agronômica e tecnológica para promover a agricultura de precisão.",
                 "projeto"=> "Rede de sensores inteligentes para o monitoramento de sistemas de irrigação por pivô central",
-                "tituloJustificativa" => "Justificativa",
-                "textoJustificativa" => "Segundo o levantamento da Câmara Setorial de Equipamentos de Irrigação (CSEI, 2021), a área irrigada por pivôs no Brasil, aumentou em 209 mil e 249 mil hectares em 2019 e 2020, respectivamente, totalizando mais de 1,6 milhões de hectares. Esse constante aumento nas áreas irrigadas, gera uma pressão gigantesca sobre os já escassos recursos hídricos. A escassez hídrica, pelas baixas alturas pluviométricas registradas, se torna mais evidente nos períodos de estiagem quando, mesmo com sistemas de irrigação, falta água para irrigar as lavouras. Sistemas de irrigação por pivô são historicamente utilizados nas culturas de milho e soja, mas têm se espalhado para outras culturas nos últimos anos, como em frutíferas e pastagens. Tanto no Brasil, quanto no Estado do Rio Grande do Sul, a agricultura irrigada é responsável pelo uso de mais de 60% da água doce disponível. O constante crescimento nos custos de produção, o aumento da contaminação da água por agrotóxicos e a busca por maior produtividade, exercem pressão sobre o uso da água nos sistemas de irrigação, e são reflexo de irrigação não realizada ou excessiva. A falta de informações para a tomada de decisão, pela baixa adoção de sensores inteligentes, fundamentais para a gestão do uso da água, é uma das principais causas dos erros e desperdícios que acarretam aumento nos gastos de energia e diesel e levam nutrientes e agrotóxicos das lavouras para os rios, reduzindo a produtividade das lavouras e causando poluição ambiental. Para aumentar a eficiência no uso da água e de energia e reduzir o carreamento de nutrientes, é imprescindível a implementação de sistemas inteligentes de monitoramento e alertas para irrigação. Situação frequente no campo é a realização de irrigação desnecessária que compromete a gestão dos recursos do sistema de irrigação. Assim, ao se reduzir os desperdícios de água, possibilita-se que outros produtores rurais, possam implementar tecnologias como sistemas de irrigação nas suas lavouras, garantindo maior segurança e produtividade para a região. Estima-se que ao se evitar apenas duas irrigações (10 milímetros cada) por ano, considerando 27 produtores, com 1 pivô de irrigação de 80 hectares cada, deixasse de desperdiçar 432 milhões de litros de água. O projeto visa a implementar uma rede de sensores de umidade do solo, e por meio de uma plataforma sistematizar informações para tornar a região Noroeste e Missões do Estado do Rio Grande do Sul, referência Latino Americana na eficiência do uso da água em pivôs de irrigação. O projeto pretende distribuir 1 (um) sensor a cada dois ou três municípios da região, beneficiando diretamente produtores rurais. Com essa rede de sensores, será desenvolvida uma plataforma digital pública, que possibilitará processar e apresentar todas as informações da rede inteligente. Esse material estará disponível, para auxiliar na tomada de decisões de produtores, consultores e da sociedade civil que não foram diretamente beneficiados com a instalação dos sensores. Além dos dados da rede de sensores, outras fontes de dados serão integradas ao sistema, dando início a um rede colaborativa com informações em tempo real com detalhes e informações da região. A integração dessas informações em uma plataforma permitirá a geração de mapas temáticos diários, com as condições agrometeorológicas, a duração dos estresses e até mesmo estimativas da redução das produtividades.",
-                "tituloObjetivosEspecíficos" => "Objetivos Específicos",
-                "textoObjetivosEspecíficos-a" => "a) Selecionar produtores rurais para implementar uma rede inteligente de monitoramento e alertas para sistemas de irrigação;",
-                "textoObjetivosEspecíficos-b" => "b) Desenvolver uma plataforma digital capaz de integrar os dados dos sensores com outras fontes de informações agrometeorológicas da região Noroeste e Missões; c) Desenvolver rotinas, na plataforma, capazes de gerar mapas temáticos com as informações, e tornar a geração de conteúdo útil para auxiliar na tomada de decisão dos produtores e demais pessoas ligadas ao agronegócio.",
-                "textoObjetivosEspecíficos-c" => "c) Desenvolver rotinas, na plataforma, capazes de gerar mapas temáticos com as informações, e tornar a geração de conteúdo útil para auxiliar na tomada de decisão dos produtores e demais pessoas ligadas ao agronegócio.",
-                "tituloEstrutura" => "Estrutura da Plataforma",
-                "textoEstrutura" => "A seguir, apresentamos a estrutura da plataforma digital que será desenvolvida como parte deste projeto inovador. A plataforma tem como objetivo integrar e sistematizar as informações coletadas pelos sensores de umidade do solo, além de outros dados agrometeorológicos da região. Com uma interface intuitiva e amigável, a plataforma oferecerá diversas funcionalidades para os usuários, incluindo gráficos dinâmicos, mapas temáticos, e ferramentas de análise que auxiliarão produtores, consultores e pesquisadores na tomada de decisões mais informadas e eficientes sobre o uso da água em sistemas de irrigação. Esta seção detalha cada uma das páginas e funcionalidades que compõem a plataforma, destacando como cada elemento contribui para a gestão sustentável dos recursos hídricos na agricultura.",
+                "projeto_sobre"=> "Projeto de Coleta de Umidade do Solo",
+                "projeto_sobre_titulo"=> "Parceria Inovadora",
+                "projeto_sobre_texto"=> " O projeto, desenvolvido pela Universidade Regional do Noroeste do Estado do Rio Grande do Sul (UNIJUÍ) em conjunto com empresas locais, visa fornecer dados precisos para agricultores da região, promovendo a agricultura de precisão.",
+                "projeto_sensores"=> "Rede de Sensores para Irrigação Inteligente",
+                "projeto_sensores_justificativa_titulo"=> "Justificativa",
+                "projeto_sensores_justificativa_texto"=> " Com o aumento das áreas irrigadas e a escassez hídrica, especialmente durante estiagens, há uma crescente demanda por eficiência no uso da água. Sistemas de irrigação por pivô, historicamente usados em milho e soja, agora se expandem para outras culturas. No entanto, a falta de adoção de sensores inteligentes resulta em desperdícios de água e energia, além da poluição por agrotóxicos. O uso inadequado de irrigação eleva os custos e afeta a produtividade.",
+                "projeto_sensores_solucao_titulo"=> "Solução Proposta",
+                "projeto_sensores_solucao_texto"=> " O projeto propõe a implementação de uma rede de sensores de umidade do solo, que, através de uma plataforma digital pública, permitirá a gestão eficiente da irrigação. Isso evitará desperdícios e possibilitará a adoção de tecnologias de irrigação por outros produtores. Com uma economia estimada de 432 milhões de litros de água anualmente, o projeto visa transformar a região em referência em uso sustentável de recursos hídricos.",
+                "projeto_objetivos"=> "Objetivos Específicos",
+                "projeto_objetivo_1_titulo"=> "Seleção de Produtores:",
+                "projeto_objetivo_1_texto"=> " Identificar produtores para a implementação de sensores e alertas inteligentes.",
+                "projeto_objetivo_2_titulo"=> "Plataforma Digital:",
+                "projeto_objetivo_2_texto"=> " Integrar dados de sensores e informações agrometeorológicas da região.",
+                "projeto_objetivo_3_titulo"=> "Mapas Temáticos:",
+                "projeto_objetivo_3_texto"=> " Desenvolver rotinas que gerem mapas diários com informações detalhadas para auxiliar nas decisões de irrigação.",
+                "projeto_imagens_titulo"=> "Fotos do Projeto",
+                "projeto_imagens"=> [
+                    "Foto_sensor_e_pivo" => "Foto_sensor_e_pivo.jpeg",
+                    "Foto_lavoura_e_pivo" => "Foto_lavoura_e_pivo.jpeg",
+                    "Foto_pivo_fockink" => "Foto_pivo_fockink.jpeg",
+                    "Foto_pivo_e_sensor" => "Foto_pivo_e_sensor.jpeg"
+                ],
+                // "tituloJustificativa" => "Justificativa",
+                // "textoJustificativa" => "Segundo o levantamento da Câmara Setorial de Equipamentos de Irrigação (CSEI, 2021), a área irrigada por pivôs no Brasil, aumentou em 209 mil e 249 mil hectares em 2019 e 2020, respectivamente, totalizando mais de 1,6 milhões de hectares. Esse constante aumento nas áreas irrigadas, gera uma pressão gigantesca sobre os já escassos recursos hídricos. A escassez hídrica, pelas baixas alturas pluviométricas registradas, se torna mais evidente nos períodos de estiagem quando, mesmo com sistemas de irrigação, falta água para irrigar as lavouras. Sistemas de irrigação por pivô são historicamente utilizados nas culturas de milho e soja, mas têm se espalhado para outras culturas nos últimos anos, como em frutíferas e pastagens. Tanto no Brasil, quanto no Estado do Rio Grande do Sul, a agricultura irrigada é responsável pelo uso de mais de 60% da água doce disponível. O constante crescimento nos custos de produção, o aumento da contaminação da água por agrotóxicos e a busca por maior produtividade, exercem pressão sobre o uso da água nos sistemas de irrigação, e são reflexo de irrigação não realizada ou excessiva. A falta de informações para a tomada de decisão, pela baixa adoção de sensores inteligentes, fundamentais para a gestão do uso da água, é uma das principais causas dos erros e desperdícios que acarretam aumento nos gastos de energia e diesel e levam nutrientes e agrotóxicos das lavouras para os rios, reduzindo a produtividade das lavouras e causando poluição ambiental. Para aumentar a eficiência no uso da água e de energia e reduzir o carreamento de nutrientes, é imprescindível a implementação de sistemas inteligentes de monitoramento e alertas para irrigação. Situação frequente no campo é a realização de irrigação desnecessária que compromete a gestão dos recursos do sistema de irrigação. Assim, ao se reduzir os desperdícios de água, possibilita-se que outros produtores rurais, possam implementar tecnologias como sistemas de irrigação nas suas lavouras, garantindo maior segurança e produtividade para a região. Estima-se que ao se evitar apenas duas irrigações (10 milímetros cada) por ano, considerando 27 produtores, com 1 pivô de irrigação de 80 hectares cada, deixasse de desperdiçar 432 milhões de litros de água. O projeto visa a implementar uma rede de sensores de umidade do solo, e por meio de uma plataforma sistematizar informações para tornar a região Noroeste e Missões do Estado do Rio Grande do Sul, referência Latino Americana na eficiência do uso da água em pivôs de irrigação. O projeto pretende distribuir 1 (um) sensor a cada dois ou três municípios da região, beneficiando diretamente produtores rurais. Com essa rede de sensores, será desenvolvida uma plataforma digital pública, que possibilitará processar e apresentar todas as informações da rede inteligente. Esse material estará disponível, para auxiliar na tomada de decisões de produtores, consultores e da sociedade civil que não foram diretamente beneficiados com a instalação dos sensores. Além dos dados da rede de sensores, outras fontes de dados serão integradas ao sistema, dando início a um rede colaborativa com informações em tempo real com detalhes e informações da região. A integração dessas informações em uma plataforma permitirá a geração de mapas temáticos diários, com as condições agrometeorológicas, a duração dos estresses e até mesmo estimativas da redução das produtividades.",
+                // "tituloObjetivosEspecíficos" => "Objetivos Específicos",
+                // "textoObjetivosEspecíficos-a" => "a) Selecionar produtores rurais para implementar uma rede inteligente de monitoramento e alertas para sistemas de irrigação;",
+                // "textoObjetivosEspecíficos-b" => "b) Desenvolver uma plataforma digital capaz de integrar os dados dos sensores com outras fontes de informações agrometeorológicas da região Noroeste e Missões; c) Desenvolver rotinas, na plataforma, capazes de gerar mapas temáticos com as informações, e tornar a geração de conteúdo útil para auxiliar na tomada de decisão dos produtores e demais pessoas ligadas ao agronegócio.",
+                // "textoObjetivosEspecíficos-c" => "c) Desenvolver rotinas, na plataforma, capazes de gerar mapas temáticos com as informações, e tornar a geração de conteúdo útil para auxiliar na tomada de decisão dos produtores e demais pessoas ligadas ao agronegócio.",
+                // "tituloEstrutura" => "Estrutura da Plataforma",
+                // "textoEstrutura" => "A seguir, apresentamos a estrutura da plataforma digital que será desenvolvida como parte deste projeto inovador. A plataforma tem como objetivo integrar e sistematizar as informações coletadas pelos sensores de umidade do solo, além de outros dados agrometeorológicos da região. Com uma interface intuitiva e amigável, a plataforma oferecerá diversas funcionalidades para os usuários, incluindo gráficos dinâmicos, mapas temáticos, e ferramentas de análise que auxiliarão produtores, consultores e pesquisadores na tomada de decisões mais informadas e eficientes sobre o uso da água em sistemas de irrigação. Esta seção detalha cada uma das páginas e funcionalidades que compõem a plataforma, destacando como cada elemento contribui para a gestão sustentável dos recursos hídricos na agricultura.",
             ]
         ],
-        "sobreData" => [
-            [
-                "titulo" => "Página \"Medições\"",
-                "texto" => "A página \"Medições\" apresenta uma lista de municípios com gráficos e tabelas das leituras dos dados coletados nas propriedades rurais de agricultores locais. Esses dados são essenciais para o monitoramento da umidade do solo.",
-                "rota" => "home"
-            ],
-            [
-                "titulo" => "Página \"Análise de Solo\"",
-                "texto" => "A página \"Análise de Solo\" fornece informações relevantes sobre análises de solo realizadas pelos laboratórios da UNIJUI. Essas análises contribuem para um melhor entendimento das propriedades do solo nas áreas de interesse.",
-                "rota" => "solo"
-            ],
-            [
-                "titulo" => "Página \"Apoiadores\"",
-                "texto" => "A página \"Apoiadores\" destaca as instituições parceiras que colaboram com o projeto. Ela inclui uma breve descrição sobre cada parceiro e fornece links para suas respectivas páginas. Além disso, são mencionados os agricultores/produtores rurais que forneceram os dados para as medições da umidade e dados do solo.",
-                "rota" => "apoiadores"
-            ],
-            [
-                "titulo" => "Página \"Equipe\"",
-                "texto" => "A página \"Equipe\" apresenta informações sobre os professores e programadores envolvidos no projeto. É uma forma de reconhecer e destacar a contribuição de cada membro da equipe para o sucesso do projeto.",
-                "rota" => "equipe"
-            ],
-            [
-                "titulo" => "Página \"Sobre\"",
-                "texto" => "A página \"Sobre\" contém uma descrição completa do projeto, abordando sua importância, objetivos e benefícios para a comunidade agrícola da região. É uma oportunidade de compartilhar mais detalhes sobre o trabalho desenvolvido.",
-                "rota" => "sobre"
-            ],
-            [
-                "titulo" => "Página \"Contato\"",
-                "texto" => "A página \"Contato\" permite que os usuários entrem em contato conosco para fazer perguntas, enviar feedback ou solicitar informações adicionais sobre o projeto e suas iniciativas. Estamos sempre disponíveis para ajudar e fornecer suporte.",
-                "rota" => "contato"
-            ]
-        ]
+        // "sobreData" => [
+        //     [
+        //         "titulo" => "Página \"Medições\"",
+        //         "texto" => "A página \"Medições\" apresenta uma lista de municípios com gráficos e tabelas das leituras dos dados coletados nas propriedades rurais de agricultores locais. Esses dados são essenciais para o monitoramento da umidade do solo.",
+        //         "rota" => "home"
+        //     ],
+        //     [
+        //         "titulo" => "Página \"Análise de Solo\"",
+        //         "texto" => "A página \"Análise de Solo\" fornece informações relevantes sobre análises de solo realizadas pelos laboratórios da UNIJUI. Essas análises contribuem para um melhor entendimento das propriedades do solo nas áreas de interesse.",
+        //         "rota" => "solo"
+        //     ],
+        //     [
+        //         "titulo" => "Página \"Projeto\"",
+        //         "texto" => "A página \"Projeto\" apresenta informações sobre os professores e programadores envolvidos no projeto. É uma forma de reconhecer e destacar a contribuição de cada membro da equipe para o sucesso do projeto.",
+        //         "rota" => "projeto"
+        //     ],
+        //     [
+        //         "titulo" => "Página \"Sobre\"",
+        //         "texto" => "A página \"Sobre\" contém uma descrição completa do projeto, abordando sua importância, objetivos e benefícios para a comunidade agrícola da região. É uma oportunidade de compartilhar mais detalhes sobre o trabalho desenvolvido.",
+        //         "rota" => "sobre"
+        //     ],
+        //     [
+        //         "titulo" => "Página \"Contato\"",
+        //         "texto" => "A página \"Contato\" permite que os usuários entrem em contato conosco para fazer perguntas, enviar feedback ou solicitar informações adicionais sobre o projeto e suas iniciativas. Estamos sempre disponíveis para ajudar e fornecer suporte.",
+        //         "rota" => "contato"
+        //     ]
+        // ]
     ];
 
 
