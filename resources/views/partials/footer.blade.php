@@ -8,7 +8,7 @@
 
 <footer class="page-footer blue">
     <div class="container">
-        <section class="row">
+        <section class="row align_center">
             <div class="col s12 m3 center-align">
                 <a href="https://unijui.edu.br" target="_blank">
                     <img src="https://www.unijui.edu.br/templates/template_unijui2016/images/logo-rodape-bco.png"
@@ -17,43 +17,22 @@
                 </a>
             </div>
 
-            <div class="col s12 m4 center-align">
-                <p><b>Contato</b><br>Escritório de Relações Universidade - Comunidade</p>
-                <p><i class="material-icons small">phone</i> <b>Telefones:</b><br>(55) 3332-0368</p>
-                <p><i class="material-icons small">email</i><b> Email:</b><br><a class="white-text"
-                        href="mailto:comunidade@unijui.edu.br">comunidade@unijui.edu.br</a></p>
+            <div class="col s12 m4 footer_info_wrapper">
+                <p><b>Escritório de Relações Universidade - Comunidade</b></p>
+                <p class="footer_info"><i class="material-icons small">phone</i> <b>Telefone: </b> (55) 3332-0368</p>
+                <p class="footer_info">
+                    <i class="material-icons small">email</i>
+                    <b> Email:</b>
+                    <a class="white-text"href="mailto:comunidade@unijui.edu.br">comunidade@unijui.edu.br</a>
+                </p>
             </div>
-            <div class="col s12 m5 center-align">
-                <div class="row">
-                    <div class="col s6">
-                        <ul>
-                            @foreach ($itens as $key => $item)
-                                @if($key < count($itens) / 2)
-                                    <li>
-                                        <a href="{{ route($rotas[$key]) }} " class="white-text">
-                                            <i class="{{ $icons[$key] }} fa-1x"></i><b>
-                                                {{ $item }}</b> <br>
-                                        </a>
-                                    </li>
-                                @endif
-                            @endforeach
-                        </ul>
-                    </div>
-                    <div class="col s6">
-                        <ul>
-                            @foreach ($itens as $key => $item)
-                                @if($key >= count($itens) / 2)
-                                    <li>
-                                        <a href="{{ route($rotas[$key]) }} " class="white-text">
-                                            <i class="{{ $icons[$key] }} fa-1x"></i><b>
-                                                {{ $item }}</b> <br>
-                                        </a>
-                                    </li>
-                                @endif
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
+            <div class="col s12 m5 footer_menu_links">
+                @foreach ($itens as $key => $item)
+                    <a href="{{ route($rotas[$key]) }}" class="footer_menu_link">
+                        <i class="{{ $icons[$key] }} fa-1x"></i>
+                        <b>{{ $item }}</b>
+                    </a>
+                @endforeach
             </div>
         </section>
     </div>
