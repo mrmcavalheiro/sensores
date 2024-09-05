@@ -9,7 +9,7 @@ class SoloController extends Controller
 {
     public static $paginaSolo = [
         "tituloPagina" => "Análise de Solo",
-        "tituloAnaliseFisica" => "Análises químicas e físicas das amostras de solos nas propriedades do projeto inova",
+        "tituloAnaliseFisica" => "Análises químicas e físicas das amostras de solos nas propriedades do projeto INOVA",
         "tituloAnalises" => "ANÁLISES QUÍMICAS",
         "tituloFisicas" => "ANÁLISES FÍSICAS",
         "apresentacao" => "Veja abaixo os resultados das análises de solo realizadas em diferentes municípios.",
