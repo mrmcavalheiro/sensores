@@ -1,92 +1,140 @@
-<div class="row container">
+<div class="row container center-align">
     <section class="center-align">
         <p class="flow-text text-center black-text">
-            Relação de municípios e análises de solo
+            {{ \App\Http\Controllers\SoloController::$paginaSolo['tituloAnaliseFisica'] }} <br>
         </p>
-    </section>
-
-    <div class="col s12 p0">
-        <ul class="collapsible">
-            @foreach (\App\Http\Controllers\SoloController::$paginaSolo[0]['municipios'] as $municipio)
-            <li>
-                <div class="collapsible-header">
-                    <div class="row m0 w100">
-                        <div class="col s11">
-                            <b>{{ $municipio['nomeMunicipio'] }}</b>
-                            <span class="total-analises">({{ $municipio['totalAnalise'] }} análises)</span>
+        <div class="col s12 p0">
+            <ul class="collapsible">
+                @foreach ($regioes as $regiao_nome => $municipios)
+                    <li>
+                        <div class="collapsible-header" style="background: linear-gradient(90deg, #b3cde0, #6497b1);">
+                            <div class="row m0 w100">
+                                <div class="col s11">
+                                    <b>Região: {{ $regiao_nome }}</b>
+                                </div>
+                                <div class="col s1">
+                                    <i class="material-icons arrow_not_active">keyboard_arrow_down</i>
+                                    <i class="material-icons arrow_active">keyboard_arrow_up</i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col s1">
-                            <i class="material-icons arrow_not_active">keyboard_arrow_down</i>
-                            <i class="material-icons arrow_active">keyboard_arrow_up</i>
-                        </div>
-                    </div>
-                </div>
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                @foreach ($municipios->groupBy('municipio_nome') as $municipio_nome => $produtores)
+                                    <li>
+                                        <div class="collapsible-header" style="background: linear-gradient(90deg, #b3e0f2, #66b2d6);">
+                                            <div class="row m0 w100">
+                                                <div class="col s11">
+                                                    <b>Município: {{ $municipio_nome }}</b>
+                                                </div>
+                                                <div class="col s1">
+                                                    <i class="material-icons arrow_not_active">keyboard_arrow_down</i>
+                                                    <i class="material-icons arrow_active">keyboard_arrow_up</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapsible-body">
+                                            <ul class="collapsible">
+                                                @foreach ($produtores->groupBy('produtor_nome') as $produtor_nome => $analises)
+                                                    <li>
+                                                        <div class="collapsible-header" style="background: linear-gradient(90deg, #b3e6f9, #33c4e6);">
+                                                            <div class="row m0 w100">
+                                                                <div class="col s11">
+                                                                    <b>Produtor: {{ $produtor_nome }} ({{ $analises->first()->nome_fantasia }})</b>
+                                                                </div>
+                                                                <div class="col s1">
+                                                                    <i class="material-icons arrow_not_active">keyboard_arrow_down</i>
+                                                                    <i class="material-icons arrow_active">keyboard_arrow_up</i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapsible-body">
+                                                            <div class="row">
+                                                                <div class="col s12">
+                                                                    <ul class="tabs">
+                                                                        <li class="tab col s6"><a href="#analise_quimica_{{ $loop->parent->parent->index }}_{{ $loop->index }}">Análise Química</a></li>
+                                                                        <li class="tab col s6"><a href="#analise_fisica_{{ $loop->parent->parent->index }}_{{ $loop->index }}">Análise Física</a></li>
+                                                                    </ul>
+                                                                </div>
 
+                                                                <!-- Conteúdo da Análise Química -->
+                                                                <div id="analise_quimica_{{ $loop->parent->parent->index }}_{{ $loop->index }}" class="col s12">
+                                                                    <table class="highlight responsive-table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Parâmetro</th>
+                                                                                <th>Unidade</th>
+                                                                                <th>0-20 cm</th>
+                                                                                <th>20-40 cm</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr><td>Argila</td><td>%</td><td>{{ $analises->first()->argila_quimica_0_20 }}</td><td>{{ $analises->first()->argila_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>pH</td><td></td><td>{{ $analises->first()->ph_quimica_0_20 }}</td><td>{{ $analises->first()->ph_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Fósforo</td><td>mg/dm³</td><td>{{ $analises->first()->fosforo_quimica_0_20 }}</td><td>{{ $analises->first()->fosforo_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Potássio</td><td>mg/dm³</td><td>{{ $analises->first()->potassio_quimica_0_20 }}</td><td>{{ $analises->first()->potassio_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Matéria Orgânica</td><td>%</td><td>{{ $analises->first()->materia_organica_quimica_0_20 }}</td><td>{{ $analises->first()->materia_organica_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Alumínio</td><td>cmolc/dm³</td><td>{{ $analises->first()->aluminio_quimica_0_20 }}</td><td>{{ $analises->first()->aluminio_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Cálcio</td><td>cmolc/dm³</td><td>{{ $analises->first()->calcio_quimica_0_20 }}</td><td>{{ $analises->first()->calcio_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Magnésio</td><td>cmolc/dm³</td><td>{{ $analises->first()->magnesio_quimica_0_20 }}</td><td>{{ $analises->first()->magnesio_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Ca/Mg</td><td> </td><td>{{ $analises->first()->ca_mg_quimica_0_20 }}</td><td>{{ $analises->first()->ca_mg_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>H + Al</td><td>cmolc/dm³</td><td>{{ $analises->first()->h_al_quimica_0_20 }}</td><td>{{ $analises->first()->h_al_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Cobre</td><td>mg/dm³</td><td>{{ $analises->first()->cobre_quimica_0_20 }}</td><td>{{ $analises->first()->cobre_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Zinco</td><td>mg/dm³</td><td>{{ $analises->first()->zinco_quimica_0_20 }}</td><td>{{ $analises->first()->zinco_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Manganês</td><td>mg/dm³</td><td>{{ $analises->first()->manganes_quimica_0_20 }}</td><td>{{ $analises->first()->manganes_quimica_20_40 }}</td></tr>
+                                                                            <tr><td>Enxofre</td><td>mg/dm³</td><td>{{ $analises->first()->enxofre_quimica_0_20 }}</td><td>{{ $analises->first()->enxofre_quimica_20_40 }}</td></tr>
+                                                                            <!-- Adicione outros parâmetros químicos conforme necessário -->
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
 
-                <div class="collapsible-body">
-                    <div class="responsive-table">
-                        <table class="striped">
-                            <thead>
-                                <tr>
-                                    <th>Informações da Análise</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($municipio['analises'] as $analise)
-                                <tr>
-                                    <td>
-                                        <div>
-                                            <strong>Textura do Solo:</strong> {{ $analise['textura_solo'] }}
-                                        </div>
-                                        <div>
-                                            <strong>pH do Solo:</strong> {{ $analise['ph_solo'] }}
-                                        </div>
-                                        <div>
-                                            <strong>Matéria Orgânica:</strong> {{ $analise['materia_organica'] }}
-                                        </div>
-                                        <div>
-                                            <strong>Capacidade de Troca de Cátions:</strong> {{ $analise['capacidade_troca_cations'] }}
-                                        </div>
-                                        <div>
-                                            <strong>Teores de Nutrientes:</strong>
-                                            <ul>
-                                                @foreach ($analise['teores_nutrientes'] as $nutriente => $valor)
-                                                <li>
-                                                    <span class="subitem-marker">&bull;</span> {{ ucfirst($nutriente) }}: {{ $valor }}
-                                                </li>
+                                                                <!-- Conteúdo da Análise Física -->
+                                                                <div id="analise_fisica_{{ $loop->parent->parent->index }}_{{ $loop->index }}" class="col s12">
+                                                                    <table class="highlight responsive-table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Parâmetro</th>
+                                                                                <th>Unidade</th>
+                                                                                <th>0-20 cm</th>
+                                                                                <th>20-40 cm</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr><td>Areia</td><td>%</td><td>{{ $analises->first()->areia_fisica_0_20 }}</td><td>{{ $analises->first()->areia_fisica_20_40 }}</td></tr>
+                                                                            <tr><td>Argila</td><td>%</td><td>{{ $analises->first()->argila_fisica_0_20 }}</td><td>{{ $analises->first()->argila_fisica_20_40 }}</td></tr>
+                                                                            <tr><td>Silte</td><td>%</td><td>{{ $analises->first()->silte_fisica_0_20 }}</td><td>{{ $analises->first()->silte_fisica_20_40 }}</td></tr>
+                                                                            <tr><td>Tipo do Solo</td><td></td><td>{{ $analises->first()->tipo_solo_fisica_0_20 }}</td><td>{{ $analises->first()->tipo_solo_fisica_20_40 }}</td></tr>
+                                                                            <tr><td>Classe Textural</td><td></td><td>{{ $analises->first()->classe_textural_fisica_0_20 }}</td><td>{{ $analises->first()->classe_textural_fisica_20_40 }}</td></tr>
+                                                                            <tr><td>AD Predita</td><td></td><td>{{ $analises->first()->ad_predita_fisica_0_20 }}</td><td>{{ $analises->first()->ad_predita_fisica_20_40 }}</td></tr>
+                                                                            <tr><td>Classe AD</td><td></td><td>{{ $analises->first()->classe_ad_fisica_0_20 }}</td><td>{{ $analises->first()->classe_ad_fisica_20_40 }}</td></tr>
+                                                                            <tr><td>AD2</td><td></td><td>{{ $analises->first()->ad2_fisica_0_20 }}</td><td>{{ $analises->first()->ad2_fisica_20_40 }}</td></tr>
+                                                                            <!-- Adicione outros parâmetros físicos conforme necessário -->
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
                                                 @endforeach
                                             </ul>
                                         </div>
-                                        <div>
-                                            <strong>Teor de Matéria Seca:</strong> {{ $analise['teor_materia_seca'] }}
-                                        </div>
-                                        <div>
-                                            <strong>Teor de Carbono Orgânico:</strong> {{ $analise['teor_carbono_organico'] }}
-                                        </div>
-                                        <div>
-                                            <strong>Densidade do Solo:</strong> {{ $analise['densidade_solo'] }}
-                                        </div>
-                                        <div>
-                                            <strong>Porosidade do Solo:</strong> {{ $analise['porosidade_solo'] }}
-                                        </div>
-                                        <div>
-                                            <strong>Condutividade Elétrica:</strong> {{ $analise['condutividade_eletrica'] }}
-                                        </div>
-                                    </td>
-                                </tr>
+                                    </li>
                                 @endforeach
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </li>
-            @endforeach
-        </ul>
-    </div>
+                            </ul>
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </section>
 </div>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const elems = document.querySelectorAll('.collapsible');
-        const instances = M.Collapsible.init(elems, { accordion: true });
+        var elems = document.querySelectorAll('.tabs');
+        var instances = M.Tabs.init(elems);
+
+        var collapsibles = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(collapsibles);
     });
 </script>

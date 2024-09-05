@@ -33,6 +33,7 @@ import shutil
 from prettytable import PrettyTable
 from datetime import datetime
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 import subprocess
 import xml.etree.ElementTree as ET
 

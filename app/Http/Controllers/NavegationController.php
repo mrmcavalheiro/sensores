@@ -42,11 +42,11 @@ class NavegationController extends Controller
     public function solo()
     {
         $soloController = new SoloController();
-        $soloController::loadSoloData(); // Carrega os dados de análise de solo
-
-        return view('site.solo', compact('soloController'));
+        $data = $soloController->loadSoloData(); // Carrega os dados de análise de solo
+    
+        return view('site.solo', compact('data'));
     }
-
+    
     //Pagina de Equipe
     public function equipe()
     {
