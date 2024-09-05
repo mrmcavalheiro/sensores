@@ -743,9 +743,16 @@ ul li {
     color: #1e88e5; /* cor azul ou qualquer outra de sua preferência */
 }
 
-.apoiador_main_container {
+.realizador_main_container {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apoiador_main_container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
 }

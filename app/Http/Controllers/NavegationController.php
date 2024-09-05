@@ -60,10 +60,11 @@ class NavegationController extends Controller
     public function projeto()
     {
         $apoiadores = \App\Models\SistemaGlobal::$paginaApoiadores[0]['apoiadores'];
+        $realizadores = \App\Models\SistemaGlobal::$paginaRealizadores[0]['realizadores'];
         $equipeController = new EquipeController();
         $equipe = $equipeController->getEquipeData();
         SistemaGlobal::loadEquipeData();
-        return view('site.projeto', compact('apoiadores'), compact('equipe'));
+        return view('site.projeto', compact('realizadores'), compact('apoiadores'));
     }
 
 }

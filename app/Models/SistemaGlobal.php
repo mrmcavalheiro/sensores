@@ -14,24 +14,24 @@ class SistemaGlobal extends Model
 
     public static $Menu = [
         "itens" => [
-            "Medições",
+            "Sobre",
+            "Equipe",
+            // "Medições",
             "Análise de Solo",
-            "Projeto",
-            "Sobre", 
             "Contato"
         ],
         "icons" => [
-            "fas fa-tachometer-alt",
-            "fas fa-globe",   
-            "fas fa-users",         
             "fas fa-info-circle",   
+            "fas fa-users",
+            // "fas fa-tachometer-alt",
+            "fas fa-globe",
             "fas fa-envelope"
         ],
         "rotas" => [
-            "home",
-            "solo",
-            "projeto",
             "sobre",
+            "projeto",
+            // "home",
+            "solo",
             "contato"
         ]
     ];
@@ -105,7 +105,7 @@ class SistemaGlobal extends Model
 
     public static $paginaEquipe = [
         [
-            "tituloPagina" => "Equipe de Projeto",
+            "tituloPagina" => "Equipe Científica",
             "apresentacao" => "Conheça nossa equipe de especialistas que trabalham duro para fornecer soluções inovadoras no campo da coleta de umidade do solo.",
             'membros' => [
                 [
@@ -195,38 +195,65 @@ class SistemaGlobal extends Model
             "tituloPagina" => "Apoiadores",
             "apresentacao" => "Conheça nossos apoiadores e patrocinadores que nos apoiam no desenvolvimento deste projeto inovador de coleta de umidade do solo.",
             "apoiadores" =>             [
+                // [
+                //     'nome' => "UNIJUI (Universidade Regional do Noroeste do Estado do Rio Grande do Sul)",
+                //     'descricao' => "A UNIJUI é uma instituição de ensino superior renomada, localizada no Estado do Rio Grande do Sul, Brasil. 
+                //       <br>Com forte ênfase em pesquisa e inovação, a universidade oferece uma ampla gama de cursos de graduação e pós-graduação em diversas áreas do conhecimento. 
+                //       <br>A UNIJUI se destaca por sua atuação na integração entre ensino, pesquisa e extensão, promovendo o desenvolvimento regional e contribuindo significativamente para o avanço científico e tecnológico. 
+                //       <br>No projeto de rede de sensores para monitoramento de sistemas de irrigação, a UNIJUI atua como a principal instituição acadêmica, fornecendo expertise e apoio técnico através de seus pesquisadores e professores.",
+                //     'website' => "https://www.unijui.edu.br/",
+                //     'logo' => 'unijui.jpg',
+                //     'imageOrientation' => 'vertical',
+                // ],
+                [
+                    'nome' => "FOCKINK INDÚSTRIAS ELÉTRICAS LTDA",
+                    // 'descricao' => "A FOCKINK INDÚSTRIAS ELÉTRICAS LTDA é uma empresa líder na fabricação de equipamentos elétricos no Brasil, com uma forte presença no mercado nacional e internacional. 
+                    // <br>A empresa é reconhecida por seu compromisso com a qualidade, inovação e sustentabilidade. A FOCKINK tem uma longa história de colaboração com instituições de pesquisa e desenvolvimento, contribuindo para projetos que visam a melhoria da eficiência energética e a implementação de tecnologias avançadas.
+                    // <br>No contexto do projeto de rede de sensores, a FOCKINK participa fornecendo suporte técnico e expertise em sensoriamento e conservação de recursos, ajudando a tornar a iniciativa uma referência em eficiência no uso da água em sistemas de irrigação.",
+                    'website' => "https://www.fockink.ind.br/",
+                    'logo' => 'fockink.png',
+                    'imageOrientation' => 'horizontal',
+                ],  
+                [
+                    'nome' => "Crops Team",
+                    // 'descricao' => "
+                    // A Crops Team é uma empresa que une a pesquisa e o conhecimento científico para gerar soluções tecnológicas para produtores rurais e empresas do agronegócio.
+                    // <br>Através de ferramentas digitais e análise de dados fornecemos consultoria personalizada à produtores e empresas do agronegócio na quantificação da eficiência produtiva e identificação dos fatores que afetam a produção de grãos.
+                    // <br>Nossa Equipe composta por mestres e doutores em agronomia, ciências do solo, Ecofisiologia, engenharia agrícola, hidrologia e agrometeorologia, possui o know-how para unir modelagem de cultivos com análise de big data, bem como desenvolver modelos de cultivos e modelos preditivos
+                    // <br>Sua trajetória começou em 1947. Em 2022 completaram 75 anos de história, sendo sempre comprometidos com a excelência dos serviços prestados conforme a ideologia de seu fundador, Alfredo Arnaldo Fockink, aonde 'a melhor propaganda é o serviço'. É uma empresa familiar, 100% brasileira, sólida e bem estruturada que a torna referência nos segmentos em que atuam. Através do slogan, geramos soluções e integramos tecnologias. Desenvolvem Sistemas de Irrigação, Sistemas de Geração Fotovoltaica, Sistemas de Termometria e Aeração, Sistemas de Biogás, Estações de Carregamento Elétrico, Subestações, Painéis Elétricos e Automação, Instalações Eletromecânicas e Painéis e Caixas Metálicas Vazias, tudo isso gerido através de uma plataforma inteligente chamada Fockink IoT.
+                    // ",
+                    'website' => "https://www.cropsteam.com/",
+                    'logo' => 'cropsteam.jpeg',
+                    'imageOrientation' => 'horizontal',
+                ],
+            ]
+            
+        ]
+        
+    ];
+    public static $paginaRealizadores = [
+        [
+            "tituloPagina" => "Realização",
+            "apresentacao" => "Conheça nossos apoiadores e patrocinadores que nos apoiam no desenvolvimento deste projeto inovador de coleta de umidade do solo.",
+            "realizadores" =>             [
                 [
                     'nome' => "UNIJUI (Universidade Regional do Noroeste do Estado do Rio Grande do Sul)",
-                    'descricao' => "A UNIJUI é uma instituição de ensino superior renomada, localizada no Estado do Rio Grande do Sul, Brasil. 
-                      <br>Com forte ênfase em pesquisa e inovação, a universidade oferece uma ampla gama de cursos de graduação e pós-graduação em diversas áreas do conhecimento. 
-                      <br>A UNIJUI se destaca por sua atuação na integração entre ensino, pesquisa e extensão, promovendo o desenvolvimento regional e contribuindo significativamente para o avanço científico e tecnológico. 
-                      <br>No projeto de rede de sensores para monitoramento de sistemas de irrigação, a UNIJUI atua como a principal instituição acadêmica, fornecendo expertise e apoio técnico através de seus pesquisadores e professores.",
                     'website' => "https://www.unijui.edu.br/",
                     'logo' => 'unijui.jpg',
                     'imageOrientation' => 'vertical',
                 ],
                 [
-                    'nome' => "FOCKINK INDÚSTRIAS ELÉTRICAS LTDA",
-                    'descricao' => "A FOCKINK INDÚSTRIAS ELÉTRICAS LTDA é uma empresa líder na fabricação de equipamentos elétricos no Brasil, com uma forte presença no mercado nacional e internacional. 
-                    <br>A empresa é reconhecida por seu compromisso com a qualidade, inovação e sustentabilidade. A FOCKINK tem uma longa história de colaboração com instituições de pesquisa e desenvolvimento, contribuindo para projetos que visam a melhoria da eficiência energética e a implementação de tecnologias avançadas.
-                    <br>No contexto do projeto de rede de sensores, a FOCKINK participa fornecendo suporte técnico e expertise em sensoriamento e conservação de recursos, ajudando a tornar a iniciativa uma referência em eficiência no uso da água em sistemas de irrigação.",
-                    'website' => "https://www.unijui.edu.br/",
-                    'logo' => 'fockink.png',
+                    'nome' => "Secretaria de Inovação, Ciência e Tecnologia",
+                    'website' => "https://sict.rs.gov.br/inicial",
+                    'logo' => 'sict_rs.png',
                     'imageOrientation' => 'horizontal',
                 ],  
-  
                 [
-                    'nome' => "Crops Team",
-                    'descricao' => "
-                    A Crops Team é uma empresa que une a pesquisa e o conhecimento científico para gerar soluções tecnológicas para produtores rurais e empresas do agronegócio.
-                    <br>Através de ferramentas digitais e análise de dados fornecemos consultoria personalizada à produtores e empresas do agronegócio na quantificação da eficiência produtiva e identificação dos fatores que afetam a produção de grãos.
-                    <br>Nossa Equipe composta por mestres e doutores em agronomia, ciências do solo, Ecofisiologia, engenharia agrícola, hidrologia e agrometeorologia, possui o know-how para unir modelagem de cultivos com análise de big data, bem como desenvolver modelos de cultivos e modelos preditivos
-                    <br>Sua trajetória começou em 1947. Em 2022 completaram 75 anos de história, sendo sempre comprometidos com a excelência dos serviços prestados conforme a ideologia de seu fundador, Alfredo Arnaldo Fockink, aonde 'a melhor propaganda é o serviço'. É uma empresa familiar, 100% brasileira, sólida e bem estruturada que a torna referência nos segmentos em que atuam. Através do slogan, geramos soluções e integramos tecnologias. Desenvolvem Sistemas de Irrigação, Sistemas de Geração Fotovoltaica, Sistemas de Termometria e Aeração, Sistemas de Biogás, Estações de Carregamento Elétrico, Subestações, Painéis Elétricos e Automação, Instalações Eletromecânicas e Painéis e Caixas Metálicas Vazias, tudo isso gerido através de uma plataforma inteligente chamada Fockink IoT.
-                    ",
-                    'website' => "https://www.unijui.edu.br/",
-                    'logo' => 'corpsteam.jpeg',
+                    'nome' => "Inova RS",
+                    'website' => "https://sict.rs.gov.br/programa-inovars",
+                    'logo' => 'inova_rs.png',
                     'imageOrientation' => 'horizontal',
-                ],    
+                ],
      
             ]
             

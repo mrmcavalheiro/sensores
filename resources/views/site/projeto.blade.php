@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title','Página Projeto')
+@section('title','Página Equipe')
 @section('content')
     <div class="projeto_container">
         {{-- cards-Equipe --}}
@@ -13,6 +13,12 @@
         
         {{-- cards-Equipe de desenvolvimento --}}
         @include('partials.projeto.membros')
+        
+        {{-- Apresentação dos realizadores --}}
+        @include('partials.realizadores.apresentacao')
+        
+        {{-- Cards dos realizadores --}}
+        @include('partials.realizadores.realizadores')
         
         {{-- Apresentação dos apoiadores --}}
         @include('partials.apoiadores.apresentacao')
