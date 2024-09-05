@@ -64,13 +64,18 @@ class ChartController extends Controller
         // Construir a consulta
         Log::info('Start date calculado', ['startDate' => $startDate]);
 
-        // Construir a consulta
+        // Construir a consulta de médias diárias para a região e o período
         $query = DB::table('region_daily_averages')
             ->where('region_id', $regionId)
             ->whereDate('date_BR', '>=', $startDate)
-            ->select(DB::raw("DATE_FORMAT(date_BR, '%d/%m/%Y') as date_BR"), DB::raw('AVG(avg_soil_vwc_s1) as avg_soil_vwc_s1'), DB::raw('AVG(avg_soil_vwc_s2) as avg_soil_vwc_s2'))
-            ->groupBy(DB::raw("DATE_FORMAT(date_BR, '%d/%m/%Y')"))
-            ->orderBy('date_BR');
+            ->select(
+                'date_BR',                                      // Data original do banco de dados
+                DB::raw('AVG(avg_soil_vwc_s1) as avg_soil_vwc_s1'),  // Média VWC Sensor 1
+                DB::raw('AVG(avg_soil_vwc_s2) as avg_soil_vwc_s2')   // Média VWC Sensor 2
+            )
+            ->groupBy('date_BR')                                 // Agrupar pela data original
+            ->orderBy('date_BR');                                // Ordenar por data
+
 
         log::info('Consulta SQL construída', ['query' => $query]);  
 

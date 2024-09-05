@@ -1,2 +1,0 @@
-"Projeto de Sensores" 
-"# sensores" 
