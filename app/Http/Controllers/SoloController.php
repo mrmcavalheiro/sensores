@@ -96,7 +96,7 @@ class SoloController extends Controller
             ->groupBy('regiao_nome');
     
         Log::info('----------------------------------------------------------------------------');
-        Log::info('Dados agrupados por região', ['regioes' => $regioes]);
+        Log::info('1 - Dados agrupados por região', ['regioes' => $regioes]);
         Log::info('----------------------------------------------------------------------------');
     
         return $regioes;
@@ -108,7 +108,7 @@ class SoloController extends Controller
         // Carregar os dados da consulta
         $regioes = $this->loadSoloData();
         Log::info('----------------------------------------------------------------------------');
-        log::info('Dados das regi%C3%B5es carregados:', ['regioes' => $regioes]);
+        log::info('2 - Dados das regi%C3%B5es carregados:', ['regioes' => $regioes]);
         Log::info('----------------------------------------------------------------------------');
         // Validação simples para garantir que os dados estão sendo carregados
         if (empty($regioes)) {
