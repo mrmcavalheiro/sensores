@@ -16,6 +16,10 @@
     align-items: center !important;
 }
 
+.align_self_center {
+    align-self: center !important;
+}
+
 .m0 {
     margin: 0 !important;
 }
@@ -419,6 +423,30 @@ ul li a:hover,
 .sidenav li a.active {
     font-weight: bold; /* Negrito para o item ativo */
     border-bottom: 2px solid #fff; /* Borda inferior para o item ativo */
+}
+
+.regioes_wrapper {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.regiao_wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.regiao_cor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.regiao_nome {
+    width: calc(100% - 28px);
 }
 
 .equipe-container {

@@ -70,7 +70,7 @@ class NavegationController extends Controller
         $equipeController = new EquipeController();
         $equipe = $equipeController->getEquipeData();
         SistemaGlobal::loadEquipeData();
-        return view('site.projeto', compact('realizadores'), compact('apoiadores'));
+        return view('site.projeto', compact('realizadores', 'apoiadores', 'equipe'));
     }
 
 }
