@@ -95,7 +95,7 @@ class SoloController extends Controller
             ->get()
             ->groupBy('regiao_nome');
     
-        Log::info('----------------------------------------------------------------------------');
+        Log::info('------------------ public function loadSoloData() --------------------------');
         Log::info('1 - Dados agrupados por região', ['regioes' => $regioes]);
         Log::info('----------------------------------------------------------------------------');
     
@@ -112,7 +112,7 @@ class SoloController extends Controller
         Log::info('----------------------------------------------------------------------------');
         // Validação simples para garantir que os dados estão sendo carregados
         if (empty($regioes)) {
-            Log::warning('Nenhum dado encontrado para as regiões.');
+            Log::warning('Nenhum dado encontrado para as regiões. Arquivo: public function solo()');
         }
     
         // Passar os dados para a view
