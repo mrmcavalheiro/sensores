@@ -227,11 +227,15 @@ table thead th {
     position: absolute;
     left: 90px;
     top: -12px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .top_banner_nota_maxima {
     width: 134px;
     height: 149px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 #nav-main li a,
@@ -1183,6 +1187,21 @@ ul li {
 }
 
 @media (max-width: 480px) {
+    nav .nav-warpper a.brand-logo {
+        font-size: 1.5em;
+        position: relative;
+        left: 0;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .top_banner_nota_maxima_wrapper {
+        left: 95px;
+        top: 25px;
+    }
+    .top_banner_nota_maxima {
+        width: 89px;
+        height: 99px;
+    }
     .period-title {
         font-size: 1em;
     }
