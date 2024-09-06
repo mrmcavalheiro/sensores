@@ -1,7 +1,5 @@
 <div class="row container">
-    <p class="flow-text black-text">
-        {{ \App\Http\Controllers\SoloController::$paginaSolo['tituloAnaliseFisica'] }} <br>
-    </p>
+    <h5 class="bold">{{ \App\Http\Controllers\SoloController::$paginaSolo['tituloAnaliseFisica'] }}</h5>
     <div class="col s12 p0">
         <ul class="collapsible collapsible_b1">
             @foreach ($regioes as $regiao_nome => $municipios)
