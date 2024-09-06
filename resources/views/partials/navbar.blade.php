@@ -34,13 +34,18 @@
                             title='{{ config('app.name') }}'>
                     </div>
                     {{-- <a href="#user"><img class="circle" src="images/yuna.jpg"></a> --}}
-                    <a href="#name"><span class="white-text name"><b>{{ config('app.name') }}</b></span></a>
+                    <a href="#name"><span class="white-text name m0 line_height_big"><b>{{ config('app.name') }}</b></span></a>
                     {{-- <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a> --}}
                 </div>
              </li>
 
-            <li><a href="#!">Menu</a></li>
             <li><div class="divider"></div></li>
+            <li>
+                <a href="{{ route($rotaPrincipal) }}">
+                    <i class="fas fa-home fa-1x blue-text text-lighten-4"></i><b>
+                    Home</b> <br>
+                </a>
+            </li>
             @foreach ($itens as $key => $item)
                 <li>
                     <a href="{{ route($rotas[$key]) }}" class="{{ Request::routeIs($rotas[$key]) ? 'active' : '' }}">

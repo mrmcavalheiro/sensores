@@ -749,6 +749,14 @@ ul li a:hover,
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .main_chart_wrapper h3 {
+        font-size: 1.5rem;
+    }
+
+    .main_chart_wrapper h4 {
+        font-size: 1.2rem;
+    }
+
     .nav-wrapper .brand-logo {
         font-size: 1em;
     }
@@ -776,6 +784,14 @@ ul li a:hover,
     .region-menu-container,
     .period-menu-container {
         margin-bottom: 20px;
+    }
+
+    .main_chart_selectors {
+        flex-direction: column;
+    }
+
+    .main_chart_selectors ul {
+        max-width: 90%;
     }
 }
 

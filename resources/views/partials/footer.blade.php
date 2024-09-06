@@ -8,7 +8,7 @@
 
 <footer class="page-footer blue">
     <div class="container">
-        <section class="row align_center">
+        <section class="row align_center gap16">
             <div class="col s12 m3 center-align">
                 <a href="https://unijui.edu.br" target="_blank">
                     <img src="https://www.unijui.edu.br/templates/template_unijui2016/images/logo-rodape-bco.png"
