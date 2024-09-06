@@ -39,7 +39,7 @@
                                                     <div class="collapsible-header collapsible_header_b3">
                                                         <div class="row m0 w100">
                                                             <div class="col s11">
-                                                                <b>Produtor: {{ $produtor_nome }} ({{ $analises->first()->nome_fantasia }})</b>
+                                                                <b>{{ $analises->first()->nome_fantasia }}</b>
                                                             </div>
                                                             <div class="col s1">
                                                                 <i class="material-icons arrow_not_active">keyboard_arrow_down</i>
