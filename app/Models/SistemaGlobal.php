@@ -137,21 +137,6 @@ class SistemaGlobal extends Model
                     'foto' => 'Mauricio.jpg',
                     'lattes' => 'http://lattes.cnpq.br/7207601062237405'
                 ],
-                [
-                    'nome' => 'Fabiana Simon',
-                    'title' => 'Coordenadora do Núcleo de Pesquisa',
-                    'descricao' => 'Graduada em Ciências Econômicas, Especialista em Comércio Exterior e Gestão de Instituições de Ensino Superior. Coordenadora do núcleo de Pesquisa, Desenvolvimento Tecnológico e Inovação da Agência de Inovação e Tecnologia da UNIJUÍ.',
-                    'foto' => 'Fabiana.jpg',
-                    'lattes' => 'http://lattes.cnpq.br/7497387209067432'
-                ],
-                [
-                    'nome' => 'Eng.º Agrº Matheus Guilherme Libardoni Meotti',
-                    'title' => 'Analista de Pesquisa e Desenvolvimento',
-                    'descricao' => 'Engenheiro Agrônomo, Mestre em Sistemas Ambientais e Sustentabilidade, Doutorando em Engenharia Agrícola. Experiência em sensoriamento para conservação de grãos.',
-                    'foto' => 'Mateus.jpeg',
-                    'lattes' => 'http://lattes.cnpq.br/0370883124256890'
-                ],
-
             ]      
         ]
     ];
