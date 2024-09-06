@@ -28,6 +28,10 @@
     padding: 0 !important;
 }
 
+.line_height_big {
+    line-height: 48px;
+}
+
 .descricao-textarea {
     height: 300px; /* Ajuste a altura desejada */
     min-height: 300px; /* Define a altura mínima */
@@ -223,11 +227,15 @@ table thead th {
     position: absolute;
     left: 90px;
     top: -12px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .top_banner_nota_maxima {
     width: 134px;
     height: 149px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 #nav-main li a,
@@ -311,7 +319,6 @@ ul li a:hover,
 }
 
 .page-footer .white-text {
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -1004,6 +1011,12 @@ ul li {
     padding-top: 24px;
 }
 
+.footer_container {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .footer_info_wrapper {
     display: flex;
     flex-direction: column;
@@ -1083,6 +1096,22 @@ ul li {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .hide_on_mobile {
+        display: none;
+    }
+
+    h3 {
+        font-size: 1.5em !important;
+    }
+
+    h4 {
+        font-size: 1.2em !important;
+    }
+
+    .membro-card h4 {
+        font-size: 1.4em !important;
+    }
+
     .nav-wrapper .brand-logo {
         font-size: 1em;
     }
@@ -1091,10 +1120,6 @@ ul li {
     }
     .equipe-container {
         grid-template-columns: 1fr;
-    }
-    .membro-card {
-        flex: 1 1 calc(100% - 40px);
-        max-width: calc(100% - 40px);
     }
     .card-image img {
         max-width: 100px; /* Ajuste conforme necessário */
@@ -1151,14 +1176,46 @@ ul li {
     .boletins_wrapper {
         grid-template-columns: 1fr 1fr;
     }
+
+    .footer_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer_container :nth-child(1) {
+        grid-column: 1 / span 2;
+    }
 }
 
 @media (max-width: 480px) {
+    nav .nav-warpper a.brand-logo {
+        font-size: 1.5em;
+        position: relative;
+        left: 0;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .top_banner_nota_maxima_wrapper {
+        left: 95px;
+        top: 25px;
+    }
+    .top_banner_nota_maxima {
+        width: 89px;
+        height: 99px;
+    }
     .period-title {
         font-size: 1em;
     }
     .period-menu li a {
         padding: 6px 8px;
         font-size: 0.8em;
+    }
+    .boletins_wrapper {
+        grid-template-columns: 1fr;
+    }
+    .footer_container {
+        grid-template-columns: 1fr;
+    }
+    .footer_container :nth-child(1) {
+        grid-column: 1;
     }
 }
