@@ -27,11 +27,17 @@ Route::post('/contato', [SendMailController::class, 'contato'])->name('novoconta
 // Pagina Principal
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+// Pagina projeto
+Route::get('/projeto', [NavegationController::class, 'projeto'])->name('projeto');
+
 // Pagina apoiadores
-Route::get('/apoiadores', [NavegationController::class, 'apoiadores'])->name('apoiadores');
+// Route::get('/apoiadores', [NavegationController::class, 'apoiadores'])->name('apoiadores');
 
 // Pagina Sobre
 Route::get('/sobre', [NavegationController::class, 'sobre'])->name('sobre');
+
+// Pagina Boletins
+Route::get('/boletins', [NavegationController::class, 'boletins'])->name('boletins');
 
 // Pagina Análise de Solo
 //Route::get('/solo', [NavegationController::class, 'solo'])->name('solo');
@@ -41,7 +47,7 @@ Route::get('/solo', [SoloController::class, 'solo'])->name('solo');
 
 
 // Pagina Equipe
-Route::get('/equipe', [NavegationController::class, 'equipe'])->name('equipe');
+// Route::get('/equipe', [NavegationController::class, 'equipe'])->name('equipe');
 
 // Envia e-mail com algum futuro contato
 Route::post('/', [SendMailController::class, 'lead'])->name('lead');

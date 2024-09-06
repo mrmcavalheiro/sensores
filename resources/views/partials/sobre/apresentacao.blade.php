@@ -1,38 +1,34 @@
-<div class="quaseMenu">
-    {{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['tituloPagina'] }}
-</div>
+<?php
+    $paginaSobre = \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0];
+?>
 
-<div class="container">
-    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['apresentacao'] }}</p>
+<div class="container sobre_container">
+    <div class="sobre_conjunto">
+        <h5 class="bold">{{ $paginaSobre['projeto_sobre'] }}</h5>
+        <p class="justify"><b>{{$paginaSobre['projeto_sobre_titulo']}}</b>{{ $paginaSobre['projeto_sobre_texto'] }}</p>
+    </div>
 
-    <h1 class="titulo-projeto">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['projeto'] }}</h1>
+    <div class="sobre_conjunto">
+        <h5 class="bold">{{ $paginaSobre['projeto_sensores'] }}</h5>
+        <p class="justify"><b>{{$paginaSobre['projeto_sensores_justificativa_titulo']}}</b>{{ $paginaSobre['projeto_sensores_justificativa_texto'] }}</p>
+        <p class="justify"><b>{{$paginaSobre['projeto_sensores_solucao_titulo']}}</b>{{ $paginaSobre['projeto_sensores_solucao_texto'] }}</p>
+    </div>
 
-    <h4 class="bold">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['tituloJustificativa'] }}</h4>
-    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoJustificativa'] }}</p>
+    <div class="sobre_conjunto">
+        <h5 class="bold">{{ $paginaSobre['projeto_objetivos'] }}</h5>
+        <ul class="sobre_lista_objetivos">
+            <li><b>{{$paginaSobre['projeto_objetivo_1_titulo']}}</b>{{ $paginaSobre['projeto_objetivo_1_texto'] }}</li>
+            <li><b>{{$paginaSobre['projeto_objetivo_2_titulo']}}</b>{{ $paginaSobre['projeto_objetivo_2_texto'] }}</li>
+            <li><b>{{$paginaSobre['projeto_objetivo_3_titulo']}}</b>{{ $paginaSobre['projeto_objetivo_3_texto'] }}</li>
+        </ul>
+    </div>
 
-    <h4 class="bold">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['tituloObjetivosEspecíficos'] }}</h4>
-    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoObjetivosEspecíficos-a'] }}</p>
-    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoObjetivosEspecíficos-b'] }}</p>
-    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoObjetivosEspecíficos-c'] }}</p>
-
-
-    <h4 class="bold">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['tituloEstrutura'] }}</h4>
-    <p class="justify">{{ \App\Models\SistemaGlobal::$paginaSobre['paginaSobre'][0]['textoEstrutura'] }}</p>
-    @foreach (\App\Models\SistemaGlobal::$paginaSobre['sobreData'] as $index => $data)
-    @if ($index > 1)
-        <div class="row">
-            <section class="col s12">
-                <a href="{{ route($data['rota']) }}">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title flow-text blue-text"><b>{{ $data['titulo'] }}</b></span>
-                            <p class="flow-text justify black-text justify">{{ $data['texto'] }}</p>
-                        </div>
-                    </div>
-                </a>
-            </section>
+    <div class="sobre_conjunto">
+        <h5 class="bold">{{ $paginaSobre['projeto_imagens_titulo'] }}</h5>
+        <div class="sobre_imagens">
+            @foreach ($paginaSobre['projeto_imagens'] as $key => $image)    
+                <img class="sobre_imagem" src="{{ asset('images/projeto/' . $image) }}" alt="{{'Imagem do Projeto' . $key}}">
+            @endforeach
         </div>
-    @endif
-@endforeach
-
+    </div>
 </div>

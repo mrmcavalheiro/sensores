@@ -10,5 +10,5 @@ class Region extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['description', 'status'];
+    protected $fillable = ['description', 'status', 'color'];
 }

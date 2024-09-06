@@ -7,55 +7,9 @@
     use Illuminate\Support\Facades\Log;
 @endphp
 
-{{-- <!-- Novo Menu de Gráficos -->
-<nav class="blue">
-    <div class="nav-wrapper center-align">
-        <ul id="nav-mobile" class="center">
-            <li><a href="javascript:void(0);" class="active" onclick="showSection('graficos')">Gráficos</a></li>
-            <li><a href="javascript:void(0);" onclick="showSection('sobre')">Sobre os Gráficos</a></li>
-        </ul>
-    </div>
-</nav> --}}
-
 <!-- Seções de Conteúdo -->
-<section id="graficos" class="content-section ">
+<section id="graficos" class="content-section">
     <div class="row">
-        {{-- <!-- Card de Seleção da Região -->
-        <div class="col s12 m6 l2 region-menu-container">
-            <div class="card">
-                <div class="card-content">
-                    <h5 class="region-title">Selecione a Região</h5>
-                    <ul id="region-menu">
-                        @foreach($regions as $index => $region)
-                            <li>
-                                <a href="javascript:void(0);" onclick="selectRegion('{{ $region['id'] }}', '{{ $region['description'] }}')" title="{{ $region['description'] }}" class="{{ $index === 0 ? 'active' : '' }}" data-id="{{ $region['id'] }}">
-                                    {{ Str::limit($region['description'], 60) }}
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card de Seleção do Período -->
-        <div class="col s12 m6 l2">
-            <div class="card">
-                <div class="card-content">
-                    <h5 class="region-title">Selecione o Período</h5>
-                    <ul id="period-menu" class="period-menu">
-                        @foreach($periods as $index => $period)
-                            <li>
-                                <a href="javascript:void(0);" onclick="selectPeriod({{ $index }}, '{{ $period }}')" class="{{ $index === 0 ? 'active' : '' }}" data-index="{{ $index }}">
-                                    {{ $period }}
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-        </div> --}}
-
         <!-- Gráficos -->
         <div class="col s12">
             <div class="new_card main_chart_wrapper">
@@ -105,6 +59,8 @@
 {{-- <section id="sobre" class="content-section">
     @include('partials.home.apresentacao')
 </section> --}}
+
+@include('partials.home.mapa')
 
 @include('partials.home.parallax')
 
