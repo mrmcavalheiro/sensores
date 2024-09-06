@@ -910,11 +910,12 @@ ul li {
 }
 
 .contato_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
 }
 
 .contato_informacoes {
-    width: 100%;
     position: relative;
     padding: 24px;
 }
@@ -1166,6 +1167,10 @@ ul li {
     .arrow_not_active,
     .arrow_active {
         font-size: 1.2rem;
+    }
+
+    .contato_container {
+        grid-template-columns: 1fr;
     }
 
     .apoiador_container img.horizontal {
