@@ -13,6 +13,8 @@ class SoloController extends Controller
         "tituloAnalises" => "ANÁLISES QUÍMICAS",
         "tituloFisicas" => "ANÁLISES FÍSICAS",
         "apresentacao" => "Veja abaixo os resultados das análises de solo realizadas em diferentes municípios.",
+        "explicacaoTitulo" => "Entenda as análises",
+        "explicacao" => "INSIRA O TEXTO AQUI <br /> app\Http\Controllers\SoloController.php",
     ];
 
     public function loadSoloData()

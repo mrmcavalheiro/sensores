@@ -21,6 +21,9 @@
         @include('partials.solo.analises', ['regioes' => $regioes])
     @endif
 
+    {{-- Explicação --}}
+    @include('partials.solo.explicacao')
+
     {{-- parallax --}}
     @include('partials.solo.parallax')
 @endsection
