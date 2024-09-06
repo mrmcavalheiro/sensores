@@ -51,13 +51,13 @@
                                                         <div class="row">
                                                             <div class="col s12">
                                                                 <ul class="tabs">
-                                                                    <li class="tab col s6"><a class="highlighted" href="#analise_quimica_{{ $loop->parent->parent->index }}_{{ $loop->index }}">Análise Química</a></li>
-                                                                    <li class="tab col s6"><a class="highlighted" href="#analise_fisica_{{ $loop->parent->parent->index }}_{{ $loop->index }}">Análise Física</a></li>
+                                                                    <li class="tab col s6"><a class="highlighted" href="#analise_quimica_{{ $loop->parent->parent->index }}_{{$loop->parent->index}}_{{ $loop->index }}">Análise Química</a></li>
+                                                                    <li class="tab col s6"><a class="highlighted" href="#analise_fisica_{{ $loop->parent->parent->index }}_{{$loop->parent->index}}_{{ $loop->index }}">Análise Física</a></li>
                                                                 </ul>
                                                             </div>
 
                                                             <!-- Conteúdo da Análise Química -->
-                                                            <div id="analise_quimica_{{ $loop->parent->parent->index }}_{{ $loop->index }}" class="col s12">
+                                                            <div id="analise_quimica_{{ $loop->parent->parent->index }}_{{$loop->parent->index}}_{{ $loop->index }}" class="col s12">
                                                                 <table class="highlight responsive-table">
                                                                     <thead>
                                                                         <tr>
@@ -88,7 +88,7 @@
                                                             </div>
 
                                                             <!-- Conteúdo da Análise Física -->
-                                                            <div id="analise_fisica_{{ $loop->parent->parent->index }}_{{ $loop->index }}" class="col s12">
+                                                            <div id="analise_fisica_{{ $loop->parent->parent->index }}_{{$loop->parent->index}}_{{ $loop->index }}" class="col s12">
                                                                 <table class="highlight responsive-table">
                                                                     <thead>
                                                                         <tr>
