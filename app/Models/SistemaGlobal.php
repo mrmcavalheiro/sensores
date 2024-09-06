@@ -161,7 +161,7 @@ class SistemaGlobal extends Model
                     'title' => 'Desenvolvedor',
                     'descricao' => 'Bacharel em Ciência da Computação e Desenvolvedor de Software Sênior.',
                     'foto' => 'Felipe.jpg',
-                    // 'lattes' => 'http://lattes.cnpq.br/5126485951006356',
+                    // 'lattes' => '',
                     'email' => 'felipe.ernesto@sou.unijui.edu.br',
                     // 'twitter' => '',
                     // 'facebook' => '',

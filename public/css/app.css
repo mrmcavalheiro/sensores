@@ -834,23 +834,33 @@ ul li {
 
 .boletim_wrapper {
     display: flex;
+    text-decoration: none;
+    color: #000;
     padding: 16px;
     gap: 16px;
     align-items: center;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.boletim_wrapper:visited {
+    color: #000;
+}
+
+.boletim_wrapper:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.boletim_wrapper:hover .download_button {
+    color: #c62828;
 }
 
 .download_button {
     cursor: pointer;
     color: #e53935;
     transition: 0.2s;
-}
-
-.download_button:hover {
-    color: #c62828;
-    font-size: 18px;
 }
 
 .sobre_container {
