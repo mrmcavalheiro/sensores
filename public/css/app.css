@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Estilos personalizados para o menu de seleção do período */
 .period-menu-container {
     margin-top: 10px; /* Ajuste para iniciar mais acima */
@@ -410,6 +414,26 @@ ul li a:hover,
 .lattes-link a:hover {
     color: #0056b3; /* Cor do link quando passar o mouse */
     text-decoration: underline;
+}
+
+.sub_menu-content li a {
+    height: auto;
+    color: #000 !important;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    line-height: 1.2em; /* Texto um pouco para cima */
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: white !important; /* Cor de fundo para o botão */
+}
+
+.sub_menu-content li a:hover {
+    background-color: #f3f3f3de !important; /* Fundo ao passar o mouse */
+    border-color: #2196f3 !important; /* Borda azul Materialize ao passar o mouse */
 }
 
 .nav-wrapper {

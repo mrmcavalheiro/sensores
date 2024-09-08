@@ -16,21 +16,29 @@ class SistemaGlobal extends Model
         "itens" => [
             "Análise de Solo",
             "Boletins",
-            // "Medições",
             "Projeto",
             "Contato"
+        ],
+        "subMenus" => [
+            [],
+            [],
+            [
+                ["nome" => "Sobre", "rota" => "#sobre"],
+                ["nome" => "Equipe", "rota" => "#equipe"],
+                ["nome" => "Realizadores", "rota" => "#realizadores"],
+                ["nome" => "Apoiadores", "rota" => "#apoiadores"],
+            ],
+            [],
         ],
         "icons" => [
             "fas fa-globe",
             "fas fa-file-pdf",
-            // "fas fa-tachometer-alt",
             "fas fa-info-circle",   
             "fas fa-envelope"
         ],
         "rotas" => [
             "solo",
             "boletins",
-            // "home",
             "sobre",
             "contato"
         ],
