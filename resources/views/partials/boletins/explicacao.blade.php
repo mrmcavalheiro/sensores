@@ -4,7 +4,7 @@
     }
 @endphp
 
-<div class="container texto_explicativo">
+<div class="container">
     <h5 class="bold">{{ $boletins['explicacaoTitulo'] }}</h5>
     <p class="justify">{!! replace_br_with_paragraphs($boletins['explicacao']) !!}</p>
 </div>

@@ -14,7 +14,13 @@ class SoloController extends Controller
         "tituloFisicas" => "ANÁLISES FÍSICAS",
         "apresentacao" => "Veja abaixo os resultados das análises de solo realizadas em diferentes municípios.",
         "explicacaoTitulo" => "Entenda as análises",
-        "explicacao" => "INSIRA O TEXTO AQUI <br /> app\Http\Controllers\SoloController.php",
+        "explicacao_1" => "O Estado do Rio Grande do Sul apresenta 5 grandes regiões fisiográficas, as quais afetam a formação e a distribuição dos solos no estado.",
+        "explicacao_1_imagem" => "regioes-fisiograficas.png",
+        "explicacao_1_imagem_alt" => "Regiões Fisiográficas do Rio Grande do Sul",
+        "explicacao_2" => "Os solos da região abrangente do projeto, pertencem ao Planalto do Rio Grande do Sul, onde têm como litologia básica a formação da Serra Geral. Nesta há ocorrência de rochas magmáticas extrusivas
+         ou vulcânicas, que advêm do extravasamento do magma da superfície da terra, que esfriou rapidamente, formando pequenos cristais, gerando solos constituídos de material mais fino quando intemperizado, como a argila. 
+         Nessa região, a diferença entre os solos está relacionada ao clima. Onde o clima é mais seco, os solos são menos desenvolvidos; e onde os solos são em sua maioria profundos, argilosos e bastante intemperizados, isso se dá por serem mais úmidos.<br />
+        Para cada região pertencente a rede de sensores, coletas de solo foram realizadas, para a caracterização física e química dos solos. No decorrer do projeto, outras coletas serão realizadas e farão parte desta plataforma. ",
     ];
 
     public function loadSoloData()

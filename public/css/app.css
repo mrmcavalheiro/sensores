@@ -354,6 +354,13 @@ ul li a:hover,
     line-height: 1.1; /* Reduz a altura da linha para os parágrafos */
 }
 
+.explicativo_com_imagem {
+    display: flex;
+    padding-block: 24px;
+    gap: 16px;
+    align-items: center;
+}
+
 .main-chart {
     margin-bottom: 40px;
 }
@@ -1117,6 +1124,11 @@ ul li {
 
     h4 {
         font-size: 1.2em !important;
+    }
+
+    .explicativo_com_imagem {
+        flex-direction: column;
+        padding-block: 12px;
     }
 
     .membro-card h4 {
