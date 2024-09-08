@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Estilos personalizados para o menu de seleção do período */
 .period-menu-container {
     margin-top: 10px; /* Ajuste para iniciar mais acima */
@@ -354,6 +358,20 @@ ul li a:hover,
     line-height: 1.1; /* Reduz a altura da linha para os parágrafos */
 }
 
+.explicativo_regioes {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.explicativo_com_imagem {
+    display: flex;
+    padding-block: 24px;
+    gap: 16px;
+    align-items: center;
+}
+
 .main-chart {
     margin-bottom: 40px;
 }
@@ -398,6 +416,30 @@ ul li a:hover,
     text-decoration: underline;
 }
 
+.sub_menu-content {
+    background-color: #2196f3 !important; /* Cor de fundo para o botão */
+}
+
+.sub_menu-content li a {
+    height: auto;
+    color: white !important;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    line-height: 1.2em; /* Texto um pouco para cima */
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: #2196f3 !important; /* Cor de fundo para o botão */
+}
+
+.sub_menu-content li a:hover {
+    background-color: #1e88e5 !important; /* Fundo ao passar o mouse */
+    border-color: #2196f3 !important; /* Borda azul Materialize ao passar o mouse */
+}
+
 .nav-wrapper {
     background-color: #2196f3; /* Azul Materialize */
 }
@@ -407,9 +449,18 @@ ul li a:hover,
     background-color: #2196f3; /* Azul Materialize */
 }
 
-.nav-wrapper .brand-logo {
-    font-size: 1.5em;
-    padding-left: 10px;
+.brand-logo span.app_name {
+    font-size: 0.8em;
+}
+
+nav a.brand-logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.brand-logo-images {
+    height: 56px;
 }
 
 .nav-wrapper ul li a {
@@ -834,23 +885,33 @@ ul li {
 
 .boletim_wrapper {
     display: flex;
+    text-decoration: none;
+    color: #000;
     padding: 16px;
     gap: 16px;
     align-items: center;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.boletim_wrapper:visited {
+    color: #000;
+}
+
+.boletim_wrapper:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.boletim_wrapper:hover .download_button {
+    color: #c62828;
 }
 
 .download_button {
     cursor: pointer;
     color: #e53935;
     transition: 0.2s;
-}
-
-.download_button:hover {
-    color: #c62828;
-    font-size: 18px;
 }
 
 .sobre_container {
@@ -900,11 +961,12 @@ ul li {
 }
 
 .contato_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
 }
 
 .contato_informacoes {
-    width: 100%;
     position: relative;
     padding: 24px;
 }
@@ -1108,6 +1170,11 @@ ul li {
         font-size: 1.2em !important;
     }
 
+    .explicativo_com_imagem {
+        flex-direction: column;
+        padding-block: 12px;
+    }
+
     .membro-card h4 {
         font-size: 1.4em !important;
     }
@@ -1115,6 +1182,11 @@ ul li {
     .nav-wrapper .brand-logo {
         font-size: 1em;
     }
+
+    .brand-logo-images {
+        height: 48px;
+    }
+
     #nav-mobile li a {
         font-size: 14px;
     }
@@ -1156,6 +1228,10 @@ ul li {
     .arrow_not_active,
     .arrow_active {
         font-size: 1.2rem;
+    }
+
+    .contato_container {
+        grid-template-columns: 1fr;
     }
 
     .apoiador_container img.horizontal {
@@ -1217,5 +1293,8 @@ ul li {
     }
     .footer_container :nth-child(1) {
         grid-column: 1;
+    }
+    .membro-card {
+        flex-direction: column;
     }
 }

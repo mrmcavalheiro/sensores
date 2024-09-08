@@ -4,6 +4,7 @@
     $itens = $menu['itens'];
     $icons = $menu['icons'];
     $rotas = $menu['rotas'];
+    $rotaPrincipal = $menu['rota_principal'];
 @endphp
 
 <footer class="page-footer blue">
@@ -27,6 +28,10 @@
                 </p>
             </div>
             <div class="footer_menu_links">
+                <a href="{{ route($rotaPrincipal) }}" class="footer_menu_link">
+                    <i class="fas fa-home fa-1x"></i>
+                    <b>Home</b>
+                </a>
                 @foreach ($itens as $key => $item)
                     <a href="{{ route($rotas[$key]) }}" class="footer_menu_link">
                         <i class="{{ $icons[$key] }} fa-1x"></i>

@@ -15,25 +15,30 @@ class SistemaGlobal extends Model
     public static $Menu = [
         "itens" => [
             "Análise de Solo",
-            "Equipe",
             "Boletins",
-            // "Medições",
-            "Sobre",
+            "Projeto",
             "Contato"
+        ],
+        "subMenus" => [
+            [],
+            [],
+            [
+                ["nome" => "Sobre", "rota" => "#sobre"],
+                ["nome" => "Equipe", "rota" => "#equipe"],
+                ["nome" => "Realizadores", "rota" => "#realizadores"],
+                ["nome" => "Apoiadores", "rota" => "#apoiadores"],
+            ],
+            [],
         ],
         "icons" => [
             "fas fa-globe",
-            "fas fa-users",
             "fas fa-file-pdf",
-            // "fas fa-tachometer-alt",
             "fas fa-info-circle",   
             "fas fa-envelope"
         ],
         "rotas" => [
             "solo",
-            "projeto",
             "boletins",
-            // "home",
             "sobre",
             "contato"
         ],
@@ -45,27 +50,29 @@ class SistemaGlobal extends Model
         "paginaSobre" => [
             [
                 "projeto"=> "Rede de sensores inteligentes para o monitoramento de sistemas de irrigação por pivô central",
-                "projeto_sobre"=> "Projeto de Coleta de Umidade do Solo",
-                "projeto_sobre_titulo"=> "Parceria Inovadora",
-                "projeto_sobre_texto"=> " O projeto, desenvolvido pela Universidade Regional do Noroeste do Estado do Rio Grande do Sul (UNIJUÍ) em conjunto com empresas locais, visa fornecer dados precisos para agricultores da região, promovendo a agricultura de precisão.",
-                "projeto_sensores"=> "Rede de Sensores para Irrigação Inteligente",
-                "projeto_sensores_justificativa_titulo"=> "Justificativa",
-                "projeto_sensores_justificativa_texto"=> " Com o aumento das áreas irrigadas e a escassez hídrica, especialmente durante estiagens, há uma crescente demanda por eficiência no uso da água. Sistemas de irrigação por pivô, historicamente usados em milho e soja, agora se expandem para outras culturas. No entanto, a falta de adoção de sensores inteligentes resulta em desperdícios de água e energia, além da poluição por agrotóxicos. O uso inadequado de irrigação eleva os custos e afeta a produtividade.",
-                "projeto_sensores_solucao_titulo"=> "Solução Proposta",
-                "projeto_sensores_solucao_texto"=> " O projeto propõe a implementação de uma rede de sensores de umidade do solo, que, através de uma plataforma digital pública, permitirá a gestão eficiente da irrigação. Isso evitará desperdícios e possibilitará a adoção de tecnologias de irrigação por outros produtores. Com uma economia estimada de 432 milhões de litros de água anualmente, o projeto visa transformar a região em referência em uso sustentável de recursos hídricos.",
+                "projeto_sobre"=> "Informações sobre o projeto",
+                "projeto_sobre_titulo"=> "Monitoramento Inteligente",
+                "projeto_sobre_texto"=> " O projeto de instalação de uma rede de sensores inteligentes de umidade do solo para o monitoramento de sistemas de irrigação por pivô central é desenvolvido pela UNIJUI em parceria com as empresas Fockinck e CropsTeam, e financiado pela Secretaria de Ciência, Inovação e Tecnologia do Estado do Rio Grande do Sul - SCIT, no âmbito do Programa INOVA RS.",
+                "projeto_sensores"=> "O que é feito no projeto?",
+                "projeto_sensores_justificativa_titulo"=> "Eficiência Hídrica",
+                "projeto_sensores_justificativa_texto"=> " O projeto está implementando uma rede de sensores de umidade do solo, e por meio de uma plataforma sistematiza as informações para tornar a região Noroeste do Estado do Rio Grande do Sul referência na eficiência do uso da água em pivôs de irrigação. O projeto distribuiu 2 (dois) sensores por propriedade, em diferentes municípios da região, beneficiando diretamente 20 produtores rurais.",
+                "projeto_sensores_solucao_titulo"=> "Objetivo geral",
+                "projeto_sensores_solucao_texto"=> " O objetivo geral deste projeto é instalar uma rede de sensores de umidade de solo para o monitoramento do uso da água em sistemas de irrigação por pivô central, com a perspectiva de tornar a região Noroeste do Estado do Rio Grande do Sul, uma referência Nacional na eficiência do uso da Água",
                 "projeto_objetivos"=> "Objetivos Específicos",
                 "projeto_objetivo_1_titulo"=> "Seleção de Produtores:",
-                "projeto_objetivo_1_texto"=> " Identificar produtores para a implementação de sensores e alertas inteligentes.",
+                "projeto_objetivo_1_texto"=> " Selecionar produtores rurais para implementar uma rede inteligente de monitoramento e alertas para sistemas de irrigação.",
                 "projeto_objetivo_2_titulo"=> "Plataforma Digital:",
-                "projeto_objetivo_2_texto"=> " Integrar dados de sensores e informações agrometeorológicas da região.",
+                "projeto_objetivo_2_texto"=> " Desenvolver uma plataforma digital capaz de integrar os dados dos sensores com outras fontes de informações agrometeorológicas da região Noroeste e Missões.",
                 "projeto_objetivo_3_titulo"=> "Mapas Temáticos:",
-                "projeto_objetivo_3_texto"=> " Desenvolver rotinas que gerem mapas diários com informações detalhadas para auxiliar nas decisões de irrigação.",
+                "projeto_objetivo_3_texto"=> " Desenvolver rotinas na plataforma capazes de gerar mapas temáticos com as informações, e tornar a geração de conteúdo útil para auxiliar na tomada de decisão dos produtores e demais pessoas ligadas ao agronegócio.",
                 "projeto_imagens_titulo"=> "Fotos do Projeto",
                 "projeto_imagens"=> [
                     "Foto_sensor_e_pivo" => "Foto_sensor_e_pivo.jpeg",
                     "Foto_lavoura_e_pivo" => "Foto_lavoura_e_pivo.jpeg",
                     "Foto_pivo_fockink" => "Foto_pivo_fockink.jpeg",
-                    "Foto_pivo_e_sensor" => "Foto_pivo_e_sensor.jpeg"
+                    "Foto_pivo_e_sensor" => "Foto_pivo_e_sensor.jpeg",
+                    "Foto_pivo_e_sensor_h" => "Foto_pivo_e_sensor_h.jpg",
+                    "Foto_sensor" => "Foto_sensor.jpg"
                 ],
                 // "tituloJustificativa" => "Justificativa",
                 // "textoJustificativa" => "Segundo o levantamento da Câmara Setorial de Equipamentos de Irrigação (CSEI, 2021), a área irrigada por pivôs no Brasil, aumentou em 209 mil e 249 mil hectares em 2019 e 2020, respectivamente, totalizando mais de 1,6 milhões de hectares. Esse constante aumento nas áreas irrigadas, gera uma pressão gigantesca sobre os já escassos recursos hídricos. A escassez hídrica, pelas baixas alturas pluviométricas registradas, se torna mais evidente nos períodos de estiagem quando, mesmo com sistemas de irrigação, falta água para irrigar as lavouras. Sistemas de irrigação por pivô são historicamente utilizados nas culturas de milho e soja, mas têm se espalhado para outras culturas nos últimos anos, como em frutíferas e pastagens. Tanto no Brasil, quanto no Estado do Rio Grande do Sul, a agricultura irrigada é responsável pelo uso de mais de 60% da água doce disponível. O constante crescimento nos custos de produção, o aumento da contaminação da água por agrotóxicos e a busca por maior produtividade, exercem pressão sobre o uso da água nos sistemas de irrigação, e são reflexo de irrigação não realizada ou excessiva. A falta de informações para a tomada de decisão, pela baixa adoção de sensores inteligentes, fundamentais para a gestão do uso da água, é uma das principais causas dos erros e desperdícios que acarretam aumento nos gastos de energia e diesel e levam nutrientes e agrotóxicos das lavouras para os rios, reduzindo a produtividade das lavouras e causando poluição ambiental. Para aumentar a eficiência no uso da água e de energia e reduzir o carreamento de nutrientes, é imprescindível a implementação de sistemas inteligentes de monitoramento e alertas para irrigação. Situação frequente no campo é a realização de irrigação desnecessária que compromete a gestão dos recursos do sistema de irrigação. Assim, ao se reduzir os desperdícios de água, possibilita-se que outros produtores rurais, possam implementar tecnologias como sistemas de irrigação nas suas lavouras, garantindo maior segurança e produtividade para a região. Estima-se que ao se evitar apenas duas irrigações (10 milímetros cada) por ano, considerando 27 produtores, com 1 pivô de irrigação de 80 hectares cada, deixasse de desperdiçar 432 milhões de litros de água. O projeto visa a implementar uma rede de sensores de umidade do solo, e por meio de uma plataforma sistematizar informações para tornar a região Noroeste e Missões do Estado do Rio Grande do Sul, referência Latino Americana na eficiência do uso da água em pivôs de irrigação. O projeto pretende distribuir 1 (um) sensor a cada dois ou três municípios da região, beneficiando diretamente produtores rurais. Com essa rede de sensores, será desenvolvida uma plataforma digital pública, que possibilitará processar e apresentar todas as informações da rede inteligente. Esse material estará disponível, para auxiliar na tomada de decisões de produtores, consultores e da sociedade civil que não foram diretamente beneficiados com a instalação dos sensores. Além dos dados da rede de sensores, outras fontes de dados serão integradas ao sistema, dando início a um rede colaborativa com informações em tempo real com detalhes e informações da região. A integração dessas informações em uma plataforma permitirá a geração de mapas temáticos diários, com as condições agrometeorológicas, a duração dos estresses e até mesmo estimativas da redução das produtividades.",
@@ -137,21 +144,6 @@ class SistemaGlobal extends Model
                     'foto' => 'Mauricio.jpg',
                     'lattes' => 'http://lattes.cnpq.br/7207601062237405'
                 ],
-                [
-                    'nome' => 'Fabiana Simon',
-                    'title' => 'Coordenadora do Núcleo de Pesquisa',
-                    'descricao' => 'Graduada em Ciências Econômicas, Especialista em Comércio Exterior e Gestão de Instituições de Ensino Superior. Coordenadora do núcleo de Pesquisa, Desenvolvimento Tecnológico e Inovação da Agência de Inovação e Tecnologia da UNIJUÍ.',
-                    'foto' => 'Fabiana.jpg',
-                    'lattes' => 'http://lattes.cnpq.br/7497387209067432'
-                ],
-                [
-                    'nome' => 'Eng.º Agrº Matheus Guilherme Libardoni Meotti',
-                    'title' => 'Analista de Pesquisa e Desenvolvimento',
-                    'descricao' => 'Engenheiro Agrônomo, Mestre em Sistemas Ambientais e Sustentabilidade, Doutorando em Engenharia Agrícola. Experiência em sensoriamento para conservação de grãos.',
-                    'foto' => 'Mateus.jpeg',
-                    'lattes' => 'http://lattes.cnpq.br/0370883124256890'
-                ],
-
             ]      
         ]
     ];
@@ -176,7 +168,7 @@ class SistemaGlobal extends Model
                     'title' => 'Desenvolvedor',
                     'descricao' => 'Bacharel em Ciência da Computação e Desenvolvedor de Software Sênior.',
                     'foto' => 'Felipe.jpg',
-                    // 'lattes' => 'http://lattes.cnpq.br/5126485951006356',
+                    // 'lattes' => '',
                     'email' => 'felipe.ernesto@sou.unijui.edu.br',
                     // 'twitter' => '',
                     // 'facebook' => '',
@@ -263,6 +255,16 @@ class SistemaGlobal extends Model
         ]
     ];
 
+    public static $paginaRegioes = [
+        [
+            "tituloRegioes" => "Entenda as Regiões",
+            "regioes_imagem" => "mapa_regioes_sem_legenda.png",
+            "explicacao" => "O Inova RS é um programa instituído pelo governo do Rio Grande do Sul que possui como principal objetivo incluir o estado no mapa global da inovação. Se propôs a ativar oito ecossistemas regionais de inovação no Rio Grande do Sul, a saber: Central; Fronteira Oeste e Campanha; Metropolitana e Litoral Norte; Noroeste e Missões; Produção e Norte; Serra Gaúcha; Sul; Vales. 
+            <br />O projeto Rede de Sensores inteligentes para o monitoramento de sistemas de irrigação por pivô central se insere no ecossistema Noroeste e Missões, onde o programa prevê que, em 2030 a Região Noroeste e Missões será referência latino-americana em inovação por meio de uma estratégia de especialização inteligente em agronegócio, eletro-metalmecânica e na geração de energia.
+            <br />Para cumprir com os objetivos do projeto, este ecossistema regional foi separado em 6 regiões, as quais foram organizadas pela proximidade territorial e características edafoclimáticas semelhantes.",
+        ]
+    ];
+
     public static $paginaBoletins = [
         [
             "tituloPagina" => "Boletins",
@@ -280,7 +282,10 @@ class SistemaGlobal extends Model
                     'nome' => "3º BOLETIM INOVA 2021",
                     'file' => 'boletim_3.pdf',
                 ],
-            ]
+            ],
+            "explicacaoTitulo" => "Entenda os boletins",
+            "explicacao" => "A comunicação por meio de boletins, possibilita socializar os dados da rede de sensores e de outras fontes de integradas ao sistema, dando início a uma rede colaborativa com informações em tempo real, com detalhes e informações da região, auxiliando a tomada de decisões por produtores, consultores e sociedade que não foram diretamente beneficiados com a instalação dos sensores. 
+            <br />Para a organização das informações do projeto e dos resultados que serão analisados durante o andamento das atividades, boletins técnicos serão organizados e disponibilizados para download.",
         ]
     ];
 
