@@ -354,6 +354,13 @@ ul li a:hover,
     line-height: 1.1; /* Reduz a altura da linha para os parágrafos */
 }
 
+.explicativo_regioes {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .explicativo_com_imagem {
     display: flex;
     padding-block: 24px;
@@ -414,9 +421,18 @@ ul li a:hover,
     background-color: #2196f3; /* Azul Materialize */
 }
 
-.nav-wrapper .brand-logo {
-    font-size: 1.5em;
-    padding-left: 10px;
+.brand-logo span.app_name {
+    font-size: 0.8em;
+}
+
+nav a.brand-logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.brand-logo-images {
+    height: 56px;
 }
 
 .nav-wrapper ul li a {
@@ -1138,6 +1154,11 @@ ul li {
     .nav-wrapper .brand-logo {
         font-size: 1em;
     }
+
+    .brand-logo-images {
+        height: 48px;
+    }
+
     #nav-mobile li a {
         font-size: 14px;
     }

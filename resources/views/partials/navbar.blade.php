@@ -12,7 +12,10 @@
         {{-- Menu Hamburger --}}
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons small-text">menu</i></a>
 
-        <a href="{{ route($rotaPrincipal) }}" class="brand-logo light">{{ config('app.name') }}</a>
+        <a href="{{ route($rotaPrincipal) }}" class="brand-logo light">
+            <img class="brand-logo-images" src="{{ asset('images/logos/logo_projeto.png') }}" alt="{{ config('app.name') }}" title="{{ config('app.name') }}">
+            <span class="app_name">{{ config('app.name') }}</span>
+        </a>
         {{-- Menu para desktop --}}
         <ul class="right hide-on-med-and-down">
             @foreach ($itens as $key => $item)

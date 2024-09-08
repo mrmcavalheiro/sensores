@@ -250,6 +250,16 @@ class SistemaGlobal extends Model
         ]
     ];
 
+    public static $paginaRegioes = [
+        [
+            "tituloRegioes" => "Entenda as Regiões",
+            "regioes_imagem" => "mapa_regioes_sem_legenda.png",
+            "explicacao" => "O Inova RS é um programa instituído pelo governo do Rio Grande do Sul que possui como principal objetivo incluir o estado no mapa global da inovação. Se propôs a ativar oito ecossistemas regionais de inovação no Rio Grande do Sul, a saber: Central; Fronteira Oeste e Campanha; Metropolitana e Litoral Norte; Noroeste e Missões; Produção e Norte; Serra Gaúcha; Sul; Vales. 
+            <br />O projeto Rede de Sensores inteligentes para o monitoramento de sistemas de irrigação por pivô central se insere no ecossistema Noroeste e Missões, onde o programa prevê que, em 2030 a Região Noroeste e Missões será referência latino-americana em inovação por meio de uma estratégia de especialização inteligente em agronegócio, eletro-metalmecânica e na geração de energia.
+            <br />Para cumprir com os objetivos do projeto, este ecossistema regional foi separado em 6 regiões, as quais foram organizadas pela proximidade territorial e características edafoclimáticas semelhantes.",
+        ]
+    ];
+
     public static $paginaBoletins = [
         [
             "tituloPagina" => "Boletins",
