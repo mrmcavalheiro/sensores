@@ -416,9 +416,13 @@ ul li a:hover,
     text-decoration: underline;
 }
 
+.sub_menu-content {
+    background-color: #2196f3 !important; /* Cor de fundo para o botão */
+}
+
 .sub_menu-content li a {
     height: auto;
-    color: #000 !important;
+    color: white !important;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -428,11 +432,11 @@ ul li a:hover,
     transition: background-color 0.3s, color 0.3s;
     border: 2px solid transparent;
     border-radius: 4px;
-    background-color: white !important; /* Cor de fundo para o botão */
+    background-color: #2196f3 !important; /* Cor de fundo para o botão */
 }
 
 .sub_menu-content li a:hover {
-    background-color: #f3f3f3de !important; /* Fundo ao passar o mouse */
+    background-color: #1e88e5 !important; /* Fundo ao passar o mouse */
     border-color: #2196f3 !important; /* Borda azul Materialize ao passar o mouse */
 }
 
