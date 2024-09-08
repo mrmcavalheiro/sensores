@@ -1,7 +1,5 @@
 <div class="row container">
-    <p class="flow-text black-text">
-        {{ \App\Http\Controllers\SoloController::$paginaSolo['tituloAnaliseFisica'] }} <br>
-    </p>
+    <h5 class="bold">{{ \App\Http\Controllers\SoloController::$paginaSolo['tituloAnaliseFisica'] }}</h5>
     <div class="col s12 p0">
         <ul class="collapsible collapsible_b1">
             @foreach ($regioes as $regiao_nome => $municipios)
@@ -39,7 +37,7 @@
                                                     <div class="collapsible-header collapsible_header_b3">
                                                         <div class="row m0 w100">
                                                             <div class="col s11">
-                                                                <b>Produtor: {{ $produtor_nome }} ({{ $analises->first()->nome_fantasia }})</b>
+                                                                <b>{{ $analises->first()->nome_fantasia }}</b>
                                                             </div>
                                                             <div class="col s1">
                                                                 <i class="material-icons arrow_not_active">keyboard_arrow_down</i>
@@ -51,13 +49,13 @@
                                                         <div class="row">
                                                             <div class="col s12">
                                                                 <ul class="tabs">
-                                                                    <li class="tab col s6"><a class="highlighted" href="#analise_quimica_{{ $loop->parent->parent->index }}_{{ $loop->index }}">Análise Química</a></li>
-                                                                    <li class="tab col s6"><a class="highlighted" href="#analise_fisica_{{ $loop->parent->parent->index }}_{{ $loop->index }}">Análise Física</a></li>
+                                                                    <li class="tab col s6"><a class="highlighted" href="#analise_quimica_{{ $loop->parent->parent->index }}_{{$loop->parent->index}}_{{ $loop->index }}">Análise Química</a></li>
+                                                                    <li class="tab col s6"><a class="highlighted" href="#analise_fisica_{{ $loop->parent->parent->index }}_{{$loop->parent->index}}_{{ $loop->index }}">Análise Física</a></li>
                                                                 </ul>
                                                             </div>
 
                                                             <!-- Conteúdo da Análise Química -->
-                                                            <div id="analise_quimica_{{ $loop->parent->parent->index }}_{{ $loop->index }}" class="col s12">
+                                                            <div id="analise_quimica_{{ $loop->parent->parent->index }}_{{$loop->parent->index}}_{{ $loop->index }}" class="col s12">
                                                                 <table class="highlight responsive-table">
                                                                     <thead>
                                                                         <tr>
@@ -88,7 +86,7 @@
                                                             </div>
 
                                                             <!-- Conteúdo da Análise Física -->
-                                                            <div id="analise_fisica_{{ $loop->parent->parent->index }}_{{ $loop->index }}" class="col s12">
+                                                            <div id="analise_fisica_{{ $loop->parent->parent->index }}_{{$loop->parent->index}}_{{ $loop->index }}" class="col s12">
                                                                 <table class="highlight responsive-table">
                                                                     <thead>
                                                                         <tr>

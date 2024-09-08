@@ -44,12 +44,12 @@
                     </ul>
                 </div>
                 
-                <div class="grafico-container">
-                    <canvas id="mainChart"></canvas>
-                </div>
                 <div class="main_chart_selected">
                     <h4><b>Região</b>: <span id="region-selected">{{ $regions[0]['description'] }}</span></h4>
                     <h4><b>Período</b>: <span id="period-selected">{{ $periods[0] }}</span></h4>
+                </div>
+                <div class="grafico-container">
+                    <canvas id="mainChart"></canvas>
                 </div>
             </div>
         </div>

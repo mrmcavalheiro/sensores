@@ -4,12 +4,13 @@
     $itens = $menu['itens'];
     $icons = $menu['icons'];
     $rotas = $menu['rotas'];
+    $rotaPrincipal = $menu['rota_principal'];
 @endphp
 
 <footer class="page-footer blue">
     <div class="container">
-        <section class="row align_center">
-            <div class="col s12 m3 center-align">
+        <section class="align_center footer_container">
+            <div class="center-align">
                 <a href="https://unijui.edu.br" target="_blank">
                     <img src="https://www.unijui.edu.br/templates/template_unijui2016/images/logo-rodape-bco.png"
                         class="d-inline-block align-center" alt="Logo UNIJUÍ" loading="lazy"
@@ -17,7 +18,7 @@
                 </a>
             </div>
 
-            <div class="col s12 m4 footer_info_wrapper">
+            <div class="footer_info_wrapper">
                 <p><b>Escritório de Relações Universidade - Comunidade</b></p>
                 <p class="footer_info"><i class="material-icons small">phone</i> <b>Telefone: </b> (55) 3332-0368</p>
                 <p class="footer_info">
@@ -26,7 +27,11 @@
                     <a class="white-text"href="mailto:comunidade@unijui.edu.br">comunidade@unijui.edu.br</a>
                 </p>
             </div>
-            <div class="col s12 m5 footer_menu_links">
+            <div class="footer_menu_links">
+                <a href="{{ route($rotaPrincipal) }}" class="footer_menu_link">
+                    <i class="fas fa-home fa-1x"></i>
+                    <b>Home</b>
+                </a>
                 @foreach ($itens as $key => $item)
                     <a href="{{ route($rotas[$key]) }}" class="footer_menu_link">
                         <i class="{{ $icons[$key] }} fa-1x"></i>
