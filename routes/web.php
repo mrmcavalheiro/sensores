@@ -28,7 +28,7 @@ Route::post('/contato', [SendMailController::class, 'contato'])->name('novoconta
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Pagina projeto
-Route::get('/projeto', [NavegationController::class, 'projeto'])->name('projeto');
+// Route::get('/projeto', [NavegationController::class, 'projeto'])->name('projeto');
 
 // Pagina apoiadores
 // Route::get('/apoiadores', [NavegationController::class, 'apoiadores'])->name('apoiadores');

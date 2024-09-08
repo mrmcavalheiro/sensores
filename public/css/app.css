@@ -1266,4 +1266,7 @@ ul li {
     .footer_container :nth-child(1) {
         grid-column: 1;
     }
+    .membro-card {
+        flex-direction: column;
+    }
 }

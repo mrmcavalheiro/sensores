@@ -36,7 +36,12 @@ class NavegationController extends Controller
 
     //Pagina de Sobre
     public function sobre(){
-        return view('site.sobre');
+        $apoiadores = \App\Models\SistemaGlobal::$paginaApoiadores[0]['apoiadores'];
+        $realizadores = \App\Models\SistemaGlobal::$paginaRealizadores[0]['realizadores'];
+        $equipeController = new EquipeController();
+        $equipe = $equipeController->getEquipeData();
+        SistemaGlobal::loadEquipeData();
+        return view('site.sobre', compact('realizadores', 'apoiadores', 'equipe'));
     }
 
     public function solo()

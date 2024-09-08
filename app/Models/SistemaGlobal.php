@@ -15,15 +15,13 @@ class SistemaGlobal extends Model
     public static $Menu = [
         "itens" => [
             "Análise de Solo",
-            "Equipe",
             "Boletins",
             // "Medições",
-            "Sobre",
+            "Projeto",
             "Contato"
         ],
         "icons" => [
             "fas fa-globe",
-            "fas fa-users",
             "fas fa-file-pdf",
             // "fas fa-tachometer-alt",
             "fas fa-info-circle",   
@@ -31,7 +29,6 @@ class SistemaGlobal extends Model
         ],
         "rotas" => [
             "solo",
-            "projeto",
             "boletins",
             // "home",
             "sobre",
