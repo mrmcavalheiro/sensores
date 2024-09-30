@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<boletins>
+    <pagina>
+        <tituloPagina>Boletins</tituloPagina>
+        <explicacaoTitulo>Entenda os boletins</explicacaoTitulo>
+        <explicacao>
+            A comunicação por meio de boletins possibilita socializar os dados da rede de sensores e de outras fontes integradas ao sistema, dando início a uma rede colaborativa com informações em tempo real, com detalhes e informações da região, auxiliando a tomada de decisões por produtores, consultores e sociedade que não foram diretamente beneficiados com a instalação dos sensores.
+            Para a organização das informações do projeto e dos resultados que serão analisados durante o andamento das atividades, boletins técnicos serão organizados e disponibilizados para download.
+        </explicacao>
+        <boletins>
+            <boletim>
+                <nome>1º BOLETIM INOVA 2021</nome>
+                <file>boletim_1.pdf</file>
+            </boletim>
+            <boletim>
+                <nome>2º BOLETIM INOVA 2021</nome>
+                <file>boletim_2.pdf</file>
+            </boletim>
+            <boletim>
+                <nome>3º BOLETIM INOVA 2021</nome>
+                <file>boletim_3.pdf</file>
+            </boletim>
+            <boletim>
+                <nome>4º BOLETIM INOVA 2024</nome>
+                <file>boletim_4.pdf</file>
+            </boletim>
+            <boletim>
+                <nome>5º BOLETIM INOVA 2024</nome>
+                <file>boletim_5.pdf</file>
+            </boletim>
+            <boletim>
+                <nome>6º BOLETIM INOVA 2024</nome>
+                <file>boletim_6.pdf</file>
+            </boletim>
+            <boletim>
+                <nome>7º BOLETIM INOVA 2024</nome>
+                <file>boletim_7.pdf</file>
+            </boletim>
+        </boletins>
+    </pagina>
+</boletins>

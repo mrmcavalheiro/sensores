@@ -282,6 +282,27 @@ class SistemaGlobal extends Model
                     'nome' => "3º BOLETIM INOVA 2021",
                     'file' => 'boletim_3.pdf',
                 ],
+                
+                [
+                    'nome' => "4º BOLETIM INOVA 2024",
+                    'file' => 'boletim_4.pdf',
+                ],
+                
+                [
+                    'nome' => "5º BOLETIM INOVA 2024",
+                    'file' => 'boletim_5.pdf',
+                ],
+                
+                [
+                    'nome' => "6º BOLETIM INOVA 2024",
+                    'file' => 'boletim_6.pdf',
+                ],
+                
+                [
+                    'nome' => "7º BOLETIM INOVA 2024",
+                    'file' => 'boletim_7.pdf',
+                ],
+                
             ],
             "explicacaoTitulo" => "Entenda os boletins",
             "explicacao" => "A comunicação por meio de boletins, possibilita socializar os dados da rede de sensores e de outras fontes de integradas ao sistema, dando início a uma rede colaborativa com informações em tempo real, com detalhes e informações da região, auxiliando a tomada de decisões por produtores, consultores e sociedade que não foram diretamente beneficiados com a instalação dos sensores. 

@@ -1,9 +1,0 @@
-2024-09-05 06:41:25,068 - INFO - 
- ********  Iniciando o script Sensores_04_Calcula_Media.py ******
-
-2024-09-05 06:41:25,329 - INFO - Atualizando daily_sensor_averages_Jap...
-2024-09-05 06:41:26,517 - INFO - 10 linhas afetadas em daily_sensor_averages_Jap.
-2024-09-05 06:41:26,519 - INFO - Atualizando daily_sensor_averages_BR...
-2024-09-05 06:41:27,720 - INFO - 17 linhas afetadas em daily_sensor_averages_BR.
-2024-09-05 06:41:27,720 - INFO - Atualizando region_daily_averages...
-2024-09-05 06:41:28,855 - INFO - 14 linhas afetadas em region_daily_averages.

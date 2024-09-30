@@ -7,6 +7,8 @@ use App\Http\Controllers\SendMailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChartController;
 use App\Http\Controllers\SoloController;
+use App\Http\Controllers\BoletinsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,3 +58,7 @@ Route::post('/', [SendMailController::class, 'lead'])->name('lead');
 
 Route::post('/update-chart', [ChartController::class, 'updateChart'])->name('update-chart');
 //Route::post('/update-chart', [ChartController::class, 'updateChart']);
+
+
+Route::get('/boletins', [BoletinsController::class, 'index'])->name('boletins');
+
